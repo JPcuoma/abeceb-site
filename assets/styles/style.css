@@ -142,6 +142,7 @@ nav.hide {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: red;
   background: teal;
   height: 150vh;
@@ -161,12 +162,8 @@ nav.hide {
 #one h1 {
   text-align: center;
   color: #fff;
-  font-size: 36px;
+  font-size: 60px;
   font-family: "NexaBook";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: max-content;
   transition: opacity 0.5s ease;
 }
@@ -177,7 +174,7 @@ nav.hide {
 }
 #one h1 strong {
   display: block;
-  font-size: 1.7em;
+  font-size: 100px;
   font-family: "NexaSlabxBold";
 }
 @media (max-width: 1253px) {
@@ -425,7 +422,6 @@ nav.hide {
   font-size: 30px;
 }
 #form form input {
-  padding: 0;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.5;
@@ -468,7 +464,7 @@ nav.hide {
   outline: none;
   text-decoration: underline;
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
   appearance: none;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
