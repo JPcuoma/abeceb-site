@@ -3,69 +3,69 @@
     font-family: "NexaBook";
     src:
       local("NexaBook"),
-      url("/assets/fonts/Nexa-Book.otf") format("opentype");
+      url("../fonts/Nexa-Book.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaSlabBold";
     src:
       local("NexaSlabBold"),
-      url("/assets/fonts/NexaSlab-Trial-Bold.woff") format("opentype");
+      url("../fonts/NexaSlab-Trial-Bold.woff") format("opentype");
   }
   @font-face {
     font-family: "NexaExtraLight";
     src:
       local("NexaExtraLight"),
-      url("/assets/fonts/Nexa-ExtraLight.ttf") format("opentype");
+      url("../fonts/Nexa-ExtraLight.ttf") format("opentype");
   }
   @font-face {
     font-family: "NexaLight";
     src:
       local("NexaLight"),
-      url("/assets/fonts/Nexa-Light.otf") format("opentype");
+      url("../fonts/Nexa-Light.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaRegular";
     src:
       local("NexaRegular"),
-      url("/assets/fonts/NexaRegular.otf") format("opentype");
+      url("../fonts/NexaRegular.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaBold";
     src:
       local("NexaBold"),
-      url("/assets/fonts/Nexa-Bold.otf") format("opentype");
+      url("../fonts/Nexa-Bold.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaBlack";
     src:
       local("NexaBlack"),
-      url("/assets/fonts/NexaBlack.otf") format("opentype");
+      url("../fonts/NexaBlack.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaHeavy";
     src:
       local("NexaHeavy"),
-      url("/assets/fonts/NexaHeavy.otf") format("opentype");
+      url("../fonts/NexaHeavy.otf") format("opentype");
   }
 
   @font-face {
     font-family: "NexaSlabBook";
     src:
       local("NexaSlabBook"),
-      url("/assets/fonts/NexaSlab-Book.otf") format("opentype");
+      url("../fonts/NexaSlab-Book.otf") format("opentype");
   }
   @font-face {
     font-family: "NexaSlabBlack";
     src:
       local("NexaSlabBlack"),
-      url("/assets/fonts/NexaSlabBlack.otf") format("opentype");
+      url("../fonts/NexaSlabBlack.otf") format("opentype");
   }
 
   @font-face {
     font-family: "NexaSlabxBold";
     src:
       local("NexaSlabxBold"),
-      url("/assets/fonts/NexaSlab-xBold.otf") format("opentype");
+      url("../fonts/NexaSlab-xBold.otf") format("opentype");
   }
   
 
@@ -186,7 +186,7 @@ nav{
     color: red;
     background: teal;
     height: 150vh;
-    background: url('/assets/img/foto_edificios.jpg') ;
+    background: url('../img/foto_edificios.jpg') ;
     background-size: cover;
     background-position: top;
     overflow: hidden;
@@ -312,7 +312,7 @@ nav{
 
 #three{
     height:1272px;
-    background: url('/assets/img/foto_globos.jpg');
+    background: url('../img/foto_globos.jpg');
     background-size: cover;
     display:flex;
     align-items: center;
@@ -496,7 +496,7 @@ nav{
         }
         
         input[type="checkbox"]:checked {
-            background-image: url(/assets/img/check1.png);
+            background-image: url(../img/check1.png);
             background-size: cover;
         }
         select{
@@ -513,7 +513,7 @@ nav{
             text-decoration:none;
             appearance: none;
             padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-            background-image: url(/assets/img/arrow.png);
+            background-image: url(../img/arrow.png);
             background-repeat: no-repeat;
             background-position: right 0.75rem center;
             background-size: 16px 12px;
@@ -679,7 +679,7 @@ footer{
       right: 30%;
       background: none;
       &:before {
-        content: url(/assets/img/arrow-right.svg);
+        content: url(../img/arrow-right.svg);
       }
     }
   
@@ -698,7 +698,7 @@ footer{
       left: 30%;
       background: none;
       &:before {
-        content: url(/assets/img/arrow-left.svg);
+        content: url(../img/arrow-left.svg);
       }
     }
   
