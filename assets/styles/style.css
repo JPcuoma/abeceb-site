@@ -267,6 +267,9 @@ nav.hide {
   display: block;
   font-family: "NexaBold";
 }
+#two .partners ul li:nth-child(2) {
+  margin: 0 120px;
+}
 
 #three {
   height: 1272px;

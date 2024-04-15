@@ -304,6 +304,9 @@ nav{
                     display:block;
                     font-family: 'NexaBold';
                 }
+                &:nth-child(2){
+                    margin:0 120px;
+                }
             }
         }
     }
