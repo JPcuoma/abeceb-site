@@ -1,0 +1,458 @@
+// 
+// Home
+// 
+
+.hamburguer {
+    position: fixed;
+    opacity: 1;
+    z-index: 1;
+    width: 100%;
+    display: Flex;
+    height: 140px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
+
+    &.hide {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .hamb-close-logo {
+        position: absolute;
+        right: 0;
+        right: 84px;
+        top: 57px;
+    }
+
+    .menu-close-logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 40%);
+    }
+}
+
+
+
+
+#one {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: red;
+    background: teal;
+    height: 150vh;
+    background: url('../img/foto_edificios.jpg');
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+
+    &.fullwidth-container {
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    h1 {
+        text-align: center;
+        color: $white;
+        font-size: 60px;
+        font-family: 'NexaBook';
+        width: max-content;
+        transition: opacity 0.5s ease;
+
+        @media (max-width: 1253px) {
+            font-size: 1.2em;
+            /* Tamaño de fuente para pantallas más pequeñas */
+        }
+
+        strong {
+            display: block;
+            font-size: 100px;
+            font-family: 'NexaSlabxBold';
+
+            @media (max-width: 1253px) {
+                font-size: 1.2em;
+                /* Tamaño de fuente para pantallas más pequeñas */
+            }
+        }
+
+        &.scroll-transition {
+            position: absolute;
+            bottom: 87px;
+            transition: none;
+            top: auto;
+        }
+
+    }
+}
+
+
+#two {
+    padding: 210px 0 0;
+    height: 880px;
+    background: $white;
+
+    h3 {
+        text-align: center;
+        font-size: 32px;
+        font-family: 'NexaBlack';
+        margin-bottom: 73px;
+    }
+
+    .partners {
+        .opt {
+            display: none;
+
+            h3 {
+                font-size: 70px;
+                color: #2C3947;
+                font-family: 'NexaBook';
+                margin-bottom: 28px;
+            }
+
+            p {
+                font-size: 20px;
+                color: #2C3947;
+                font-family: 'NexaBook';
+                max-width: 722px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            a {
+                text-align: center;
+                display: block;
+                margin-top: 90px;
+                color: $green;
+                font-family: 'NexaHeavy';
+                font-size: 20px;
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                font-size: 18px;
+                font-family: 'NexaBold';
+                color: $dark-green;
+                width: auto;
+                text-align: center;
+                padding: 10px 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $dark-green
+                }
+
+                ul li+li {
+                    margin-left: -10px;
+                }
+
+                &.active {
+                    background: $green;
+                    border-radius: 30px;
+                    color: $white;
+                }
+
+                &:hover {
+                    background: rgb(62 117 120 / 50%);
+                    border-radius: 30px;
+                    color: $dark-green;
+
+                    &.active {
+                        background: $green;
+                        border-radius: 30px;
+                        color: $white;
+                    }
+                }
+
+                span {
+                    width: 152px;
+                    display: block;
+                    font-family: 'NexaBold';
+                }
+
+                &:nth-child(2) {
+                    margin: 0 120px;
+                }
+            }
+        }
+    }
+
+}
+
+#three {
+    height: 1272px;
+    background: url('../img/foto_globos.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+
+    h3 {
+        font-size: 50px;
+        font-family: 'NexaLight';
+        text-align: center;
+        color: $white;
+
+        strong {
+            display: block;
+            font-family: 'NexaSlabBlack';
+        }
+    }
+
+    a.btn {
+        font-size: 20px;
+        font-family: 'NexaBold';
+        color: $white;
+        padding: 20px;
+        text-decoration: none;
+        background-color: $green;
+        border-radius: 30px;
+        display: table;
+        margin: 0 auto;
+    }
+}
+
+#four {
+    background: #F2F2F2;
+    padding: 184px 0;
+
+    h3 {
+        font-size: 32px;
+        font-family: 'NexaBlack';
+        text-align: center;
+        margin-bottom: 112px;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        margin-top: 90px;
+        color: $green;
+        font-family: 'NexaHeavy';
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .servicios-boxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: $green;
+
+        font-family: 'NexaSlabBook';
+        text-align: center;
+        line-height: 48px;
+
+        .box {
+            max-width: 392px;
+            font-size: 60px;
+
+            span {
+                color: $dark-green;
+                display: block;
+                font-family: 'NexaLight';
+                font-size: 50px;
+                max-width: 352px;
+                margin: 0 auto;
+            }
+
+            p {
+                font-size: 24px;
+                color: #2C3947;
+                font-family: 'NexaRegular';
+                padding: 0px 40px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+#five {
+    padding-top: 129px;
+    padding: 109px 76px;
+    height: 880px;
+    position: relative;
+    background-color: $white;
+
+    h3 {
+        font-size: 32px;
+        font-family: 'NexaBlack';
+        text-align: center;
+        margin-bottom: 112px;
+    }
+
+    .img-insights {
+        position: absolute;
+        right: 0;
+        top: 120px;
+    }
+
+    .left {
+        max-width: 644px;
+
+        h4 {
+            font-size: 60px;
+            line-height: 60px;
+            font-family: "NexaExtraLight";
+            margin-bottom: 20px;
+            color: #2C3947;
+
+            strong {
+                font-family: 'NexaHeavy';
+            }
+        }
+
+        p {
+            font-family: 'NexaRegular';
+            font-size: 24px;
+        }
+
+        a {
+            text-align: left;
+            display: block;
+            margin-top: 40px;
+            color: $green;
+            font-family: 'NexaHeavy';
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+#six {
+    height: 880px;
+    background: #F2F2F2;
+    padding: 130px 0 0;
+
+    h3 {
+        font-size: 32px;
+        font-family: 'NexaBlack';
+        text-align: center;
+        margin-bottom: 112px;
+    }
+}
+
+
+
+#form {
+    height: 880px;
+    background: #2C3947;
+    color: $white;
+    padding: 170px;
+
+    h3 {
+        font-size: 32px;
+        font-family: 'NexaHeavy';
+        text-align: center;
+        margin-bottom: 112px;
+    }
+
+    form {
+        text-align: center;
+        font-family: 'NexaExtraLight';
+        font-size: 30px;
+
+        input {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            background-clip: padding-box;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid white;
+            border-left: none;
+            max-width: 180px;
+
+            &:focus-visible {
+                outline: none;
+            }
+
+        }
+
+        input[type="checkbox"]::-ms-check {
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            height: 20px;
+            width: 20px;
+            border: 3px solid silver;
+        }
+
+        input[type="checkbox"]:checked {
+            background-image: url(../img/check1.png);
+            background-size: cover;
+        }
+
+        select {
+            background-color: transparent;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid white;
+            border-left: none;
+            width: 13rem;
+            outline: none;
+            text-decoration: underline;
+            color: $white;
+            font-size: 30px;
+            text-decoration: none;
+            appearance: none;
+            padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+            background-image: url(../img/arrow.png);
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 16px 12px;
+            border: none;
+            text-decoration: underline;
+        }
+
+        .terminos {
+            margin-top: 40px;
+
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-size: 15px;
+                    color: #CCCCCC;
+                    margin-left: 10px;
+                }
+            }
+
+        }
+
+        input.btn {
+            margin-top: 40px;
+            color: $white;
+            background: $green;
+            text-decoration: none;
+            border-radius: 40px;
+            border: none;
+            font-size: 20px;
+            width: 275px;
+            font-family: 'nexaheavy';
+        }
+    }
+}

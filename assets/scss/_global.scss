@@ -1,0 +1,52 @@
+// 
+// Global
+// 
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 1s;
+    font-size: 10px;
+}
+
+html {
+    transition: all 1s;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+
+.line-clamp-2 {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp-3 {
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp-5 {
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}

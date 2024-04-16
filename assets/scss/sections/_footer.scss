@@ -1,0 +1,52 @@
+// 
+// Footer
+// 
+
+footer {
+    background: $white;
+    padding: 80px 62px;
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+
+        @media(max-width:768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .footer-column {
+        padding: 20px;
+        text-align: left;
+
+        li {
+            font-family: 'NexaExtraLight';
+            font-size: 16px;
+            color: #3F7679;
+            padding-bottom: 20px;
+
+            &.title {
+                font-family: 'NexaHeavy';
+            }
+
+        }
+
+        &.last {
+            width: 325px;
+            text-align: right;
+
+            .direccion {
+                font-family: 'NexaHeavy';
+            }
+
+            .mail {
+                font-family: 'NexaHeavy';
+            }
+
+            .redes img {
+                margin-left: 24px;
+            }
+        }
+    }
+}

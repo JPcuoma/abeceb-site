@@ -1,0 +1,46 @@
+//
+// Navbar
+//
+
+nav {
+    height: 140px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            font-family: 'NexaBold';
+
+            a {
+                display: flex;
+                color: $white;
+                mix-blend-mode: difference;
+                text-decoration: none;
+                font-size: 22px;
+
+                &.btn {
+                    background: $green;
+                    color: $white;
+                    border-radius: 30px;
+                }
+            }
+
+        }
+    }
+
+    &.hide {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+}
