@@ -26,137 +26,139 @@
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
 }
+.modern-slider{
 
-.slick-slide {
-  float: left;
-  margin: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  flex: 0 0 calc(10.333% - 10px);
-  /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
-  margin: 0 5px;
-  /* Espacio entre los slides */
-  box-sizing: border-box;
-  /* Otros estilos para los slides */
-}
-
-/* ==== Slider Style === */
-.modern-slider {
-  .item {
-    .img-fill {
-      height: 288px;
-
-      .info {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-        line-height: 100vh;
+  .slick-slide {
+    float: left;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex: 0 0 calc(10.333% - 10px);
+    /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
+    margin: 0 5px;
+    /* Espacio entre los slides */
+    box-sizing: border-box;
+    /* Otros estilos para los slides */
+  }
+  
+  /* ==== Slider Style === */
+  .modern-slider {
+    .item {
+      .img-fill {
+        height: 288px;
+  
+        .info {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          line-height: 100vh;
+          text-align: center;
+        }
+  
+        img {
+          filter: blur(5px);
+        }
+      }
+  
+      .info>div {
+        vertical-align: middle;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  
+    .next-arrow {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      width: 45px;
+      height: 45px;
+      border: 0 none;
+      margin-top: -22.5px;
+      text-align: center;
+      cursor: pointer;
+      font: 20px/45px FontAwesome;
+      z-index: 5;
+      right: 30%;
+      background: none;
+  
+      &:before {
+        content: url(../img/arrow-right.svg);
+      }
+    }
+  
+    .prev-arrow {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      width: 45px;
+      height: 45px;
+      border: 0 none;
+      margin-top: -22.5px;
+      text-align: center;
+      font: 20px/45px FontAwesome;
+      z-index: 5;
+      cursor: pointer;
+      left: 30%;
+      background: none;
+  
+      &:before {
+        content: url(../img/arrow-left.svg);
+      }
+    }
+  
+    .item {
+      h4 {
+        font-family: 'NexaExtraLight';
+        color: #3E7578;
+        animation: fadeOutRight 1s both;
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+        line-height: 65px;
+      }
+  
+      h5 {
+        margin: 0;
+        padding: 0;
+        font-family: 'NexaExtraLight';
+        color: #2C3947;
+        max-width: 600px;
+        overflow: hidden;
+        max-width: 430px;
+        animation: fadeOutLeft 1s both;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-top: 40px;
         text-align: center;
       }
-
-      img {
-        filter: blur(5px);
+  
+      a {
+        text-align: center;
+        margin-top: 60px;
+        color: $green;
+        font-family: 'NexaHeavy';
+        font-size: 20px;
+        line-height: 20px;
+        text-decoration: none;
       }
     }
-
-    .info>div {
-      vertical-align: middle;
-      display: flex;
-      flex-direction: column;
-    }
   }
-
-  .next-arrow {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    width: 45px;
-    height: 45px;
-    border: 0 none;
-    margin-top: -22.5px;
-    text-align: center;
-    cursor: pointer;
-    font: 20px/45px FontAwesome;
-    z-index: 5;
-    right: 30%;
-    background: none;
-
-    &:before {
-      content: url(../img/arrow-right.svg);
-    }
-  }
-
-  .prev-arrow {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    width: 45px;
-    height: 45px;
-    border: 0 none;
-    margin-top: -22.5px;
-    text-align: center;
-    font: 20px/45px FontAwesome;
-    z-index: 5;
-    cursor: pointer;
-    left: 30%;
-    background: none;
-
-    &:before {
-      content: url(../img/arrow-left.svg);
-    }
-  }
-
-  .item {
-    h4 {
-      font-family: 'NexaExtraLight';
-      color: #3E7578;
-      animation: fadeOutRight 1s both;
-      margin: 0;
-      padding: 0;
-      font-size: 60px;
-      line-height: 65px;
-    }
-
-    h5 {
-      margin: 0;
-      padding: 0;
-      font-family: 'NexaExtraLight';
-      color: #2C3947;
-      max-width: 600px;
-      overflow: hidden;
-      max-width: 430px;
-      animation: fadeOutLeft 1s both;
-      font-size: 20px;
-      line-height: 26px;
-      margin: 0 auto;
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    a {
-      text-align: center;
-      margin-top: 60px;
-      color: $green;
-      font-family: 'NexaHeavy';
-      font-size: 20px;
-      line-height: 20px;
-      text-decoration: none;
-    }
-  }
-}
-
-
-.slick-initialized.slick-slider {
-  .slick-active {
-    opacity: 0.2;
-    transition: all 300ms ease;
-
-    &.slick-current {
-      opacity: 1;
+  
+  
+  .slick-initialized.slick-slider {
+    .slick-active {
+      opacity: 0.2;
       transition: all 300ms ease;
+  
+      &.slick-current {
+        opacity: 1;
+        transition: all 300ms ease;
+      }
     }
   }
 }
