@@ -2,83 +2,38 @@
 // Home
 // 
 
-.hamburguer {
-    position: fixed;
-    opacity: 1;
-    z-index: 1;
-    width: 100%;
-    display: Flex;
-    height: 140px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
-
-    &.hide {
-        opacity: 0;
-        transition: opacity 0.5s ease;
-    }
-
-    .hamb-close-logo {
-        position: absolute;
-        right: 0;
-        right: 84px;
-        top: 57px;
-    }
-
-    .menu-close-logo {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 40%);
-    }
-}
-
-
-
-
 #one {
     height: 100%;
+    min-height: 100vh;
+    max-height: 880px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: red;
-    background: teal;
-    height: 150vh;
     background: url('../img/foto_edificios.jpg');
     background-size: cover;
     background-position: top;
     overflow: hidden;
     position: relative;
     background-color: #000;
+    padding: clamp(80px, 12vw, 150px) 0;
+    box-sizing: content-box;
 
-    &.fullwidth-container {
-        height: 100vh;
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+
 
     h1 {
         text-align: center;
         color: $white;
-        font-size: 60px;
+        font-size: clamp(30px, 4vw, 60px);
         font-family: 'NexaBook';
         width: max-content;
         transition: opacity 0.5s ease;
 
-        @media (max-width: 1253px) {
-            font-size: 1.2em;
-            /* Tamaño de fuente para pantallas más pequeñas */
-        }
 
         strong {
             display: block;
-            font-size: 100px;
+            font-size: clamp(35px, 5vw, 100px);
             font-family: 'NexaSlabxBold';
-
-            @media (max-width: 1253px) {
-                font-size: 1.2em;
-                /* Tamaño de fuente para pantallas más pequeñas */
-            }
         }
 
         &.scroll-transition {
@@ -93,15 +48,18 @@
 
 
 #two {
-    padding: 210px 0 0;
-    height: 880px;
+    padding: 8vw 0;
+    min-height: 100vh;
     background: $white;
+    display: flex;
+    place-content: center;
+    flex-direction: column;    
 
     h3 {
         text-align: center;
-        font-size: 32px;
+        font-size: clamp(28px, 3vw, 32px);
         font-family: 'NexaBlack';
-        margin-bottom: 73px;
+        margin-bottom: 6vw;
     }
 
     .partners {
@@ -109,14 +67,14 @@
             display: none;
 
             h3 {
-                font-size: 70px;
+                font-size: clamp(30px, 5vw, 70px);
                 color: #2C3947;
                 font-family: 'NexaBook';
                 margin-bottom: 28px;
             }
 
             p {
-                font-size: 20px;
+                font-size: clamp(18px, 2vw, 20px);
                 color: #2C3947;
                 font-family: 'NexaBook';
                 max-width: 722px;
@@ -127,7 +85,7 @@
             a {
                 text-align: center;
                 display: block;
-                margin-top: 90px;
+                margin-top: 5vw;
                 color: $green;
                 font-family: 'NexaHeavy';
                 font-size: 20px;
@@ -139,9 +97,11 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+            max-width: 800px;
 
             li {
+                width: fit-content;
                 font-size: 18px;
                 font-family: 'NexaBold';
                 color: $dark-green;
@@ -152,10 +112,6 @@
 
                 &:hover {
                     color: $dark-green
-                }
-
-                ul li+li {
-                    margin-left: -10px;
                 }
 
                 &.active {
@@ -177,13 +133,8 @@
                 }
 
                 span {
-                    width: 152px;
                     display: block;
                     font-family: 'NexaBold';
-                }
-
-                &:nth-child(2) {
-                    margin: 0 120px;
                 }
             }
         }
@@ -250,21 +201,21 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        color: $green;
-
-        font-family: 'NexaSlabBook';
-        text-align: center;
-        line-height: 48px;
-
+        gap: 25px;
+        flex-wrap: wrap;
+        
         .box {
+            color: $green;
+            font-family: 'NexaSlabBook';
             max-width: 392px;
-            font-size: 60px;
+            font-size: clamp(50px, 5vw, 60px);
+            text-align: center;
 
             span {
                 color: $dark-green;
                 display: block;
                 font-family: 'NexaLight';
-                font-size: 50px;
+                font-size: clamp(40px, 4vw, 50px);
                 max-width: 352px;
                 margin: 0 auto;
             }
@@ -281,9 +232,9 @@
 }
 
 #five {
-    padding-top: 129px;
-    padding: 109px 76px;
-    height: 880px;
+    padding: 8vw;
+    min-height: 100vh;
+    max-width: 880px;
     position: relative;
     background-color: $white;
 
@@ -294,30 +245,50 @@
         margin-bottom: 112px;
     }
 
-    .img-insights {
+    .img-insights-desk {
         position: absolute;
+        z-index: 1;
+        display: block;
         right: 0;
         top: 120px;
-    }
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+        .img-insights-mob{
+            position: absolute;
+            z-index: 1;
+            display: none;
+            right: 0;
+            bottom: 0;
+            @media (max-width:768px) {
+                display: block;
+            }
+        }
+    
 
     .left {
+        width: 100%;
         max-width: 644px;
+        position: relative;
+        z-index: 5;
 
         h4 {
-            font-size: 60px;
-            line-height: 60px;
+            font-size: clamp(50px, 8vw, 60px);
+            line-height: 1;
             font-family: "NexaExtraLight";
             margin-bottom: 20px;
             color: #2C3947;
 
             strong {
+                font-size: clamp(45px, 6vw, 50px);
                 font-family: 'NexaHeavy';
             }
         }
 
         p {
             font-family: 'NexaRegular';
-            font-size: 24px;
+            font-size: clamp(18px, 2.2vw, 24px);
         }
 
         a {
@@ -333,9 +304,13 @@
 }
 
 #six {
-    height: 880px;
+    padding: 8vw;
+    min-height: 100vh;
+    max-width: 880px;
     background: #F2F2F2;
-    padding: 130px 0 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 
     h3 {
         font-size: 32px;
@@ -351,7 +326,7 @@
     height: 880px;
     background: #2C3947;
     color: $white;
-    padding: 170px;
+    padding: 8vw;
 
     h3 {
         font-size: 32px;

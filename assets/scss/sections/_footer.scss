@@ -4,16 +4,20 @@
 
 footer {
     background: $white;
-    padding: 80px 62px;
+    padding: 2vw 1vw;
 
     .footer-container {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(7, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 10px;
 
-        @media(max-width:768px) {
-            grid-template-columns: 1fr;
-        }
+        // @media(max-width:768px) {
+        //     grid-template-columns: 1fr;
+        // }
     }
 
     .footer-column {
@@ -37,7 +41,7 @@ footer {
         }
 
         &.last {
-            width: 325px;
+            // width: 325px;
             text-align: right;
 
             .direccion {

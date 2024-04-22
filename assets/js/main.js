@@ -29,20 +29,28 @@
     
 
   /* menu */
-  const hambClose = document.querySelector('.hamb-close-logo');
+  const hambClose = document.querySelectorAll('.hamb-toggle');
     const hamburguer = document.querySelector('.hamburguer');
     const menu = document.querySelector('#menu');
-    const closeButton = document.querySelector('.close');
+    // const closeButton = document.querySelector('.close');
     
-    hambClose.addEventListener('click', function() {
-      hamburguer.classList.toggle('hide');
-      menu.classList.toggle('hide');
-    });
+    hambClose.forEach((btn) => {
+          btn.addEventListener('click', function() {
+            if( menu.classList.contains('hide')){
+              hamburguer.classList.add('hide')
+              menu.classList.remove('hide');
+            }else{
+              hamburguer.classList.remove('hide')
+              menu.classList.add('hide')
+            }
+          });
+        }
+      )
     
-    closeButton.addEventListener('click', function() {
-      menu.classList.toggle('hide');
-      hamburguer.classList.toggle('hide');
-    });
+    // closeButton.addEventListener('click', function() {
+    //   menu.classList.toggle('hide');
+    //   hamburguer.classList.toggle('hide');
+    // });
 
 
     

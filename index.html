@@ -14,7 +14,9 @@
 
 <body>
     <nav id="menu" class="hide">
-        <a href="#"><img src="assets/img/abeceb-close-menu.svg" alt="abeceb logo">
+        <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
+        <a href="#" class="nav-logo">
+            <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
         </a>
         <ul>
             <li><a href="#">Nosotros</a></li>
@@ -22,12 +24,12 @@
             <li><a href="#">Insights</a></li>
             <li><a href="#">Foro</a></li>
             <li><a class="btn" href="#">¿Hablamos?</a></li>
-            <li class="close"><img src="assets/img/close-nav.svg" alt="cerrar"></li>
+            <li class="hamb-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
         </ul>
     </nav>
     <div class="hamburguer">
-        <img src="assets/img/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
-        <img src="assets/img/hamburger.svg" alt="hamburguer menu icon" class="hamb-close-logo">
+        <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
+        <img src="assets/img/icons/hamburger.svg" alt="menu" class="hamb-toggle">
     </div>
 
     
@@ -47,7 +49,6 @@
 
 
         <section id="two">
-            <div class="container ">
                 <h3 class="">Equipo</h3>
                 <div class="partners fade-in-el fade-in fast">
                     <ul>
@@ -76,7 +77,6 @@
                         <a href="#">ver partners</a>
                     </div>
                 </div>
-            </div>
         </section>
 
 
@@ -92,27 +92,21 @@
                 <h3>Servicios</h3>
                 <div class="servicios-boxes  ">
                     <div class="box fade-in-el fade-in fast">
-                        <div class="top">
-                            Predecimos <span>el entorno económico</span>
-                            <hr>
-                            <p>Conectamos la macro
-                                con la micro del negocio.</p>
-                        </div>
+                        Predecimos <span>el entorno económico</span>
+                        <hr>
+                        <p>Conectamos la macro
+                            con la micro del negocio.</p>
                     </div>
                     <div class="box fade-in-el fade-in slow">
-                        <div class="top">
-                            Conocemos <span>el know how y el how to</span>
-                            <hr>
-                            <p>Somos el socio estratégico
-                                del C-Level.</p>
-                        </div>
+                        Conocemos <span>el know how y el how to</span>
+                        <hr>
+                        <p>Somos el socio estratégico
+                            del C-Level.</p>
                     </div>
                     <div class="box fade-in-el fade-in medium">
-                        <div class="top">
-                            Conectamos <span>oportunidades de negocio</span>
-                            <hr>
-                            <p>Junto al mejor expertise sectorial de la región.</p>
-                        </div>
+                        Conectamos <span>oportunidades de negocio</span>
+                        <hr>
+                        <p>Junto al mejor expertise sectorial de la región.</p>
                     </div>
                 </div>
                 <a href="#">Ver todos los servicios</a>
@@ -130,8 +124,12 @@
                         valor.</p>
                     <a href="#">Ver más</a>
                 </div>
-                <div class="img-insights fade-in-el fade-in fast"><img src="assets/img/insights-img.png"
-                        alt="miscelanea"></div>
+                <div class="img-insights-desk fade-in-el fade-in fast">
+                    <img src="assets/img/insights-img.png" alt="miscelanea">
+                </div>
+                <div class="img-insights-mob fade-in-el fade-in fast">
+                    <img src="assets/img/insights-img-mob.png" alt="miscelanea">
+                </div>
             </div>
         </section>
 
@@ -298,9 +296,9 @@
                     <li class="mail">info@abeceb.com</li>
                     <li class="tel">(+5411) 4312 0811</li>
                     <li class="redes">
-                        <a href="#"><img src="assets/img/abeceb-youtube-icon.svg" alt="youtube"></a>
-                        <a href="#"><img src="assets/img/abeceb-ilinkedin-logo.svg" alt="linkedin"></a>
-                        <a href="#"><img src="assets/img/abeceb-instagram-logo.svg" alt="instagram"></a>
+                        <a href="#"><img src="assets/img/icons/abeceb-youtube-icon.svg" alt="youtube"></a>
+                        <a href="#"><img src="assets/img/icons/abeceb-ilinkedin-logo.svg" alt="linkedin"></a>
+                        <a href="#"><img src="assets/img/icons/abeceb-instagram-logo.svg" alt="instagram"></a>
                     </li>
                 </ul>
             </div>
@@ -332,8 +330,17 @@
                 cssEase: 'linear',
                 // fade:true,
                 draggable: true,
-                prevArrow: '<button class="prev-arrow"></button>',
-                nextArrow: '<button class="next-arrow"></button>',
+                prevArrow: '<button class="prev-arrow"><img src="./assets/img/icons/arrow-left.svg" /></button>',
+                nextArrow: '<button class="next-arrow"><img src="./assets/img/icons/arrow-right.svg" /></button>',
+                responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        },
+                    ]
             });
 
         })
