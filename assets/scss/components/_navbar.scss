@@ -12,6 +12,11 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width:1100px) {
+        height: 55px;
+    }
+
+
 nav {
     position: fixed;
     z-index: inherit;
@@ -35,7 +40,8 @@ nav {
         @media (max-width:1100px) {
             height: 100vh;
             padding: 90px;
-            background-color: $black-typo;
+            background: $black-typo;
+            opacity: 1;
             justify-content: center;
             align-items: flex-start;
             transform: translateX(0);
@@ -99,10 +105,13 @@ nav {
             }
 
             &.hamb-close-toggle{
+                img{
+                    width: clamp(25px, 4vw, 42px);
+                }
                 @media (max-width:1100px) {    
                     position: absolute;
-                    top: 6vw;
-                    right: 6vw;
+                    top: clamp(20px, 4vw, 60px);
+                    right: clamp(20px, 4vw, 60px );
                     margin: 0;
                 }
             }
@@ -121,46 +130,62 @@ nav {
         }
     }
 }
-.header-logo-box {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 140px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
-    
-    @media (max-width: 768px) {
-        display: none;
-    }
-    
-    .img {
-        width: 250px;
-    }
-    
-    &.hide {
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.5s ease;
-    }
-}
-.hamb-toggle{
-    cursor: pointer;
-    position: absolute;
-    right: 6vw;
-    padding: 5px;
-    border-radius: 50%;
-    top: clamp(20px, 6vw, 60px);
-
-    &.hide {
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.5s ease;
-    }
-
-    img{
+    .header-logo-box {
+        position: absolute;
+        top: 0;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
+        
+        @media (max-width: 768px) {
+            justify-content: flex-start;
+            background: transparent;
+        }
+        
+        .menu-close-logo-desk {
+            width: 250px;
+            display: inline-block;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+        .menu-close-logo-mob {
+            position: absolute;
+            top: 0;
+            display: none;
+            width: 96px;
+
+            @media (max-width: 768px) {
+                display: inline-block;
+            }
+        }
+        
+        &.hide {
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.5s ease;
+        }
     }
-}
+    .hamb-toggle{
+        cursor: pointer;
+        position: absolute;
+        right: clamp(20px, 4vw, 60px );
+        padding: 5px;
+        border-radius: 50%;
+        top: clamp(20px, 4vw, 60px);
+        
+        &.hide {
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.5s ease;
+        }
+        
+        img{
+            width: clamp(25px, 4vw, 42px);
+        }
+    }
 }

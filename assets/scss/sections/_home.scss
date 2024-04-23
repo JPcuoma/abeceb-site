@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;  
-    height: 2300px;
+    // height: 2300px;
     background: url('../img/foto_edificios.jpg');
     background-size: cover;
     background-position: top;
@@ -33,49 +33,55 @@
     h1.title{
         text-align: center;
         color: $white;
-        font-size: clamp(30px, 4vw, 60px);
-        font-family: 'NexaBook';
         transition: opacity 0.5s ease;
+        
+        span{
+            font-family: 'NexaBook';
+            font-weight: 400;
+            font-size: clamp(28px, 4vw, 60px);
+        }
 
         strong {
             display: block;
             text-align: center;
             font-size: clamp(48px, 5vw, 100px);
             font-family: 'NexaSlabxBold';
+            margin-top: 10px;
+            margin-bottom: 0px;
         }
     }
 
-    &.parallax__layer_hero {
-        position: relative;
-        height: 2300px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+    // &.parallax__layer_hero {
+    //     position: relative;
+    //     height: 2300px;
+    //     display: flex;
+    //     align-items: flex-start;
+    //     justify-content: center;
 
-        .parallax__image_hero {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+    //     .parallax__image_hero {
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         z-index: -1;
+    //         background-size: cover;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
 
-            img,
-            .image_hero {
-                object-fit: cover;
-                width: 100%;
-                height: 150%;
-            }
-        }
-    }
+    //         img,
+    //         .image_hero {
+    //             object-fit: cover;
+    //             width: 100%;
+    //             height: 150%;
+    //         }
+    //     }
+    // }
 }
 
 
 #two {
-    padding: 8vw 7px;
+    padding: clamp(130px, 8vw, 210px) clamp(20px, 7vw, 30px);
     min-height: 100vh;
     background: $white;
     display: flex;
@@ -94,10 +100,11 @@
             display: none;
 
             h3 {
-                font-size: clamp(30px, 10vw, 70px);
+                font-size: clamp(30px, 20vw, 70px);
                 color: #2C3947;
                 font-family: 'NexaBook';
-                margin-bottom: 28px;
+                margin-bottom: 40px;
+                margin-top: 87px;
             }
 
             p {
@@ -130,7 +137,7 @@
 
             li {
                 flex: 1 0 0;
-                font-size: clamp(12px, 3vw, 18px);
+                font-size: clamp(15px, 3vw, 18px);
                 font-family: 'NexaBold';
                 color: $dark-green;
                 width: auto;
@@ -180,7 +187,7 @@
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 10px 20px;
 
     h3 {
         font-size: clamp(30px, 10vw, 50px);
@@ -205,23 +212,23 @@
         display: table;
         margin: 0 auto;
         text-align: center;
-        width: clamp(fit-content, 80vw, 277px);
+        width: clamp(335px, 80vw, 277px);
         
         @media (max-width:768px) {
-            padding: 15px;
+            padding: 20px ;
         }
     }
 }
 
 #four {
     background: #F2F2F2;
-    padding: 184px 7px;
+    padding: clamp(49px, 8vw, 184px) clamp(20px, 5vw, 64px);
 
     h3 {
         font-size: 32px;
         font-family: 'NexaBlack';
         text-align: center;
-        margin-bottom: 112px;
+        margin-bottom: clamp(52px, 6vw, 112px);
     }
 
     a {
@@ -238,30 +245,30 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        gap: 25px;
+        gap: 82px;
         flex-wrap: wrap;
 
         .box {
             color: $green;
             font-family: 'NexaSlabBook';
             max-width: 392px;
-            font-size: clamp(30px, 12vw, 60px);
+            font-size: clamp(50px, 12vw, 60px);
             text-align: center;
 
             span {
                 color: $dark-green;
                 display: block;
                 font-family: 'NexaLight';
-                font-size: clamp(25px, 8vw, 50px);
+                font-size: clamp(40px, 8vw, 50px);
                 max-width: 352px;
                 margin: 0 auto;
             }
 
             p {
-                font-size: clamp(18px, 4vw, 24px);
+                font-size: 24px;
                 color: #2C3947;
                 font-family: 'NexaRegular';
-                padding: 0px 4vw;
+                padding: 0px;
                 line-height: 1;
             }
         }
@@ -269,7 +276,8 @@
 }
 
 #five {
-    padding: 8vw 7vw;
+    padding: clamp(50px, 8vw, 129px) clamp(20px, 7vw, 76px);
+    padding-bottom: 270px;
     min-height: 100vh;
     max-height: 880px;
     position: relative;
@@ -300,7 +308,7 @@
         z-index: 1;
         display: none;
         right: 0;
-        bottom: 0;
+        bottom: -2px;
 
         @media (max-width:768px) {
             display: block;
@@ -315,14 +323,18 @@
         z-index: 5;
 
         h4 {
-            font-size: clamp(40px, 10vw, 60px);
+            font-size: clamp(50px, 10vw, 60px);
             line-height: 1;
             font-family: "NexaExtraLight";
             margin-bottom: 20px;
             color: #2C3947;
 
+            @media (max-width:768px) {
+                text-align: center;
+            }
+
             strong {
-                font-size: clamp(35px, 6vw, 50px);
+                font-size: clamp(40px, 6vw, 50px);
                 font-family: 'NexaHeavy';
             }
         }
@@ -330,6 +342,11 @@
         p {
             font-family: 'NexaRegular';
             font-size: clamp(18px, 2.2vw, 24px);
+
+            
+            @media (max-width:768px) {
+                text-align: center;
+            }
         }
 
         a {
@@ -340,6 +357,10 @@
             font-family: 'NexaHeavy';
             font-size: 20px;
             text-decoration: none;
+            
+            @media (max-width:768px) {
+                text-align: center;
+            }
         }
     }
 }

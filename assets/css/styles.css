@@ -102,6 +102,11 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .nav-container {
+    height: 55px;
+  }
+}
 .nav-container nav {
   position: fixed;
   z-index: inherit;
@@ -123,7 +128,8 @@ html {
   .nav-container nav {
     height: 100vh;
     padding: 90px;
-    background-color: #2C3947;
+    background: #2C3947;
+    opacity: 1;
     justify-content: center;
     align-items: flex-start;
     transform: translateX(0);
@@ -185,11 +191,14 @@ html {
   color: #fff;
   border-radius: 30px;
 }
+.nav-container nav ul li.hamb-close-toggle img {
+  width: clamp(25px, 4vw, 42px);
+}
 @media (max-width: 1100px) {
   .nav-container nav ul li.hamb-close-toggle {
     position: absolute;
-    top: 6vw;
-    right: 6vw;
+    top: clamp(20px, 4vw, 60px);
+    right: clamp(20px, 4vw, 60px);
     margin: 0;
   }
 }
@@ -216,11 +225,29 @@ html {
 }
 @media (max-width: 768px) {
   .nav-container .header-logo-box {
+    justify-content: flex-start;
+    background: transparent;
+  }
+}
+.nav-container .header-logo-box .menu-close-logo-desk {
+  width: 250px;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .nav-container .header-logo-box .menu-close-logo-desk {
     display: none;
   }
 }
-.nav-container .header-logo-box .img {
-  width: 250px;
+.nav-container .header-logo-box .menu-close-logo-mob {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 96px;
+}
+@media (max-width: 768px) {
+  .nav-container .header-logo-box .menu-close-logo-mob {
+    display: inline-block;
+  }
 }
 .nav-container .header-logo-box.hide {
   opacity: 0;
@@ -230,10 +257,10 @@ html {
 .nav-container .hamb-toggle {
   cursor: pointer;
   position: absolute;
-  right: 6vw;
+  right: clamp(20px, 4vw, 60px);
   padding: 5px;
   border-radius: 50%;
-  top: clamp(20px, 6vw, 60px);
+  top: clamp(20px, 4vw, 60px);
 }
 .nav-container .hamb-toggle.hide {
   opacity: 0;
@@ -241,7 +268,7 @@ html {
   transition: opacity 0.5s ease;
 }
 .nav-container .hamb-toggle img {
-  width: 100%;
+  width: clamp(25px, 4vw, 42px);
 }
 
 #form {
@@ -252,21 +279,23 @@ html {
   place-content: center;
   background: #2C3947;
   color: #fff;
-  padding: 8vw 2vw;
+  padding: clamp(80px, 8vw, 170px) clamp(20px, 2vw, 70px);
 }
 #form h3 {
   font-size: 32px;
   font-family: "NexaHeavy";
+  color: #93C01F;
   text-align: center;
-  margin-bottom: 8vw;
+  margin-bottom: clamp(50px, 8vw, 110px);
 }
 #form form {
   text-align: center;
   font-family: "NexaExtraLight";
-  font-size: clamp(24px, 4vw, 30px);
+  font-size: clamp(20px, 4vw, 30px);
+  line-height: 2.5;
 }
 #form form input {
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   font-weight: 400;
   line-height: 1.5;
   color: #ced4da;
@@ -307,19 +336,17 @@ html {
   max-width: 200px;
   outline: none;
   color: #fff;
-  font-size: 28px;
+  font-size: clamp(20px, 4vw, 30px);
   appearance: none;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   background-size: 16px 12px;
-  border: none;
-  text-decoration: underline;
-  text-underline-offset: 7px;
   line-height: 1.5;
   text-align: center;
   vertical-align: text-bottom;
   background-image: url(/assets/img/icons/arrow.png);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
+  border-bottom: 1px solid #fff;
 }
 #form form select option {
   font-size: 18px;
@@ -543,7 +570,6 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 2300px;
   background: url("../img/foto_edificios.jpg");
   background-size: cover;
   background-position: top;
@@ -566,43 +592,24 @@ html {
 #one h1.title {
   text-align: center;
   color: #fff;
-  font-size: clamp(30px, 4vw, 60px);
-  font-family: "NexaBook";
   transition: opacity 0.5s ease;
+}
+#one h1.title span {
+  font-family: "NexaBook";
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 60px);
 }
 #one h1.title strong {
   display: block;
   text-align: center;
   font-size: clamp(48px, 5vw, 100px);
   font-family: "NexaSlabxBold";
-}
-#one.parallax__layer_hero {
-  position: relative;
-  height: 2300px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-#one.parallax__layer_hero .parallax__image_hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#one.parallax__layer_hero .parallax__image_hero img,
-#one.parallax__layer_hero .parallax__image_hero .image_hero {
-  object-fit: cover;
-  width: 100%;
-  height: 150%;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 #two {
-  padding: 8vw 7px;
+  padding: clamp(130px, 8vw, 210px) clamp(20px, 7vw, 30px);
   min-height: 100vh;
   background: #fff;
   display: flex;
@@ -619,10 +626,11 @@ html {
   display: none;
 }
 #two .partners .opt h3 {
-  font-size: clamp(30px, 10vw, 70px);
+  font-size: clamp(30px, 20vw, 70px);
   color: #2C3947;
   font-family: "NexaBook";
-  margin-bottom: 28px;
+  margin-bottom: 40px;
+  margin-top: 87px;
 }
 #two .partners .opt p {
   font-size: clamp(18px, 4vw, 20px);
@@ -651,7 +659,7 @@ html {
 }
 #two .partners ul li {
   flex: 1 0 0;
-  font-size: clamp(12px, 3vw, 18px);
+  font-size: clamp(15px, 3vw, 18px);
   font-family: "NexaBold";
   color: #3E7578;
   width: auto;
@@ -691,7 +699,7 @@ html {
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  padding: 10px;
+  padding: 10px 20px;
 }
 #three h3 {
   font-size: clamp(30px, 10vw, 50px);
@@ -714,23 +722,23 @@ html {
   display: table;
   margin: 0 auto;
   text-align: center;
-  width: clamp(fit-content, 80vw, 277px);
+  width: clamp(335px, 80vw, 277px);
 }
 @media (max-width: 768px) {
   #three a.btn {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
 #four {
   background: #F2F2F2;
-  padding: 184px 7px;
+  padding: clamp(49px, 8vw, 184px) clamp(20px, 5vw, 64px);
 }
 #four h3 {
   font-size: 32px;
   font-family: "NexaBlack";
   text-align: center;
-  margin-bottom: 112px;
+  margin-bottom: clamp(52px, 6vw, 112px);
 }
 #four a {
   text-align: center;
@@ -745,34 +753,35 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 25px;
+  gap: 82px;
   flex-wrap: wrap;
 }
 #four .servicios-boxes .box {
   color: #93C01F;
   font-family: "NexaSlabBook";
   max-width: 392px;
-  font-size: clamp(30px, 12vw, 60px);
+  font-size: clamp(50px, 12vw, 60px);
   text-align: center;
 }
 #four .servicios-boxes .box span {
   color: #3E7578;
   display: block;
   font-family: "NexaLight";
-  font-size: clamp(25px, 8vw, 50px);
+  font-size: clamp(40px, 8vw, 50px);
   max-width: 352px;
   margin: 0 auto;
 }
 #four .servicios-boxes .box p {
-  font-size: clamp(18px, 4vw, 24px);
+  font-size: 24px;
   color: #2C3947;
   font-family: "NexaRegular";
-  padding: 0px 4vw;
+  padding: 0px;
   line-height: 1;
 }
 
 #five {
-  padding: 8vw 7vw;
+  padding: clamp(50px, 8vw, 129px) clamp(20px, 7vw, 76px);
+  padding-bottom: 270px;
   min-height: 100vh;
   max-height: 880px;
   position: relative;
@@ -802,7 +811,7 @@ html {
   z-index: 1;
   display: none;
   right: 0;
-  bottom: 0;
+  bottom: -2px;
 }
 @media (max-width: 768px) {
   #five .img-insights-mob {
@@ -816,19 +825,29 @@ html {
   z-index: 5;
 }
 #five .left h4 {
-  font-size: clamp(40px, 10vw, 60px);
+  font-size: clamp(50px, 10vw, 60px);
   line-height: 1;
   font-family: "NexaExtraLight";
   margin-bottom: 20px;
   color: #2C3947;
 }
+@media (max-width: 768px) {
+  #five .left h4 {
+    text-align: center;
+  }
+}
 #five .left h4 strong {
-  font-size: clamp(35px, 6vw, 50px);
+  font-size: clamp(40px, 6vw, 50px);
   font-family: "NexaHeavy";
 }
 #five .left p {
   font-family: "NexaRegular";
   font-size: clamp(18px, 2.2vw, 24px);
+}
+@media (max-width: 768px) {
+  #five .left p {
+    text-align: center;
+  }
 }
 #five .left a {
   text-align: left;
@@ -838,6 +857,11 @@ html {
   font-family: "NexaHeavy";
   font-size: 20px;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  #five .left a {
+    text-align: center;
+  }
 }
 
 #six {
@@ -885,22 +909,35 @@ html {
 
 footer {
   background: #fff;
-  padding: 2vw 1vw;
+  padding: clamp(40px, 5vw, 80px) 20px;
 }
 footer .footer-container {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 24px;
 }
 @media (max-width: 768px) {
   footer .footer-container {
-    flex-direction: column;
+    justify-content: stretch;
+    gap: 16px;
+  }
+}
+footer .footer-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  footer .footer-group {
+    gap: 16px;
   }
 }
 footer .footer-column {
-  padding: 20px;
   text-align: left;
 }
 footer .footer-column li {
@@ -908,6 +945,11 @@ footer .footer-column li {
   font-size: 16px;
   color: #3F7679;
   padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  footer .footer-column li {
+    font-size: 14px;
+  }
 }
 footer .footer-column li.title {
   font-family: "NexaHeavy";
@@ -917,8 +959,18 @@ footer .footer-column li.redes {
   align-items: center;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  footer .footer-column li.redes {
+    justify-content: center;
+  }
+}
 footer .footer-column.last {
   text-align: right;
+}
+@media (max-width: 768px) {
+  footer .footer-column.last {
+    text-align: left;
+  }
 }
 footer .footer-column.last .direccion {
   font-family: "NexaHeavy";
