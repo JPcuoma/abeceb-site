@@ -702,10 +702,19 @@ html {
   padding: 10px 20px;
 }
 #three h3 {
-  font-size: clamp(30px, 10vw, 50px);
+  font-size: clamp(45px, 10vw, 50px);
   font-family: "NexaLight";
+  font-weight: 300;
   text-align: center;
   color: #fff;
+}
+#three h3 br {
+  display: none;
+}
+@media (max-width: 768px) {
+  #three h3 br {
+    display: block;
+  }
 }
 #three h3 strong {
   display: block;

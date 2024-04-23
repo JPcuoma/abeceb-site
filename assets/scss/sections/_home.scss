@@ -190,10 +190,18 @@
     padding: 10px 20px;
 
     h3 {
-        font-size: clamp(30px, 10vw, 50px);
+        font-size: clamp(45px, 10vw, 50px);
         font-family: 'NexaLight';
+        font-weight: 300;
         text-align: center;
         color: $white;
+
+        br{
+            display: none;
+            @media (max-width:768px) {
+                display: block;
+            }
+        }
 
         strong {
             display: block;
