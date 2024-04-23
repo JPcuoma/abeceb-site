@@ -324,7 +324,7 @@ html {
   border: 3px solid silver;
 }
 #form form input[type=checkbox]:checked {
-  background-image: url(/assets/img/icons/check1.png);
+  background-image: url(/img/icons/check1.png);
   background-size: cover;
 }
 #form form select {
@@ -343,7 +343,7 @@ html {
   line-height: 1.5;
   text-align: center;
   vertical-align: text-bottom;
-  background-image: url(/assets/img/icons/arrow.png);
+  background-image: url(/img/icons/arrow.png);
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   border-bottom: 1px solid #fff;
@@ -695,7 +695,7 @@ html {
   height: 100%;
   min-height: 100vh;
   max-height: 1272px;
-  background: url("/assets/img/foto_globos.jpg");
+  background: url("/img/foto_globos.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
