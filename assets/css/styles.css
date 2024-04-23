@@ -539,6 +539,14 @@ html {
 }
 
 #one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 2300px;
+  background: url("../img/foto_edificios.jpg");
+  background-size: cover;
+  background-position: top;
   overflow: hidden;
   position: relative;
   background-color: #000;
