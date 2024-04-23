@@ -99,7 +99,7 @@
         animation: fadeOutLeft 1s both;
         font-size: clamp(16px, 2.2vw, 20px);
         line-height: 26px;
-        margin: 8vw auto;
+        margin: clamp(20px, 8vw, 60px) auto;
         // margin-top: 40px;
         text-align: center;
       }
