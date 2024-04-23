@@ -374,7 +374,8 @@ html {
   border-radius: 40px;
   border: none;
   font-size: 20px;
-  width: 275px;
+  width: 100%;
+  max-width: 335px;
   font-family: "nexaheavy";
   cursor: pointer;
 }
