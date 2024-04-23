@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ABECEB</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
 
@@ -13,24 +13,29 @@
 </head>
 
 <body>
-    <nav id="menu" class="hide">
-        <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
-        <a href="#" class="nav-logo">
-            <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
-        </a>
-        <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Foro</a></li>
-            <li><a class="btn" href="#">¿Hablamos?</a></li>
-            <li class="hamb-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
-        </ul>
-    </nav>
-    <div class="hamburguer">
-        <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
-        <img src="assets/img/icons/hamburger.svg" alt="menu" class="hamb-toggle">
+    <div class="nav-container">
+        <nav id="menu" class="hide">
+            <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
+            <a href="#" class="nav-logo">
+                <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
+            </a>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Insights</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a class="btn" href="#">¿Hablamos?</a></li>
+                <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
+            </ul>
+        </nav>
+        <div class="header-logo-box">
+            <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
+        </div>
+        <div class="hamb-toggle" id="hamb-toggle">
+            <img src="assets/img/icons/hamburger.svg" alt="menu">
+        </div>
     </div>
+
 
     
     
@@ -38,8 +43,10 @@
     <main>
 
         <div id="one" class="fullwidth-section section1" data-type="background" data-speed="2">
-            <div class="logo"><img src="assets/img/abeceb-logo-main.svg" alt="abeceb logo"></div>
-            <h1 class="ftext item">Somos la consultora con
+            <div class="logo">
+                <img src="assets/img/abeceb-logo-main.svg" alt="abeceb logo">
+            </div>
+            <h1 class="title">Somos la consultora con
                 <strong>mejor talento sectorial</strong>
                 de Latinoamérica <br><br>
                 y líder en <strong>detección, gestión y desarrollo</strong> de negocios.
@@ -53,7 +60,7 @@
                 <div class="partners fade-in-el fade-in fast">
                     <ul>
                         <li id="partners" class="active"><span>Partners</span></li>
-                        <li id="advisory"><span>Advisory </span></li>
+                        <li id="advisory"><span>Advisory Board</span></li>
                         <li id="talent">Talento Sectorial</li>
                     </ul>
                     <div class="o-partners opt " style="display: block;">
@@ -133,72 +140,74 @@
             </div>
         </section>
 
-        <section id="six">
+        <section id="six" >
             <h3>Plataforma de Negocios</h3>
-            <div class="modern-slider fade-in-el fade-in fast">
-
-
-                <!-- Item -->
-                <div class="item">
-                    <div class="img-fill">
-                        <div class="info">
-                            <div>
-                                <h4>Foro</h4>
-                                <h5>El encuentro anual que reúne a las personalidades más relevantes del ámbito público
-                                    y privado de Hispanoamérica en un espacio de networking sin igual.</h5>
-                                <a href="">ver más</a>
+            <div class="slick-container">
+                <div class="slick-container__overlay">
+                    <div class="modern-slider">
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <div class="info">
+                                    <div>
+                                        <h4>Foro</h4>
+                                        <h5>El encuentro anual que reúne a las personalidades más relevantes del ámbito público
+                                            y privado de Hispanoamérica en un espacio de networking sin igual.</h5>
+                                        <a href="">ver más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- // Item -->
-                <!-- Item -->
-                <div class="item">
-                    <div class="img-fill">
-                        <div class="info">
-                            <div>
-                                <h4>Colaboraciones</h4>
-                                <h5>Contribuimos a los ecosistemas
-                                    de las instituciones más influyentes.</h5>
-                                <a href="">ver más</a>
+                        <!-- // Item -->
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <div class="info">
+                                    <div>
+                                        <h4>Colaboraciones</h4>
+                                        <h5>Contribuimos a los ecosistemas
+                                            de las instituciones más influyentes.</h5>
+                                        <a href="">ver más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- // Item -->
-                <!-- Item -->
-                <div class="item">
-                    <div class="img-fill">
-                        <div class="info">
-                            <div>
-                                <h4>ABECEB
-                                    en los medios</h4>
-                                <h5>Nuestro aporte a la economía y negocios.</h5>
-                                <a href="">ver más</a>
+                        <!-- // Item -->
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <div class="info">
+                                    <div>
+                                        <h4>ABECEB
+                                            en los medios</h4>
+                                        <h5>Nuestro aporte a la economía y negocios.</h5>
+                                        <a href="">ver más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- // Item -->
-                <!-- Item -->
-                <div class="item">
-                    <div class="img-fill">
-                        <div class="info">
-                            <div>
-                                <h4>Networking</h4>
-                                <h5>Generamos contactos de valor para potenciar negocios y alianzas estratégicas.</h5>
-                                <a href="">ver más</a>
+                        <!-- // Item -->
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <div class="info">
+                                    <div>
+                                        <h4>Networking</h4>
+                                        <h5>Generamos contactos de valor para potenciar negocios y alianzas estratégicas.</h5>
+                                        <a href="">ver más</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- / Item -->
                     </div>
                 </div>
-                <!-- // Item -->
             </div>
+
         </section>
 
         <section id="form">
             <h3>¿Hablamos?</h3>
-
             <form action="" class="fade-in-el fade-in fast">
                 <label for="inputContact1">Soy</label>
                 <input type="text">
@@ -213,6 +222,7 @@
                     <option value="Advisor">Advisor</option>
                     <option value="Otros">Otros</option>
                 </select>
+                <br class="mob">
                 <label for="inputContact1">en la industria de</label>
                 <select class="" id="inputContact3" aria-required="true" aria-invalid="false" name="inputContact3">
                      <option value="">Seleccionar</option>
@@ -225,19 +235,24 @@
                 <br>
                 <label for="inputTrabajo">Estoy buscando soluciones</label>
                 <select class="" id="inputContact4" aria-required="true" aria-invalid="false" name="inputContact4">
-                     <option value="">Seleccionar</option>
+                    <option value="">Seleccionar</option>
                     <option value="Consultoría Económica">Consultoría Económica</option>
                     <option value="Consultoría Estratégica">Consultoría Estratégica</option>
                     <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
                 </select>
+                <br class="mob">
                 <label for="inputTrabajo">para generar</label>
                 <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-select"
                     id="inputContact5" aria-required="true" aria-invalid="false" name="inputContact5">
                      <option value="">Seleccionar</option>
                     <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
                     <option value="Nuevos negocios">Nuevos negocios</option>
-                </select> <label for="inputTrabajo">en mi</label> <br>
-                <input type="text"> <label for="inputTrabajo">Mi correo es</label> <input type="text">
+                </select>
+                <br> 
+                <label for="inputTrabajo">en mi</label>
+                <input type="text">
+                <label for="inputTrabajo">Mi correo es</label> 
+                <input type="text">
                 <div class="terminos">
                     <label>
                         <input type="checkbox" name="" value="1" aria-invalid="false">
@@ -330,8 +345,8 @@
                 cssEase: 'linear',
                 // fade:true,
                 draggable: true,
-                prevArrow: '<button class="prev-arrow"><img src="./assets/img/icons/arrow-left.svg" /></button>',
-                nextArrow: '<button class="next-arrow"><img src="./assets/img/icons/arrow-right.svg" /></button>',
+                prevArrow: '<button class="slick-arrow prev-arrow"><img src="./assets/img/icons/arrow-left.svg" /></button>',
+                nextArrow: '<button class="slick-arrow next-arrow"><img src="./assets/img/icons/arrow-right.svg" /></button>',
                 responsive: [
                         {
                         breakpoint: 768,

@@ -29,17 +29,20 @@
     
 
   /* menu */
-  const hambClose = document.querySelectorAll('.hamb-toggle');
-    const hamburguer = document.querySelector('.hamburguer');
+    const hambToggle = document.querySelectorAll('#hamb-toggle');
+    const hambOpenMenu = document.querySelector('.hamb-toggle');
+    const hamburguer = document.querySelector('.header-logo-box');
     const menu = document.querySelector('#menu');
     // const closeButton = document.querySelector('.close');
     
-    hambClose.forEach((btn) => {
+    hambToggle.forEach((btn) => {
           btn.addEventListener('click', function() {
             if( menu.classList.contains('hide')){
               hamburguer.classList.add('hide')
+              hambOpenMenu.classList.add('hide')
               menu.classList.remove('hide');
             }else{
+              hambOpenMenu.classList.remove('hide')
               hamburguer.classList.remove('hide')
               menu.classList.add('hide')
             }
