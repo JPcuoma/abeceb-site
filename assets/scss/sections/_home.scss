@@ -253,8 +253,11 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        gap: 82px;
         flex-wrap: wrap;
+        gap: 40px;
+        @media (max-width:768px) {
+            gap: 82px;
+        }
 
         .box {
             color: $green;

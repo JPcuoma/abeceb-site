@@ -763,8 +763,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 82px;
   flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  #four .servicios-boxes {
+    gap: 82px;
+  }
 }
 #four .servicios-boxes .box {
   color: #93C01F;
