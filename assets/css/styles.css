@@ -378,6 +378,7 @@ html {
   max-width: 335px;
   font-family: "nexaheavy";
   cursor: pointer;
+  padding: 20px;
 }
 #form form br.mob {
   display: none;
@@ -473,7 +474,7 @@ html {
   animation: fadeOutRight 1s both;
   margin: 0;
   padding: 0;
-  font-size: clamp(25px, 4.5vw, 60px);
+  font-size: clamp(35px, 4.5vw, 60px);
   line-height: 1;
 }
 .modern-slider .item h5 {
@@ -621,6 +622,7 @@ html {
   text-align: center;
   font-size: clamp(28px, 3vw, 32px);
   font-family: "NexaBlack";
+  color: #2C3947;
   margin-bottom: 6vw;
 }
 #two .partners .opt {
@@ -745,6 +747,7 @@ html {
   padding: clamp(49px, 8vw, 184px) clamp(20px, 5vw, 64px);
 }
 #four h3 {
+  color: #2C3947;
   font-size: 32px;
   font-family: "NexaBlack";
   text-align: center;
@@ -806,6 +809,7 @@ html {
 #five h3 {
   font-size: 32px;
   font-family: "NexaBlack";
+  color: #2C3947;
   text-align: center;
   margin-top: 0;
   margin-bottom: clamp(50px, 4vw, 112px);
@@ -892,6 +896,7 @@ html {
 }
 #six h3 {
   font-size: 32px;
+  color: #2C3947;
   font-family: "NexaBlack";
   text-align: center;
   margin-bottom: clamp(80px, 10vw, 112px);
@@ -964,6 +969,14 @@ footer .footer-group {
 footer .footer-column {
   text-align: left;
 }
+@media (max-width: 570px) {
+  footer .footer-column {
+    min-width: auto;
+  }
+  footer .footer-column:first-child {
+    width: 145px;
+  }
+}
 footer .footer-column li {
   font-family: "NexaRegular";
   font-size: 16px;
@@ -994,6 +1007,11 @@ footer .footer-column.last {
 @media (max-width: 768px) {
   footer .footer-column.last {
     text-align: left;
+    width: 100%;
+  }
+  footer .footer-column.last img {
+    display: block;
+    margin: 0 auto;
   }
 }
 footer .footer-column.last .direccion {

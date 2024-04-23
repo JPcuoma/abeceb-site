@@ -92,6 +92,7 @@
         text-align: center;
         font-size: clamp(28px, 3vw, 32px);
         font-family: 'NexaBlack';
+        color: $black-typo;
         margin-bottom: 6vw;
     }
 
@@ -233,6 +234,7 @@
     padding: clamp(49px, 8vw, 184px) clamp(20px, 5vw, 64px);
 
     h3 {
+        color: $black-typo;
         font-size: 32px;
         font-family: 'NexaBlack';
         text-align: center;
@@ -298,6 +300,7 @@
     h3 {
         font-size: 32px;
         font-family: 'NexaBlack';
+        color: $black-typo;
         text-align: center;
         margin-top: 0;
         margin-bottom: clamp(50px, 4vw, 112px);
@@ -389,6 +392,7 @@
 
     h3 {
         font-size: 32px;
+        color: $black-typo;
         font-family: 'NexaBlack';
         text-align: center;
         margin-bottom: clamp(80px, 10vw,112px);

@@ -27,12 +27,22 @@ footer {
         flex-wrap: wrap;
         gap: 24px;
 
+
+        
         @media (max-width:768px) {
             gap: 16px;
         }
+
     }
     .footer-column {
         text-align: left;
+
+        @media (max-width:570px) {
+            min-width: auto;   
+            &:first-child{
+                width: 145px;
+            }
+        }
 
 
         li {
@@ -64,6 +74,12 @@ footer {
             text-align: right;
             @media (max-width:768px) {
                 text-align: left;
+                width: 100%;
+
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
             }
 
             .direccion {
