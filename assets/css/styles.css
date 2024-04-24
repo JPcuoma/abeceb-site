@@ -591,6 +591,11 @@ html {
 #one .logo {
   width: clamp(250px, 70%, 400px);
 }
+@media (max-width: 768px) {
+  #one .logo {
+    padding-bottom: 1.5rem;
+  }
+}
 #one .logo img {
   width: 100%;
 }

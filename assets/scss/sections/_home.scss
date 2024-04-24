@@ -22,6 +22,9 @@
     .logo {
         width: clamp(250px, 70%, 400px);
         // padding-top: 8rem;
+        @media (max-width:768px) {
+           padding-bottom: 1.5rem;
+        }
         img{
             width: 100%;
         }
