@@ -7,7 +7,7 @@
     left: 0;
     z-index: 50;
     width: 100%;
-    height: 140px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ nav {
     position: fixed;
     z-index: inherit;
     top: 0;
-    height: 140px;
+    height: 120px;
     padding: 0 4vw;
     display: flex;
     align-items: center;
@@ -137,12 +137,14 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 140px;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
-        
+        height: 120px;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
+       
         @media (max-width: 768px) {
             justify-content: flex-start;
             background: transparent;
+            height: 60px;
+
         }
         
         .menu-close-logo-desk {
@@ -161,6 +163,7 @@ nav {
 
             @media (max-width: 768px) {
                 display: inline-block;
+                opacity: 0;
             }
         }
         

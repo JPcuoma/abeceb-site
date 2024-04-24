@@ -34,11 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "back.out",
             scrollTrigger: {
                     trigger: ".anm_heading_title_2",
-                    start: 'bottom bottom',
+                    start: 'top bottom',
                     toggleActions: "play none none reverse",
                     // markers: true,	
                     // scrub: 3
                 },  
+          
         });
 
     gsap.to('#anm_brand_home',{       
@@ -53,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function parallax(){
         gsap.to(".image_three", {
-            // yPercent: -10,
-            backgroundPosition: `50% ${-innerHeight / 3}px`,
+            yPercent: 20,
+            // backgroundPosition: `50% ${-innerHeight / 3}px`,
             ease: "none",
             scrollTrigger: {
                 trigger: ".image_three",
@@ -71,40 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 
         });
       }
-      parallax();
-
-    function sectionThree(){
-        const tlSectionThree = gsap.timeline({
-            scrollTrigger: {     
-                trigger: "#three", 
-                start: 'top+=250 center',    			
-                toggleActions: "play none none reverse",
-                //  markers: true,
-                // scrub: 2            
-            }
-        });
-        tlSectionThree.from(".anm_cta_title", {
-            y: 30,
-            opacity: 0
-            
-        });
-        tlSectionThree.from(".anm_cta_btn", {
-            y: 50,
-            opacity: 0,
-            delay: 1          
-        },'<');
-        tlSectionThree.to(".anm_cta_title", {
-            y: -20,       
-        },'<');
-        
-      }
-      sectionThree();
+      parallax(); 
     
 
     // set time line Hero Home
     const tlHomeHero = gsap.timeline({
         scrollTrigger: {           
-            start: 'top+=250',	
+            start: 'top+=350',	
             end: '+=1',            			
             toggleActions: "play none none reverse",
             //  markers: true,
@@ -130,43 +104,56 @@ document.addEventListener("DOMContentLoaded", function () {
                 trigger: ".image_hero",
                 scrub: true 
             },  
-        })
-        // .to(".parallax__layer_hero", {
-        //     // backgroundPosition: `50% ${-innerHeight / 3}px`,
-        //     yPercent: -20,
-        //     ease: "none",
-        //     scrollTrigger: {
-        //         trigger: ".parallax__layer_hero",
-        //         scrub: true
+        });
+      
+        function sectionThree(){
+            const tlSectionThree = gsap.timeline({
+                scrollTrigger: {     
+                    trigger: "#three", 
+                    start: 'top+=350 center',    			
+                    toggleActions: "play none none reverse",
+                    //  markers: true,
+                    // scrub: 2            
+                }
+            });
+            tlSectionThree.from(".anm_cta_title", {
+                y: 30,
+                opacity: 0
                 
-        //     }, 
-        // });     
-        // .to('#one',{
-        //     yPercent: -100
-        // }, '<')
-
-    
-
-   
-
-     
-
-       
+            });
+            tlSectionThree.from(".anm_cta_btn", {
+                y: 50,
+                opacity: 0,
+                delay: 1          
+            },'<');
+            tlSectionThree.to(".anm_cta_title", {
+                y: -20,       
+            },'<');
+            
+          }
+          sectionThree();
 
 
 	
-
-   let mm = gsap.matchMedia();
+    let mm = gsap.matchMedia();
 
     mm.add("(min-width: 800px)", () => {
             // desktop setup code here...
-          
+            tlHomeHero.to(".header-logo-box", {          
+                background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
+            });   
                 
         });
 
     mm.add("(max-width: 799px)", () => {
             // mobile setup code here...
-           
+            tlHomeHero.to(".header-logo-box", {          
+                background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
+            })
+            .to(".menu-close-logo-mob", {          
+                opacity: 1,               
+            })   
+            
         });
 
 

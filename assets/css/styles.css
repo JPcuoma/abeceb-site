@@ -97,7 +97,7 @@ html {
   left: 0;
   z-index: 50;
   width: 100%;
-  height: 140px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@ html {
   position: fixed;
   z-index: inherit;
   top: 0;
-  height: 140px;
+  height: 120px;
   padding: 0 4vw;
   display: flex;
   align-items: center;
@@ -220,13 +220,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 140px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgb(0, 0, 0) 154%);
+  height: 120px;
 }
 @media (max-width: 768px) {
   .nav-container .header-logo-box {
     justify-content: flex-start;
     background: transparent;
+    height: 60px;
   }
 }
 .nav-container .header-logo-box .menu-close-logo-desk {
@@ -247,6 +247,7 @@ html {
 @media (max-width: 768px) {
   .nav-container .header-logo-box .menu-close-logo-mob {
     display: inline-block;
+    opacity: 0;
   }
 }
 .nav-container .header-logo-box.hide {
@@ -511,7 +512,7 @@ html {
 
 .item {
   opacity: 1;
-  transition: opacity 3s ease;
+  transition: opacity 1.5s ease;
   /* Controla la velocidad de la transición */
 }
 
@@ -524,7 +525,7 @@ html {
   opacity: 0;
   transform: translateY(20px);
   /* Movimiento inicial desde abajo hacia arriba */
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 0.7s ease, transform 0.7s ease;
   /* Controla la velocidad de la transición */
 }
 
@@ -568,46 +569,94 @@ html {
 }
 
 #one {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: url("../img/foto_edificios.jpg");
-  background-size: cover;
-  background-position: top;
   overflow: hidden;
   position: relative;
-  background-color: #000;
-  padding: clamp(80px, 12vw, 150px) 7px;
-  box-sizing: content-box;
+}
+#one .fullwidth-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transform: translate(0px, 250px);
+}
+@media (max-width: 768px) {
+  #one .fullwidth-container {
+    transform: translate(0px, 150px);
+  }
 }
 #one .logo {
   width: clamp(250px, 70%, 400px);
-  margin-bottom: 10vw;
 }
 #one .logo img {
   width: 100%;
 }
-#one .logo {
-  padding-top: 8rem;
-}
-#one h1.title {
+#one h1 {
   text-align: center;
   color: #fff;
   transition: opacity 0.5s ease;
-}
-#one h1.title span {
   font-family: "NexaBook";
   font-weight: 400;
   font-size: clamp(28px, 4vw, 60px);
 }
-#one h1.title strong {
+#one h1 strong {
   display: block;
   text-align: center;
   font-size: clamp(48px, 5vw, 100px);
   font-family: "NexaSlabxBold";
   margin-top: 10px;
   margin-bottom: 0px;
+}
+#one h1.scroll-transition {
+  position: absolute;
+  bottom: 87px;
+  transition: none;
+  top: auto;
+}
+#one h1.anm_heading_title_1 {
+  opacity: 0;
+}
+#one h1.anm_heading_title_2 {
+  opacity: 0;
+  padding-top: 12rem;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  #one h1.anm_heading_title_2 {
+    padding-top: 0rem;
+  }
+}
+#one.parallax__layer_hero {
+  position: relative;
+  height: 2300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  #one.parallax__layer_hero {
+    height: 1500px;
+  }
+}
+#one.parallax__layer_hero .parallax__image_hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#one.parallax__layer_hero .parallax__image_hero img,
+#one.parallax__layer_hero .parallax__image_hero .image_hero {
+  object-fit: cover;
+  width: 100%;
+  height: 150%;
 }
 
 #two {
@@ -692,17 +741,29 @@ html {
 }
 
 #three {
-  height: 100%;
-  min-height: 100vh;
-  max-height: 1272px;
-  background: url("../img/foto_globos.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#three.parallax__layer_three {
+  position: relative;
+  height: 963px;
+}
+#three.parallax__layer_three .parallax__image_three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 10px 20px;
+}
+#three.parallax__layer_three .parallax__image_three img, #three.parallax__layer_three .parallax__image_three .image_three {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 #three h3 {
   font-size: clamp(45px, 10vw, 50px);

@@ -3,43 +3,38 @@
 // 
 
 #one {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;  
-    // height: 2300px;
-    background: url('../img/foto_edificios.jpg');
-    background-size: cover;
-    background-position: top;
     overflow: hidden;
     position: relative;
-    background-color: #000;
-    padding: clamp(80px, 12vw, 150px) 7px;
-    box-sizing: content-box;
-
-    .logo{
+    .fullwidth-container {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column; 
+        transform: translate(0px, 250px);
+        @media (max-width:768px) {
+            transform: translate(0px, 150px);
+        }
+    }
+    .logo {
         width: clamp(250px, 70%, 400px);
-        margin-bottom: 10vw;
+        // padding-top: 8rem;
         img{
             width: 100%;
         }
     }
 
-    .logo {
-        padding-top: 8rem;
-    }
 
-
-    h1.title{
+    h1{
         text-align: center;
         color: $white;
-        transition: opacity 0.5s ease;
-        
-        span{
-            font-family: 'NexaBook';
-            font-weight: 400;
-            font-size: clamp(28px, 4vw, 60px);
-        }
+        transition: opacity 0.5s ease;    
+        font-family: 'NexaBook';
+        font-weight: 400;
+        font-size: clamp(28px, 4vw, 60px);
 
         strong {
             display: block;
@@ -49,34 +44,56 @@
             margin-top: 10px;
             margin-bottom: 0px;
         }
+        &.scroll-transition {
+            position: absolute;
+            bottom: 87px;
+            transition: none;
+            top: auto;
+        }
+
+        &.anm_heading_title_1{
+            opacity: 0;
+        }
+        &.anm_heading_title_2{
+            opacity: 0;
+            padding-top: 12rem;
+            position: absolute;   
+            @media (max-width:768px) {
+                padding-top: 0rem;
+            }        
+        }
     }
 
-    // &.parallax__layer_hero {
-    //     position: relative;
-    //     height: 2300px;
-    //     display: flex;
-    //     align-items: flex-start;
-    //     justify-content: center;
+    &.parallax__layer_hero {
+        position: relative;
+        height: 2300px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        @media (max-width:768px) {
+            height: 1500px;
+        } 
 
-    //     .parallax__image_hero {
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //         z-index: -1;
-    //         background-size: cover;
-    //         background-position: center;
-    //         background-repeat: no-repeat;
+        .parallax__image_hero {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
-    //         img,
-    //         .image_hero {
-    //             object-fit: cover;
-    //             width: 100%;
-    //             height: 150%;
-    //         }
-    //     }
-    // }
+            img,
+            .image_hero {
+                object-fit: cover;
+                width: 100%;
+                height: 150%;
+            }
+        }
+    }
+
 }
 
 
@@ -178,18 +195,30 @@
 }
 
 #three {
-    height: 100%;
-    min-height: 100vh;
-    max-height: 1272px;
-    background: url('../img/foto_globos.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    padding: 10px 20px;
 
+    &.parallax__layer_three {
+        position: relative;
+        height: 963px;
+        .parallax__image_three {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            img, .image_three {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                }   
+            }
+    }
     h3 {
         font-size: clamp(45px, 10vw, 50px);
         font-family: 'NexaLight';
