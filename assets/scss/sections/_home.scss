@@ -105,7 +105,9 @@
     min-height: 100vh;
     background: $white;
     display: flex;
-    place-content: center;
+    justify-content: space-around;
+    align-items: center;
+    // place-content: center;
     flex-direction: column;
 
     h3 {
@@ -117,8 +119,14 @@
     }
 
     .partners {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         .opt {
             display: none;
+            min-height: 450px;
 
             h3 {
                 font-size: clamp(30px, 20vw, 70px);
@@ -140,20 +148,27 @@
             a {
                 text-align: center;
                 display: block;
-                margin-top: 5vw;
+                margin-top: clamp(60px, 5vw, 90px);
                 color: $green;
                 font-family: 'NexaHeavy';
                 font-size: 20px;
                 text-decoration: none;
+                transition: background-color .2s ease;
+
+                &:hover,&:active{
+                    color: $dark-green;
+                }
+                
             }
         }
 
         ul {
-            margin: 0 auto;
+            // margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-around;
             gap: 7px;
+            width: 100%;
             max-width: 800px;
 
             li {
@@ -254,6 +269,11 @@
         margin: 0 auto;
         text-align: center;
         width: clamp(335px, 80vw, 277px);
+        transition: background-color .2s ease;
+
+        &:hover, &:active{
+            background-color: $dark-green;
+        }
         
         @media (max-width:768px) {
             padding: 20px ;
@@ -276,11 +296,18 @@
     a {
         text-align: center;
         display: block;
-        margin-top: 90px;
         color: $green;
         font-family: 'NexaHeavy';
         font-size: 20px;
         text-decoration: none;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 90px;
+        transition: background-color .2s ease;
+
+        &:hover,&:active{
+            color: $dark-green;
+        }
     }
 
     .servicios-boxes {
@@ -397,16 +424,23 @@
         }
 
         a {
-            text-align: left;
             display: block;
-            margin-top: 40px;
             color: $green;
             font-family: 'NexaHeavy';
             font-size: 20px;
             text-decoration: none;
+            width: fit-content;
+            margin-right: 0 auto;
+            margin-top: 40px;
+            transition: background-color .2s ease;
+    
+            &:hover,&:active{
+                color: $dark-green;
+            }
             
             @media (max-width:768px) {
-                text-align: center;
+                margin: 0 auto;
+                margin-top: 40px;
             }
         }
     }

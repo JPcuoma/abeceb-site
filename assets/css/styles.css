@@ -117,7 +117,6 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgb(0, 0, 0) 154%);
   transition: all 0.5s ease-in-out;
   transform: translateY(0%);
 }
@@ -205,12 +204,12 @@ html {
 .nav-container nav.hide {
   opacity: 0;
   z-index: 0;
-  transform: translateY(-110%);
+  transform: translateY(110%);
 }
 @media (max-width: 1100px) {
   .nav-container nav.hide {
     width: 50%;
-    transform: translateX(-140%);
+    transform: translateX(140%);
   }
 }
 .nav-container .header-logo-box {
@@ -290,10 +289,17 @@ html {
   margin-bottom: clamp(50px, 8vw, 110px);
 }
 #form form {
+  width: 100%;
   text-align: center;
   font-family: "NexaExtraLight";
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: clamp(20px, 3vw, 30px);
   line-height: 2.5;
+}
+#form form .group-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #form form input {
   font-size: clamp(20px, 4vw, 30px);
@@ -309,7 +315,7 @@ html {
   border-right: none;
   border-bottom: 1px solid white;
   border-left: none;
-  max-width: 180px;
+  flex: 1 0 0;
 }
 #form form input:focus-visible {
   outline: none;
@@ -323,12 +329,14 @@ html {
   height: 22px;
   width: 22px;
   border: 3px solid silver;
+  flex: none;
 }
 #form form input[type=checkbox]:checked {
   background-image: url(../img/icons/check1.png);
   background-size: cover;
 }
 #form form select {
+  cursor: pointer;
   background-color: transparent;
   border-top: none;
   border-right: none;
@@ -337,9 +345,9 @@ html {
   max-width: 200px;
   outline: none;
   color: #fff;
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: clamp(20px, 2.2vw, 30px);
   appearance: none;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  padding: 0rem 2.25rem 0.15rem 0.75rem;
   background-size: 16px 12px;
   line-height: 1.5;
   text-align: center;
@@ -353,16 +361,32 @@ html {
   font-size: 18px;
   background-color: rgba(44, 57, 71, 0.8196078431);
 }
+#form form #inputContact1 {
+  max-width: 200px;
+}
+#form form #inputContact2 {
+  max-width: 320px;
+}
+#form form #inputContact3 {
+  max-width: 320px;
+}
+#form form #inputContact4 {
+  max-width: 400px;
+}
+#form form #inputContact5 {
+  max-width: 520px;
+}
+#form form #inputContact6 {
+  max-width: 350px;
+}
 #form form .terminos {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #form form .terminos label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-}
-#form form .terminos label span {
   font-size: 15px;
   color: #CCCCCC;
   margin-left: 10px;
@@ -380,6 +404,10 @@ html {
   font-family: "nexaheavy";
   cursor: pointer;
   padding: 20px;
+  transition: background-color 0.2s ease;
+}
+#form form input.btn:hover, #form form input.btn:active {
+  background-color: #3E7578;
 }
 #form form br.mob {
   display: none;
@@ -499,6 +527,10 @@ html {
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.modern-slider .item a:hover, .modern-slider .item a:active {
+  color: #3E7578;
 }
 
 .slick-initialized.slick-slider .slick-active {
@@ -669,7 +701,8 @@ html {
   min-height: 100vh;
   background: #fff;
   display: flex;
-  place-content: center;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
 }
 #two h3 {
@@ -679,8 +712,16 @@ html {
   color: #2C3947;
   margin-bottom: 6vw;
 }
+#two .partners {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 #two .partners .opt {
   display: none;
+  min-height: 450px;
 }
 #two .partners .opt h3 {
   font-size: clamp(30px, 20vw, 70px);
@@ -700,18 +741,22 @@ html {
 #two .partners .opt a {
   text-align: center;
   display: block;
-  margin-top: 5vw;
+  margin-top: clamp(60px, 5vw, 90px);
   color: #93C01F;
   font-family: "NexaHeavy";
   font-size: 20px;
   text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+#two .partners .opt a:hover, #two .partners .opt a:active {
+  color: #3E7578;
 }
 #two .partners ul {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 7px;
+  width: 100%;
   max-width: 800px;
 }
 #two .partners ul li {
@@ -801,6 +846,10 @@ html {
   margin: 0 auto;
   text-align: center;
   width: clamp(335px, 80vw, 277px);
+  transition: background-color 0.2s ease;
+}
+#three a.btn:hover, #three a.btn:active {
+  background-color: #3E7578;
 }
 @media (max-width: 768px) {
   #three a.btn {
@@ -822,11 +871,17 @@ html {
 #four a {
   text-align: center;
   display: block;
-  margin-top: 90px;
   color: #93C01F;
   font-family: "NexaHeavy";
   font-size: 20px;
   text-decoration: none;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 90px;
+  transition: background-color 0.2s ease;
+}
+#four a:hover, #four a:active {
+  color: #3E7578;
 }
 #four .servicios-boxes {
   display: flex;
@@ -936,17 +991,23 @@ html {
   }
 }
 #five .left a {
-  text-align: left;
   display: block;
-  margin-top: 40px;
   color: #93C01F;
   font-family: "NexaHeavy";
   font-size: 20px;
   text-decoration: none;
+  width: fit-content;
+  margin-right: 0 auto;
+  margin-top: 40px;
+  transition: background-color 0.2s ease;
+}
+#five .left a:hover, #five .left a:active {
+  color: #3E7578;
 }
 @media (max-width: 768px) {
   #five .left a {
-    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
@@ -1055,15 +1116,18 @@ footer .footer-column li {
   }
 }
 footer .footer-column li.title {
+  color: #2C3947;
   font-family: "NexaHeavy";
 }
 footer .footer-column li.redes {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 24px;
 }
 @media (max-width: 768px) {
   footer .footer-column li.redes {
+    padding-top: clamp(40px, 5vw, 80px);
     justify-content: center;
   }
 }
@@ -1077,7 +1141,13 @@ footer .footer-column.last {
   }
   footer .footer-column.last img {
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 268px;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  footer .footer-column.last img {
+    max-width: 335px;
   }
 }
 footer .footer-column.last .direccion {
@@ -1085,9 +1155,6 @@ footer .footer-column.last .direccion {
 }
 footer .footer-column.last .mail {
   font-family: "NexaHeavy";
-}
-footer .footer-column.last .redes img {
-  margin-left: 24px;
 }
 
 #us_equipo {

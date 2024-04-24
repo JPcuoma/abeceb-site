@@ -111,6 +111,11 @@
         font-size: 20px;
         line-height: 20px;
         text-decoration: none;
+        transition: background-color .2s ease;
+
+          &:hover,&:active{
+            color: $dark-green;
+        }
       }
     }
   }
