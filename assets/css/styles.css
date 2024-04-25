@@ -433,6 +433,9 @@ html {
 #form form .form-field.active input, #form form .form-field.active select {
   border-bottom: 1px solid #93C01F;
 }
+#form form .form-field.active input[type=checkbox] {
+  border: 3px solid #93C01F;
+}
 #form form .form-field.active .form-field__error-text {
   display: block;
 }

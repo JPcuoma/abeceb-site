@@ -179,6 +179,10 @@
             input,select{
                 border-bottom: 1px solid $green;
             }
+            input[type="checkbox"] {
+                border: 3px solid $green;
+            }
+
             .form-field__error-text{
                 display: block;
             }

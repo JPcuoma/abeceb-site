@@ -219,60 +219,83 @@
                     </span>
                     <span>
                         <label for="inputContact2">y trabajo como</label>
-
-                        <select name="inputContact2" id="inputContact2">
-                            <option value=""></option>
-                            <option value="CEO">CEO</option>
-                            <option value="Board Member">Board Member</option>
-                            <option value="CFO">CFO</option>
-                            <option value="Director">Director</option>
-                            <option value="Manager">Manager</option>
-                            <option value="Advisor">Advisor</option>
-                            <option value="Otros">Otros</option>
-                        </select>
+                        <span class="form-field">
+                            <select name="inputContact2" id="inputContact2">
+                                <option value=""></option>
+                                <option value="CEO">CEO</option>
+                                <option value="Board Member">Board Member</option>
+                                <option value="CFO">CFO</option>
+                                <option value="Director">Director</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Advisor">Advisor</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
                     </span>
                     <span>
                         <label for="inputContact3">en la industria de</label>
-                        <select class="" id="inputContact3" name="inputContact3">
-                            <option value=""></option>
-                            <option value="Oil and Gas">Oil and Gas</option>
-                            <option value="Movilidad">Movilidad</option>
-                            <option value="Agro">Agro</option>
-                            <option value="Conocimiento">Conocimiento</option>
-                            <option value="Otros">Otros</option>
-                        </select>
+                        <span class="form-field">
+                            <select class="" id="inputContact3" name="inputContact3">
+                                <option value=""></option>
+                                <option value="Oil and Gas">Oil and Gas</option>
+                                <option value="Movilidad">Movilidad</option>
+                                <option value="Agro">Agro</option>
+                                <option value="Conocimiento">Conocimiento</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
                     </span>
                     <span>
                         <label for="inputContact4">Estoy buscando soluciones</label>
-                        <select class="" id="inputContact4" name="inputContact4">
-                            <option value=""></option>
-                            <option value="Consultoría Económica">Consultoría Económica</option>
-                            <option value="Consultoría Estratégica">Consultoría Estratégica</option>
-                            <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
-                        </select>
+                        <span class="form-field">
+                            <select class="" id="inputContact4" name="inputContact4">
+                                <option value=""></option>
+                                <option value="Consultoría Económica">Consultoría Económica</option>
+                                <option value="Consultoría Estratégica">Consultoría Estratégica</option>
+                                <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
                     </span>
 
-                        <label for="inputContact5">para generar</label>
+                    <label for="inputContact5">para generar</label>
+                    <span class="form-field">
                         <select id="inputContact5" name="inputContact5">
                             <option value=""></option>
                             <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
                             <option value="Nuevos negocios">Nuevos negocios</option>
                         </select>
-
+                        <span class="form-field__error-text">
+                            Por favor, llená este campo
+                        </span>
+                    </span>
                     <label >en mi empresa. </label>
                 </div>
                 <span>
                     <label for="inputContact6">Mi correo es</label> 
-                    <input type="text"  name="inputContact6" id="inputContact6">
+                    <span class="form-field">
+                        <input type="text"  name="inputContact6" id="inputContact6">
+                        <span class="form-field__error-text">
+                            Por favor, llená este campo
+                        </span>
+                    </span>
                 </span>
-                <div class="terminos">
+                <span class="terminos form-field active">
                     <input type="checkbox" value="1" name="terms" id="terms">
                     <label for="terms">
                         Acepto los términos y condiciones
                     </label>
-                </div>
+                </span>
                 <input class="btn" type="submit" value="Contactanos">
-                <div class="form-message form-message__succes active">
+                <div class="form-message form-message__succes ">
                     <img src="assets/img/icons/v-succes.svg" alt="succes">
                     <span>
                         ¡Formulario enviado con éxito!
