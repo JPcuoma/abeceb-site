@@ -673,11 +673,6 @@ html {
   align-items: flex-start;
   justify-content: center;
 }
-@media (max-width: 768px) {
-  #one.parallax__layer_hero {
-    height: 1500px;
-  }
-}
 #one.parallax__layer_hero .parallax__image_hero {
   position: absolute;
   top: 0;
