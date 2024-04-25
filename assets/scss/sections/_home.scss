@@ -124,6 +124,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        transition: all .2s ease-in-out;
         .opt {
             display: none;
             min-height: 450px;
@@ -148,17 +149,18 @@
             a {
                 text-align: center;
                 display: block;
+                width: fit-content;
+                margin: 0 auto;
                 margin-top: clamp(60px, 5vw, 90px);
                 color: $green;
                 font-family: 'NexaHeavy';
                 font-size: 20px;
                 text-decoration: none;
-                transition: background-color .2s ease;
+                transition: all .2s ease;
 
                 &:hover,&:active{
                     color: $dark-green;
                 }
-                
             }
         }
 
@@ -181,7 +183,7 @@
                 padding: 15px ;
                 cursor: pointer;
                 border-radius: 30px;
-
+                transition: all .2s ease-in-out;
 
                 &:hover {
                     color: $dark-green
@@ -316,6 +318,9 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 40px;
+        @media (max-width:1400px) {
+            flex-direction: column;
+        }
         @media (max-width:768px) {
             gap: 82px;
         }
@@ -433,6 +438,8 @@
             margin-right: 0 auto;
             margin-top: 40px;
             transition: background-color .2s ease;
+            color: $dark-green;
+
     
             &:hover,&:active{
                 color: $dark-green;

@@ -34,7 +34,7 @@
         input {
             font-size: clamp(20px, 4vw, 30px);
             font-weight: 400;
-            line-height: 1.5;
+            line-height: 1.3;
             color: #ced4da;
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -117,7 +117,7 @@
             max-width: 400px;
         }
         #inputContact5{
-            max-width: 520px;
+            max-width: clamp(270px, 100%, 520px);
         }
         #inputContact6{
             max-width: 350px;
@@ -159,11 +159,58 @@
             }
         }
 
-        br.mob{
-            display: none;
-            @media (max-width: 768px) {
+
+        .form-field{
+            position: relative;
+
+            &__error-text{
+                display: none;
+                color: $green;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                font-size: 14px;
+            }
+
+        }
+        .form-field.active{
+            input,select{
+                border-bottom: 1px solid $green;
+            }
+            .form-field__error-text{
                 display: block;
             }
         }
+        .form-message{
+            display: none;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 749px;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: clamp(18px, 2vw, 20px);
+            font-family: "NexaBold";
+            border-radius: 30px;
+
+            img{
+                display: inline-block;
+                margin-right: 10px;
+                width: 40px;
+            }
+            &__succes{
+                background-color: #74C89F;
+            }
+            &__error{
+                background-color: #FA4343;
+            }
+        }
+        .form-message.active{
+            display: flex;
+        }
+
     }
 }

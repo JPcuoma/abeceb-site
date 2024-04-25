@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             tlHomeHero.to(".header-logo-box", {          
-                background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
+                // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
             });   
                 
         });
@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function () {
           
             
             tlHomeHero.to(".header-logo-box", {          
-                background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
+                // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
             })
             .to(".menu-close-logo-mob", {          
                 opacity: 1,               

@@ -21,8 +21,8 @@ nav {
     position: fixed;
     z-index: inherit;
     top: 0;
-    height: 120px;
     padding: 0 4vw;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,6 +69,7 @@ nav {
         display: flex;
         justify-content: flex-end;
         width: fit-content;
+        margin-top: 10px;
         margin-left: auto;
         z-index: inherit;
 
@@ -90,7 +91,6 @@ nav {
                 margin: 25px 0;
             }
 
-
             a {
                 color: $white;
                 mix-blend-mode: difference;
@@ -105,6 +105,7 @@ nav {
             }
 
             &.hamb-close-toggle{
+                padding-right: 0;
                 img{
                     width: clamp(25px, 4vw, 42px);
                 }
@@ -122,11 +123,11 @@ nav {
     &.hide {
         opacity: 0;
         z-index: 0;
-        transform: translateY(110%);
+        transform: translateY(-110%);
         
         @media (max-width:1100px) {
             width: 50%;
-            transform: translateX(140%);
+            transform: translateX(160%);
         }
     }
 }
@@ -138,13 +139,11 @@ nav {
         justify-content: center;
         align-items: center;
         height: 120px;
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%);
        
         @media (max-width: 768px) {
             justify-content: flex-start;
             background: transparent;
             height: 60px;
-
         }
         
         .menu-close-logo-desk {

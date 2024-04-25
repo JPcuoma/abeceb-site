@@ -106,12 +106,13 @@
   
       a {
         text-align: center;
-        color: $green;
+        // color: $green;
         font-family: 'NexaHeavy';
         font-size: 20px;
         line-height: 20px;
         text-decoration: none;
         transition: background-color .2s ease;
+        color: $dark-green;
 
           &:hover,&:active{
             color: $dark-green;
