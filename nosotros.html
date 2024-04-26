@@ -13,21 +13,28 @@
 </head>
 
 <body>
-    <nav id="menu" class="hide">
-        <a href="#"><img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo">
-        </a>
-        <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Foro</a></li>
-            <li><a class="btn" href="#">¿Hablamos?</a></li>
-            <li class="close"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
-        </ul>
-    </nav>
-    <div class="hamburguer">
-        <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
-        <img src="assets/img/icons/hamburger.svg" alt="hamburguer menu icon" class="hamb-close-logo">
+    <div class="nav-container">
+        <nav id="menu" class="hide">
+            <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
+            <a href="#" class="nav-logo">
+                <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
+            </a>
+            <ul>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <!-- <li><a href="#">Insights</a></li> -->
+                <!-- <li><a href="#">Foro</a></li> -->
+                <li><a class="btn" href="#">¿Hablamos?</a></li>
+                <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
+            </ul>
+        </nav>
+        <div class="header-logo-box">
+            <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" id="brand-logo-sticky" class="menu-close-logo-desk">          
+            <img src="assets/img/abeceb-logo-mob.png" alt="logo menu" class="menu-close-logo-mob">
+        </div>
+        <div class="hamb-toggle" id="hamb-toggle">
+            <img src="assets/img/icons/hamburger.svg" alt="menu">
+        </div>
     </div>
 
     
@@ -49,75 +56,22 @@
 
         <section id="us_partners">
             <div class="container">
-                <h3>Partners</h3>
-                <h4>Somos Partners</h4>
-                <h5>Nos define un ADN emprendedor</h5>
-                <p>Cultivamos una mirada de innovación desde nuestros orígenes
-                    y generamos la capacidad de transferir esos cambios a nuestra propuesta de valor.</p>
-                <p>Creamos una cultura emprendedora con foco en la búsqueda de la excelencia
-                    y un fuerte compromiso con el cliente. Hemos evolucionado la estrategia,
-                    crecido en talentos y acompañado la demanda del mercado en cada ciclo,
-                    con un mindset abierto.</p>
-
-                    <div class="partners-figure">
-                        <div class="partners-figure__img">
-                            <img src="assets/img/partners.png" alt="">
-                        </div>
-                        <!-- <div class="partners-figure__content">
-                            <div class="partners-figure__content--title">
-                                <div>
-                                    <h6>
-                                        Dante Sica
-                                    </h6>
-                                    <span>Socio Fundador</span>
-                                </div>
-                                <div>
-                                    <img src="/assets/img/adn-green.svg" alt="">
-                                </div>
-                                <div>
-                                    <h6>
-                                        Mariana Camino
-                                    </h6>
-                                    <span>Presidenta y CEO</span>
-                                </div>
-                            </div>
-                            <div class="partners-figure__content--text">
-                                <div class="partners-elipsis-text-left">
-                                    <p>
-                                        Fue ministro de Producción y Trabajo
-                                        de la Nación.
-                                    </p>
-                                    <p>
-                                        Es uno de los principales referentes económicos
-                                        de la Argentina y los países de la región,
-                                        tanto para el sector público como el
-                                        sector privado.
-                                    </p>
-                                    <p>
-                                        Es experto en desarrollo, política
-                                        industrial y negociaciones
-                                        internacionales.
-                                    </p>
-                                </div>
-                                <div class="partners-elipsis-text-right">
-                                    <p>
-                                        Fundó y dirigió la consultora ABECEB, que asiste a directivos de empresas, cámaras y diversas organizaciones en la formulación y definición de estrategias de negocios.
-                                    </p>
-                                    <p>
-                                        Es profesor adjunto de la Cátedra de Macroeconomía I de la Facultad de Ciencias Económicas de la Universidad Nacional de
-                                        La Plata y profesor invitado en Facultades Nacionales y Extranjeras de Postgrado.
-                                    </p>
-                                    <p>
-                                        Actualmente es el Presidente del
-                                        Advisory Board de ABECEB.    
-                                    </p>
-                                </div>
-                            </div>
-                            <a class="partners-figure__content--icon">
-                                <img src="/assets/img/linkeding-icon-white.svg" alt="">
-                            </a>
-                        </div> -->
-                    </div>
+                <div class="text-box">
+                    <h3>Partners</h3>
+                    <h4>Somos Partners</h4>
+                    <h5>Nos define un ADN emprendedor</h5>
+                    <p>
+                        Cultivamos una mirada de innovación desde nuestros orígenes
+                        y generamos la capacidad de transferir esos cambios a nuestra propuesta de valor.
+                    </p>
+                    <p>
+                        Creamos una cultura emprendedora con foco en la búsqueda de la excelencia
+                        y un fuerte compromiso con el cliente. Hemos evolucionado la estrategia,
+                        crecido en talentos y acompañado la demanda del mercado en cada ciclo,
+                        con un mindset abierto.
+                    </p>
+                </div>
+                
                     <div class="partners-figure">
                         <div class="partners-figure__img">
                             <img src="assets/img/partners.png" alt="">
@@ -131,19 +85,29 @@
                                             cambiar justify-content: flex-end; 
                                 -->
                                 <div>
-                                    <h6>
-                                        Dante Sica
-                                    </h6>
-                                    <span>Socio Fundador</span>
+                                    <a>
+                                        <img src="/assets/img/icons/linkeding-icon-white.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h6>
+                                            Dante Sica
+                                        </h6>
+                                        <span>Socio Fundador</span>
+                                    </div>
                                 </div>
                                 <div>
                                     <img src="/assets/img/icons/adn-green.svg" alt="">
                                 </div>
                                 <div>
-                                    <h6>
-                                        Mariana Camino
-                                    </h6>
-                                    <span>Presidenta y CEO</span>
+                                    <div>
+                                        <h6>
+                                            Mariana Camino
+                                        </h6>
+                                        <span>Presidenta y CEO</span>
+                                    </div>
+                                    <a>
+                                        <img src="/assets/img/icons/linkeding-icon-white.svg" alt="">
+                                    </a>
                                 </div>
                             </div>
                             <div class="partners-figure__content--text">
@@ -211,17 +175,18 @@
 
 
 
-        <section id="us_clientes">
-            <div class="container">
-                <div class="left">
-                    <h4>Hacemos que <span>Nuestros clientes</span> <strong>Puedan tomar mejores decisiones de negocios</strong></h4>
-                    <p>Apalancados en nuestra experiencia, conocimiento y redes, les facilitamos el desarrollo de estrategias de crecimiento en Latinoamérica y Europa.</p>
-                </div>
-                <img src="assets/img/clientes-bg1.jpg" alt="clientes" class="bg1">
-            </div>
+        <section class="us-clientes" id="us-clientes">
+                    <div class="us-clientes__left">
+                        <h4>Hacemos que <span>Nuestros clientes</span> <strong>Puedan tomar mejores decisiones de negocios</strong></h4>
+                        <p>Apalancados en nuestra experiencia, conocimiento y redes, les facilitamos el desarrollo de estrategias de crecimiento en Latinoamérica y Europa.</p>
+                    </div>
+                    <div class="us-clientes__right">
+                        <!-- <img src="assets/img/us-clientes.png" alt="clientes" class="us-clientes__right--bg"> -->
+                        <!-- <img src="assets/img/moleculas-us-clientes.png" alt="clientes" class="us-clientes__right--moleculas"> -->
+                    </div>
         </section>
 
-        <section id="us_clientes">
+        <!-- <section id="us_clientes">
             <div class="container">
                 <div class="left">
                     <h4>Hacemos <span>para ellos </span> <strong>más real la economía real</strong></h4>
@@ -229,7 +194,7 @@
                 </div>
                 <img src="assets/img/clientes-bg2.jpg" alt="clientes" class="bg1">
             </div>
-        </section>
+        </section> -->
 
 
         <section id="us_directores">
@@ -240,7 +205,29 @@
                     <div class="card">
                         <div class="info">
                             <div class="name">Gustavo Perego</div>
-                            <div class="job">Director Comercial</div>
+                            <div class="job">Director de Negocios LatAm</div>
+                            <div class="linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                        </div>
+                        <div class="staff">
+                            <img src="assets/img/staff/gustavo-perego.png" alt="gustavo perego">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="staff">
+                            <img src="assets/img/staff/natacha-izquierdo-gonzalez.png" alt="natacha izquierdo gonzalez">
+                        </div>
+                        <div class="info">
+                            <div class="name">Natacha Ixquierdo González</div>
+                            <div class="job">Directora de Operaciones</div>
+                            <div class="linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="info">
+                            <div class="name">Soledad Perez Duhalde</div>
+                            <div class="job">Directora Inteligencia de Mercado LatAm</div>
                             <div class="linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
                         <div class="staff">
@@ -249,15 +236,13 @@
                     </div>
                     <div class="card">
                         <div class="staff">
-                            <img src="assets/img/staff/soledad-perez-duhalde.png" alt="soledad perez dualde picture">
+                            <img src="assets/img/staff/paula.png" alt="soledad perez dualde picture">
                         </div>
                         <div class="info">
-                            <div class="name">Soledad Perez Duhalde</div>
-                            <div class="job">Directora de Operaciones
-                                & Grandes Cuentas</div>
+                            <div class="name">Paula Iturria</div>
+                            <div class="job">Directora de Marketing y Comunicación</div>
                             <div class="linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
-                       
                     </div>
                 </div>
             </div>
@@ -387,40 +372,48 @@
 
 
         <footer>
-            <div class="footer-container">
+            <div class="footer-container" id="footer">
 
-                <ul class="footer-column">
-                    <li class="title">Nosotros</li>
-                    <li>Equipo</li>
-                    <li>Advisory board</li>
-                    <li>Talento sectorial</li>
-                    <li>Trabajá en ABECEB</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Insights</li>
-                    <li>ABECEB en los medios</li>
-                    <li>Informes de coyuntura</li>
-                    <li>Insights</li>
-                    <li>Casos de éxito</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Servicios</li>
-                    <li>Consultoría económica</li>
-                    <li>Consultoría estratégica</li>
-                    <li>Negocios</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Clientes</li>
-                    <li>Nuestros clientes</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Foro</li>
-                    <li>Foro ABECEB</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">¿Hablamos?</li>
-                    <li>Contacto</li>
-                </ul>
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Nosotros</li>
+                        <li>Partners</li>
+                        <li>Advisory board</li>
+                        <li>Talento sectorial</li>
+                        <li>Trabajá
+                            en ABECEB</li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Insights</li>
+                        <li>ABECEB en los medios</li>
+                        <li>Informes de coyuntura</li>
+                        <li>Insights</li>
+                        <li>Casos de éxito</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Servicios</li>
+                        <li>Consultoría económica</li>
+                        <li>Consultoría estratégica</li>
+                        <li>Negocios</li>
+                        <li>Nuestra red</li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Clientes</li>
+                        <li>Nuestros clientes</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <!-- <ul class="footer-column">
+                        <li class="title">Foro</li>
+                        <li>Foro ABECEB</li>
+                    </ul> -->
+                    <ul class="footer-column">
+                        <li class="title">¿Hablamos?</li>
+                        <li>Contacto</li>
+                    </ul>                        
+                </div>
                 <ul class="footer-column last">
                     <li><img src="assets/img/abeceb-logo-footer.svg" alt="abeceb logo"></li>
                     <li class="direccion">Juana Manso 555 Piso 8° | Oficina F </li>
@@ -473,7 +466,7 @@
 
     </script>
 
-    <script src="assets/js/lenis.min.js"></script>
+    <!-- <script src="assets/js/lenis.min.js"></script>
     <script>
         const lenis = new Lenis({
             // Valeur entre 0 et 1
@@ -492,7 +485,7 @@
         }
         requestAnimationFrame(raf);
 
-    </script>
+    </script> -->
 </body>
 
 </html>

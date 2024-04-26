@@ -13,23 +13,29 @@
 </head>
 
 <body>
-    <nav id="menu" class="hide">
-        <a href="#"><img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo">
-        </a>
-        <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Foro</a></li>
-            <li><a class="btn" href="#">¿Hablamos?</a></li>
-            <li class="close"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
-        </ul>
-    </nav>
-    <div class="hamburguer">
-        <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" class="menu-close-logo">
-        <img src="assets/img/icons/hamburger.svg" alt="hamburguer menu icon" class="hamb-close-logo">
+    <div class="nav-container">
+        <nav id="menu" class="hide">
+            <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
+            <a href="#" class="nav-logo">
+                <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
+            </a>
+            <ul>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <!-- <li><a href="#">Insights</a></li> -->
+                <!-- <li><a href="#">Foro</a></li> -->
+                <li><a class="btn" href="#">¿Hablamos?</a></li>
+                <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
+            </ul>
+        </nav>
+        <div class="header-logo-box">
+            <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" id="brand-logo-sticky" class="menu-close-logo-desk">          
+            <img src="assets/img/abeceb-logo-mob.png" alt="logo menu" class="menu-close-logo-mob">
+        </div>
+        <div class="hamb-toggle" id="hamb-toggle">
+            <img src="assets/img/icons/hamburger.svg" alt="menu">
+        </div>
     </div>
-
     
     
     
@@ -198,42 +204,49 @@
 
 
 
-
         <footer>
-            <div class="footer-container">
+            <div class="footer-container" id="footer">
 
-                <ul class="footer-column">
-                    <li class="title">Nosotros</li>
-                    <li>Equipo</li>
-                    <li>Advisory board</li>
-                    <li>Talento sectorial</li>
-                    <li>Trabajá en ABECEB</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Insights</li>
-                    <li>ABECEB en los medios</li>
-                    <li>Informes de coyuntura</li>
-                    <li>Insights</li>
-                    <li>Casos de éxito</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Servicios</li>
-                    <li>Consultoría económica</li>
-                    <li>Consultoría estratégica</li>
-                    <li>Negocios</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Clientes</li>
-                    <li>Nuestros clientes</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">Foro</li>
-                    <li>Foro ABECEB</li>
-                </ul>
-                <ul class="footer-column">
-                    <li class="title">¿Hablamos?</li>
-                    <li>Contacto</li>
-                </ul>
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Nosotros</li>
+                        <li>Partners</li>
+                        <li>Advisory board</li>
+                        <li>Talento sectorial</li>
+                        <li>Trabajá
+                            en ABECEB</li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Insights</li>
+                        <li>ABECEB en los medios</li>
+                        <li>Informes de coyuntura</li>
+                        <li>Insights</li>
+                        <li>Casos de éxito</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Servicios</li>
+                        <li>Consultoría económica</li>
+                        <li>Consultoría estratégica</li>
+                        <li>Negocios</li>
+                        <li>Nuestra red</li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Clientes</li>
+                        <li>Nuestros clientes</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <!-- <ul class="footer-column">
+                        <li class="title">Foro</li>
+                        <li>Foro ABECEB</li>
+                    </ul> -->
+                    <ul class="footer-column">
+                        <li class="title">¿Hablamos?</li>
+                        <li>Contacto</li>
+                    </ul>                        
+                </div>
                 <ul class="footer-column last">
                     <li><img src="assets/img/abeceb-logo-footer.svg" alt="abeceb logo"></li>
                     <li class="direccion">Juana Manso 555 Piso 8° | Oficina F </li>
@@ -286,7 +299,7 @@
 
     </script>
 
-    <script src="assets/js/lenis.min.js"></script>
+    <!-- <script src="assets/js/lenis.min.js"></script>
     <script>
         const lenis = new Lenis({
             // Valeur entre 0 et 1
@@ -305,7 +318,7 @@
         }
         requestAnimationFrame(raf);
 
-    </script>
+    </script> -->
 </body>
 
 </html>
