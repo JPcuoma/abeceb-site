@@ -1296,19 +1296,21 @@ footer .footer-column.last .mail {
   align-items: center;
 }
 #us_equipo ul li {
-  color: #fff;
-  font-family: "NexaBold";
-  font-size: 18px;
   margin-bottom: 24px;
   position: relative;
-  overflow: hidden;
+}
+#us_equipo ul li a {
+  font-size: 18px;
+  font-family: "NexaBold";
   width: fit-content;
-  padding: 6px 10px;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 10px;
 }
-#us_equipo ul li:hover, #us_equipo ul li:active {
+#us_equipo ul li a:hover, #us_equipo ul li a:active {
   background-color: #f0f0f0;
   border-radius: 30px;
   color: #3E7578;
