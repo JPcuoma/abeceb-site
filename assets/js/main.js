@@ -35,7 +35,7 @@
     const hambOpenMenu = document.querySelector('.hamb-toggle');
     const hamburguer = document.querySelector('.header-logo-box');
     const menu = document.querySelector('#menu');
-    // const closeButton = document.querySelector('.close');
+    const formBtn = document.querySelector('a[href="#form"]');
     
     hambToggle.forEach((btn) => {
           btn.addEventListener('click', function() {
@@ -51,38 +51,34 @@
           });
         }
       )
-    
-    // closeButton.addEventListener('click', function() {
-    //   menu.classList.toggle('hide');
-    //   hamburguer.classList.toggle('hide');
-    // });
-
-
+      formBtn.addEventListener('click', ()=>{
+        hambOpenMenu.classList.remove('hide')
+        hamburguer.classList.remove('hide')
+        menu.classList.add('hide')
+      })
     
 
+// dropdowns
+    
+  //   const dropLabel = document.querySelectorAll('.dropdown__label');
+  //   const dropsClose = document.querySelectorAll('.dropdown')
+    
+  //   dropLabel.forEach((dropDownBox)=>{
+  //       dropDownBox.addEventListener('click', ()=>{
+  //         const parentContainer = dropDownBox.parentElement
+  //         if (parentContainer.classList.contains('active')) {
+  //           parentContainer.classList.remove('active')
+  //           return
+  //         }else{
+  //           dropsClose.forEach(parent=>parent.classList.remove('active'))
+  //         }
+  //         parentContainer.classList.add('active')
+  //       }
+  //     )
+  //   }
+  // )
+    
 
-
-/* fade in elementos */ 
-
-// window.addEventListener('scroll', function() {
-//     const items = document.querySelectorAll('.fade-in-el');
-  
-//     items.forEach(item => {
-//       if (isElementInViewport(item)) {
-//         item.classList.add('show');
-//       }
-//     });
-//   });
-  
-//   function isElementInViewport(el) {
-//     const rect = el.getBoundingClientRect();
-//     return (
-//       rect.top >= 0 &&
-//       rect.left >= 0 &&
-//       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-//   }
 
 
 
