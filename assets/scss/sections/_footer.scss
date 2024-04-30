@@ -40,22 +40,23 @@ footer {
         @media (max-width:570px) {
             min-width: auto;   
             &:first-child{
-                width: 145px;
+                // width: 145px;
             }
         }
 
 
         li {
             font-family: 'NexaRegular';
-            font-size: 16px;
             color: #3F7679;
             padding-bottom: 20px;
-
+            font-size: 14px;
+            
             @media (max-width: 768px) {
                 font-size: 14px;
             }
-
+            
             &.title {
+                font-size: 16px;
                 color: $black-typo;
                 font-family: 'NexaHeavy';
             }

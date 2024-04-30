@@ -16,15 +16,16 @@
     <div class="nav-container">
         <nav id="menu" class="hide">
             <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
-            <a href="#" class="nav-logo">
+            <a href="./" class="nav-logo">
                 <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
             </a>
             <ul>
+                <li><a href="./" class="back-home">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./services.html">Servicios</a></li>
                 <!-- <li><a href="#">Insights</a></li> -->
                 <!-- <li><a href="#">Foro</a></li> -->
-                <li><a class="btn" href="#form">¿Hablamos?</a></li>
+                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
                 <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
             </ul>
         </nav>
@@ -42,14 +43,14 @@
     
     <main>
 
-        <section id="us_equipo">
+        <section id="us_equipo" class="bg-nosotros">
             <div class="container">
                 <h1>Equipo <strong>ABECEB</strong></h1>
                 <ul>
-                    <li><a href="#us_partners">Partners</a></li>
-                    <li><a href="#us_advisory">Advisory board</a></li>
-                    <li><a href="#us_talento">Talento sectorial</a></li>
-                    <li><a href="#us_work">Trabajá con nosotros</a></li>
+                    <li><a href="#us_partners" onclick="lenis.scrollTo('#us_partners')">Partners</a></li>
+                    <li><a href="#us_advisory" onclick="lenis.scrollTo('#us_advisory')">Advisory board</a></li>
+                    <li><a href="#us_talento" onclick="lenis.scrollTo('#us_talento')">Talento sectorial</a></li>
+                    <li><a href="#us_work" onclick="lenis.scrollTo('#us_work')">Trabajá con nosotros</a></li>
                 </ul>
             </div>
         </section>
@@ -178,12 +179,12 @@
 
         <section class="us-clientes" id="us-clientes">
                     <div class="us-clientes__left">
-                        <h4>Hacemos que <span>Nuestros clientes</span> <strong>Puedan tomar mejores decisiones de negocios</strong></h4>
+                        <h4>Hacemos que <span>nuestros clientes</span> <strong>puedan tomar mejores decisiones de negocios</strong></h4>
                         <p>Apalancados en nuestra experiencia, conocimiento y redes, les facilitamos el desarrollo de estrategias de crecimiento en Latinoamérica y Europa.</p>
                     </div>
                     <div class="us-clientes__right">
-                        <!-- <img src="assets/img/us-clientes.png" alt="clientes" class="us-clientes__right--bg"> -->
-                        <!-- <img src="assets/img/moleculas-us-clientes.png" alt="clientes" class="us-clientes__right--moleculas"> -->
+                        <img src="assets/img/us-clientes.png" alt="clientes" class="us-clientes__right--bg">
+                        <img src="assets/img/moleculas-us-clientes.png" alt="clientes" class="us-clientes__right--moleculas">
                     </div>
         </section>
 
@@ -494,6 +495,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="form">
             <h3>¿Hablamos?</h3>
             <form action="" class="form_animation">
@@ -542,7 +545,7 @@
                         </span>
                     </span>
                     <span>
-                        <label for="inputContact4">Estoy buscando soluciones</label>
+                        <label for="inputContact4">Estoy buscando soluciones de</label>
                         <span class="form-field">
                             <select class="" id="inputContact4" name="inputContact4">
                                 <option value=""></option>
@@ -557,20 +560,22 @@
                     </span>
 
                     <label for="inputContact5">para generar</label>
-                    <span class="form-field">
-                        <select id="inputContact5" name="inputContact5">
-                            <option value=""></option>
-                            <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
-                            <option value="Nuevos negocios">Nuevos negocios</option>
-                        </select>
-                        <span class="form-field__error-text">
-                            Por favor, llená este campo
+                    <div>
+                        <span class="form-field">
+                            <select id="inputContact5" name="inputContact5">
+                                <option value=""></option>
+                                <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
+                                <option value="Nuevos negocios">Nuevos negocios</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
                         </span>
-                    </span>
-                    <label >en mi empresa. </label>
+                        <label >en mi empresa. </label>
+                    </div>
                 </div>
                 <span>
-                    <label for="inputContact6">Mi correo es</label> 
+                    <label for="inputContact6">Mi correo electrónico es</label> 
                     <span class="form-field">
                         <input type="text"  name="inputContact6" id="inputContact6">
                         <span class="form-field__error-text">
@@ -670,6 +675,8 @@
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+
 
 
     <script>
@@ -701,7 +708,7 @@
 
     </script>
 
-    <!-- <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
     <script>
         const lenis = new Lenis({
             // Valeur entre 0 et 1
@@ -720,7 +727,7 @@
         }
         requestAnimationFrame(raf);
 
-    </script> -->
+    </script>
 </body>
 
 </html>

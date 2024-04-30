@@ -14,15 +14,16 @@
     <div class="nav-container">
         <nav id="menu" class="hide">
             <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
-            <a href="#" class="nav-logo">
+            <a href="./" class="nav-logo">
                 <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
             </a>
             <ul>
+                <li><a href="./" class="back-home">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./services.html">Servicios</a></li>
                 <!-- <li><a href="#">Insights</a></li> -->
                 <!-- <li><a href="#">Foro</a></li> -->
-                <li><a class="btn" href="#form">¿Hablamos?</a></li>
+                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
                 <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
             </ul>
         </nav>
@@ -82,10 +83,10 @@
 
         <section id="three" class="parallax__layer_three">
 			<div class="container parallax__content_three">
-				<h3 class="anm_cta_title">Asumimos tus retos
+				<h3 class="anm_cta_title">Asumimos <br> tus retos
 					<strong>como propios</strong>
 				</h3>
-				<a href="#form" class="btn element anm_cta_btn">Hablanos de tu proyecto</a>
+				<a href="#form" onclick="lenis.scrollTo('#form')" class="btn element anm_cta_btn">Hablanos de tu proyecto</a>
 			</div>
 			<div class="parallax__image_three">
                 <div class="image_three" style="background: url(assets/img/foto_globos.jpg); background-size: cover; background-repeat: no-repeat;"></div>
@@ -106,6 +107,7 @@
                         Conocemos <span>el know how y el how to</span>
                         <hr>
                         <p>Somos el socio estratégico
+                            <br>
                             del C-Level.</p>
                     </div>
                     <div class="box">
@@ -123,6 +125,7 @@
                 <h3>Insights</h3>
                 <div class="left five_item_animation">
                     <h4>Nuestro conocimiento
+                        <br>
                         <strong>a tu disposición</strong>
                     </h4>
                     <p>Somos una usina de pensamiento y conocimiento que capitalizamos a través de nuestra propuesta de
@@ -252,7 +255,7 @@
                         </span>
                     </span>
                     <span>
-                        <label for="inputContact4">Estoy buscando soluciones</label>
+                        <label for="inputContact4">Estoy buscando soluciones de</label>
                         <span class="form-field">
                             <select class="" id="inputContact4" name="inputContact4">
                                 <option value=""></option>
@@ -267,20 +270,22 @@
                     </span>
 
                     <label for="inputContact5">para generar</label>
-                    <span class="form-field">
-                        <select id="inputContact5" name="inputContact5">
-                            <option value=""></option>
-                            <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
-                            <option value="Nuevos negocios">Nuevos negocios</option>
-                        </select>
-                        <span class="form-field__error-text">
-                            Por favor, llená este campo
+                    <div>
+                        <span class="form-field">
+                            <select id="inputContact5" name="inputContact5">
+                                <option value=""></option>
+                                <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
+                                <option value="Nuevos negocios">Nuevos negocios</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
                         </span>
-                    </span>
-                    <label >en mi empresa. </label>
+                        <label >en mi empresa. </label>
+                    </div>
                 </div>
                 <span>
-                    <label for="inputContact6">Mi correo es</label> 
+                    <label for="inputContact6">Mi correo electrónico es</label> 
                     <span class="form-field">
                         <input type="text"  name="inputContact6" id="inputContact6">
                         <span class="form-field__error-text">
@@ -373,7 +378,7 @@
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- <script src="assets/js/lenis.min.js"></script> -->
+    <script src="assets/js/lenis.min.js"></script>
     <!-- gsap -->
     <script src="assets/js/gsap/splitting.min.js"></script>
     <script src="assets/js/gsap/trigger.js"></script>
@@ -415,7 +420,7 @@
     </script>
 
 
-    <!-- <script>
+    <script>
         const lenis = new Lenis({
             // Valeur entre 0 et 1
             // Valeur par défaut : 0,1
@@ -433,7 +438,7 @@
         }
         requestAnimationFrame(raf);
 
-    </script> -->
+    </script>
 </body>
 
 </html>

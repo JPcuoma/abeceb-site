@@ -29,6 +29,12 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+
+            @media (max-width:790px) {
+                &>*{
+                    width: 100%;
+                }
+            }
         }
 
         input {
@@ -96,6 +102,10 @@
             background-repeat: no-repeat;
             background-position: right 0.75rem center;
             border-bottom: 1px solid #fff;
+
+            @media (max-width:786px) {
+                width: 100%;
+            }
             
             option{
                 // text-align: left;
@@ -128,7 +138,7 @@
         #inputContact5{
             max-width: 520px;
             @media (max-width:570px) {
-                max-width: 90%;
+                max-width: 98%;
             }
         }
         #inputContact6{

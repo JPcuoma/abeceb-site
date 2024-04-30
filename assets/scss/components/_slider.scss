@@ -48,32 +48,33 @@
     .slick-arrow{
       position: absolute;
       top: 30%;
-      width: 45px;
-      height: 45px;
+      width: 32px;
+      height: 52px;
       border: 0 none;
       cursor: pointer;
       z-index: 5;
       background: none;
 
       img{
-        width: 80%;
+        width: 100%;
+        height: 100%;
       }
       @media (max-width:768px) {
-        top: 0%;
-        width: 30px;
-        // height: 20px;
+        top: 3%;
+        width: 25px;
+        height: 31px;
       }
     }
     .next-arrow {
       right: 31%;
       @media (max-width: 768px) {
-        right: 3vw;
+        right: 1vw;
       }
     }
     .prev-arrow {
       left: 31%;
       @media (max-width: 768px) {
-        left: 3vw;
+        left: 1vw;
       }
     }
   
@@ -113,6 +114,8 @@
         text-decoration: none;
         transition: background-color .2s ease;
         color: $dark-green;
+        cursor:default ;
+
 
           &:hover,&:active{
             color: $dark-green;

@@ -165,7 +165,6 @@
         }
 
         ul {
-            // margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -184,6 +183,10 @@
                 cursor: pointer;
                 border-radius: 30px;
                 transition: all .2s ease-in-out;
+
+                @media (max-width:375px) {
+                    font-size: clamp(12px, 3vw, 18px);
+                }
 
                 &:hover {
                     color: $dark-green
@@ -240,7 +243,7 @@
             }
     }
     h3 {
-        font-size: clamp(45px, 10vw, 50px);
+        font-size: clamp(35px, 10vw, 50px);
         font-family: 'NexaLight';
         font-weight: 300;
         text-align: center;
@@ -260,7 +263,7 @@
     }
 
     a.btn {
-        font-size: 20px;
+        font-size: clamp(18px, 2vw, 20px);
         font-family: 'NexaBold';
         color: $white;
         padding: 20px;
@@ -270,7 +273,7 @@
         display: table;
         margin: 0 auto;
         text-align: center;
-        width: clamp(335px, 80vw, 277px);
+        width: clamp(280px, 80vw, 277px);
         transition: background-color .2s ease;
 
         &:hover, &:active{
@@ -305,7 +308,7 @@
         width: fit-content;
         margin: 0 auto;
         margin-top: 90px;
-        transition: background-color .2s ease;
+        transition: all .2s ease;
 
         &:hover,&:active{
             color: $dark-green;
@@ -315,10 +318,10 @@
     .servicios-boxes {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 40px;
-        @media (max-width:1400px) {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 4vw;
+        @media (max-width:1200px) {
             flex-direction: column;
         }
         @media (max-width:768px) {
@@ -328,15 +331,16 @@
         .box {
             color: $green;
             font-family: 'NexaSlabBook';
+            flex: 1 0 300px;
             max-width: 392px;
-            font-size: clamp(50px, 12vw, 60px);
+            font-size: clamp(40px, 12vw, 60px);
             text-align: center;
 
             span {
                 color: $dark-green;
                 display: block;
                 font-family: 'NexaLight';
-                font-size: clamp(40px, 8vw, 50px);
+                font-size: clamp(30px, 8vw, 50px);
                 max-width: 352px;
                 margin: 0 auto;
             }
@@ -402,7 +406,7 @@
         z-index: 5;
 
         h4 {
-            font-size: clamp(50px, 10vw, 60px);
+            font-size: clamp(40px, 10vw, 60px);
             line-height: 1;
             font-family: "NexaExtraLight";
             margin-bottom: 20px;
@@ -430,14 +434,15 @@
 
         a {
             display: block;
-            color: $green;
+            // color: $green;
+            cursor:default ;
             font-family: 'NexaHeavy';
             font-size: 20px;
             text-decoration: none;
             width: fit-content;
-            margin-right: 0 auto;
+            margin-right: auto;
             margin-top: 40px;
-            transition: color .2s ease;
+            transition: all .2s ease;
             color: $dark-green;
 
     
