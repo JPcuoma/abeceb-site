@@ -18,93 +18,41 @@ document.addEventListener("DOMContentLoaded", function () {
     // });
 
     gsap.from(".anm_heading_title_1 .char", 
-        1, {
-             delay:0.5,
+            {
+             delay: 0.55,
              opacity: 0,
              yPercent: 30, 
              stagger: 0.03, 
-             ease: "back.out" 
+             ease: "back.out", 
+             scrollTrigger: {
+                    trigger: ".anm_heading_title_1",
+                    start: 'top-=100 center',
+                    end:'center center',
+                    // scrub: true,
+                    toggleActions: "play none none reverse",
+                    // markers: true               
+                },  
             });
 
     gsap.from(".anm_heading_title_2 .char",  {
             delay:0.5,
             opacity: 0,
             yPercent: 30, 
-            stagger: 0.02, 
+            stagger: 0.05, 
             ease: "back.out",
             scrollTrigger: {
                     trigger: ".anm_heading_title_2",
-                    start: 'top bottom',
-                    toggleActions: "play none none reverse",
-                    // markers: true,	
-                    // scrub: 3
+                    start: 'top center',
+                    end:'center center',
+                    scrub: 2,
+                    // toggleActions: "play none none reverse",
+                    // markers: true
+                   
                 },  
           
-        });
-
-    gsap.to('#anm_brand_home',{       
-        scale:0.5,
-        scrollTrigger: {
-            //  trigger: "#one",
-                start: 'bottom bottom',
-                toggleActions: "play none none reverse",	
-                scrub: true 
-            },  
-        }); 
-
-    function parallax(){
-        gsap.to(".image_three", {
-            yPercent: 20,
-            // backgroundPosition: `50% ${-innerHeight / 3}px`,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".image_three",
-                scrub: true
-            }, 
-        });
-
-        gsap.to(".parallax__layer_three", {
-            backgroundPosition: `50% ${-innerHeight / 3}px`,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".parallax__layer_three",
-                scrub: true
-            }, 
-        });
-      }
-      parallax(); 
-    
-
-    // set time line Hero Home
-    const tlHomeHero = gsap.timeline({
-        scrollTrigger: {           
-            start: 'top+=350',	
-            end: '+=1',            			
-            toggleActions: "play none none reverse",
-            //  markers: true,
-            scrub: 2            
-        }
-    });
-
-    tlHomeHero      
-        .to('#anm_brand_home',{
-           opacity: 0,
-           scale:0.5,
-           scrub: 1
-         })
-         .to('#brand-logo-sticky',{
-            opacity: 1,    
-            scrub: 1    
-        }, '<')
-        .to(".image_hero", {
-            // backgroundPosition: `50% ${-innerHeight / 2}px`,
-            yPercent: -30,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".image_hero",
-                scrub: true 
-            },  
-        });
+        });   
+     
+        
     
     function sectionTwo() {
         gsap.from(".partners", {
@@ -146,6 +94,28 @@ document.addEventListener("DOMContentLoaded", function () {
         
         };
     sectionThree();
+    
+    function parallaxThree(){
+        gsap.to(".image_three", {
+            yPercent: 20,
+            // backgroundPosition: `50% ${-innerHeight / 3}px`,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".image_three",
+                scrub: true
+            }, 
+        });
+
+        gsap.to(".parallax__layer_three", {
+            backgroundPosition: `50% ${-innerHeight / 3}px`,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".parallax__layer_three",
+                scrub: true
+            }, 
+        });
+      }
+      parallaxThree(); 
 
     function sectionFour() {
         gsap.from(".box", {
@@ -236,7 +206,15 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     sectionFooter();
 
-    
+    // set time line Hero Home
+    const tlHomeHero = gsap.timeline({
+        scrollTrigger: {           
+            start: 'top+=250 top+=150',	
+            end: '+=1',            			
+            toggleActions: "play none none reverse",
+            // markers: true   
+        }
+    });
 
 	
     let mm = gsap.matchMedia();
@@ -244,36 +222,66 @@ document.addEventListener("DOMContentLoaded", function () {
     mm.add("(min-width: 800px)", () => {
             // desktop setup code here...
             gsap.set('.anm_heading_title_2', {
-                opacity: 1,
-                y: `${+innerHeight}px`
-            });
-
-            tlHomeHero.to(".header-logo-box", {          
-                // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
-            });   
+                opacity: 1
+            });        
+           
+            tlHomeHero      
+                .to('#anm_brand_home',{
+                    opacity: 0,
+                    scale: 0.5
+                })
+                .to('#brand-logo-sticky',{
+                    opacity: 1  
+                })
+                .to('.anm_heading_title_1',{
+                    opacity: 0,
+                    // scrub: 2
+                })
+                .to(".image_hero", {
+                    // backgroundPosition: `50% ${-innerHeight / 2}px`,
+                    yPercent: -40,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".image_hero",
+                        scrub: true 
+                    },  
+                }); 
                 
         });
 
     mm.add("(max-width: 799px)", () => {
             // mobile setup code here...
             gsap.set('.anm_heading_title_2', {
-                opacity: 1,
-                y: `${+innerHeight}px`
+                opacity: 1                
             });
             gsap.set('#one.parallax__layer_hero', {                
-                height: `${+innerHeight * 2}px`
+                // height: `${+innerHeight * 2}px`
             });
             gsap.set('.image_three', {                
                   backgroundPositionX: `30%`,
             });
           
             
-            tlHomeHero.to(".header-logo-box", {          
-                // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
-            })
-            .to(".menu-close-logo-mob", {          
-                opacity: 1,               
-            })   
+            tlHomeHero
+                .to(".header-logo-box", {          
+                    // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
+                })
+                .to(".menu-close-logo-mob", {          
+                    opacity: 1,               
+                })
+                .to('.anm_heading_title_1',{
+                    opacity: 1,
+                    // scrub: 2
+                })
+                .to(".image_hero", {
+                    // backgroundPosition: `50% ${-innerHeight / 2}px`,
+                    yPercent: -40,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: ".image_hero",
+                        scrub: true 
+                    },  
+                });    
             
         });
 

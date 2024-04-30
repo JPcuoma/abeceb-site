@@ -736,12 +736,13 @@ html {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  transform: translate(0px, 250px);
 }
-@media (max-width: 768px) {
-  #one .fullwidth-container {
-    transform: translate(0px, 150px);
-  }
+#one .fullwidth-container .one-hero-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #one .logo {
   width: clamp(250px, 70%, 400px);
@@ -781,7 +782,6 @@ html {
 }
 #one h1.anm_heading_title_2 {
   opacity: 0;
-  padding-top: 12rem;
   position: absolute;
 }
 @media (max-width: 768px) {
@@ -791,7 +791,7 @@ html {
 }
 #one.parallax__layer_hero {
   position: relative;
-  height: 2300px;
+  height: 230vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
