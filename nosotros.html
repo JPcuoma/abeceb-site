@@ -13,36 +13,9 @@
 </head>
 
 <body>
-    <div class="nav-container">
-        <nav id="menu" class="hide">
-            <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
-            <a href="./" class="nav-logo">
-                <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
-            </a>
-            <ul>
-                <li><a href="./" class="back-home">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./services.html">Servicios</a></li>
-                <!-- <li><a href="#">Insights</a></li> -->
-                <!-- <li><a href="#">Foro</a></li> -->
-                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
-                <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
-            </ul>
-        </nav>
-        <div class="header-logo-box">
-            <img src="assets/img/icons/abeceb-close-menu.svg" alt="logo menu" id="brand-logo-sticky" class="menu-close-logo-desk">          
-            <img src="assets/img/abeceb-logo-mob.png" alt="logo menu" class="menu-close-logo-mob">
-        </div>
-        <div class="hamb-toggle" id="hamb-toggle">
-            <img src="assets/img/icons/hamburger.svg" alt="menu">
-        </div>
-    </div>
-
+       
+    <div class="scroller">
     
-    
-    
-    <main>
-
         <section id="us_equipo" class="bg-nosotros">
             <div class="container">
                 <h1>Equipo <strong>ABECEB</strong></h1>
@@ -72,120 +45,145 @@
                         con un mindset abierto.
                     </p>
                 </div>
-                
-                    <div class="partners-figure">
-                        <div class="partners-figure__img">
-                            <img class="partners-figure__img--desk" src="assets/img/partners-desk.png" alt="">
-                            <img class="partners-figure__img--mob" src="assets/img/partners-mob.png" alt="">
-                        </div>
-                        <div class="partners-figure__content">
-                            <div class="partners-figure__content--title-box">
-                                <div class="partners-figure__content--title-1 ">
-                                    <a>
-                                        <img src="assets/img/icons/linkeding-icon-white.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h6>
-                                            Dante Sica
-                                        </h6>
-                                        <span>Socio Fundador</span>
-                                    </div>
-                                </div>
-                                <div class="partners-figure__content--title-icon right">
-                                    <img src="assets/img/icons/adn-green.svg" alt="">
-                                </div>
-                                <div class="partners-figure__content--title-2 active">
-                                    <div>
-                                        <h6>
-                                            Mariana Camino
-                                        </h6>
-                                        <span>Presidenta y CEO</span>
-                                    </div>
-                                    <a>
-                                        <img src="assets/img/icons/linkeding-icon-white.svg" alt="">
-                                    </a>
+            </div>
+        </section>
+        <section class="us_partners_animate">
+            <div class="partners-figure">
+                <div class="partners-figure__img">
+                    <img class="partners-figure__img--desk" src="assets/img/partners-desk-full.png" alt="">
+                    <img class="partners-figure__img--mob" src="assets/img/partners-mob.png" alt="">
+                </div>     
+                <div class="text-wrap">.
+                    <!--Dante Sica-->          
+                    <div class="panel-text">
+                        <div class="title-box"> 
+                            <div class="title-1">
+                                <a>
+                                    <img src="assets/img/icons/linkeding-icon-white.svg" alt="">
+                                </a>
+                                <div>
+                                    <h6>Dante Sica</h6>
+                                    <span>Socio Fundador</span>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="partners-figure__content--text">
-                                <div class="partners-elipsis-text-left">
-                                    <p>
-                                        Fue ministro de Producción y Trabajo
-                                        de la Nación.
-                                    </p>
-                                    <p>
-                                        Es uno de los principales referentes económicos
-                                        de la Argentina y los países de la región,
-                                        tanto para el sector público como el
-                                        sector privado.
-                                    </p>
-                                    <p>
-                                        Es experto en desarrollo, política
-                                        industrial y negociaciones
-                                        internacionales.
-                                    </p>
-                                </div>
-                                <div class="partners-elipsis-text-right">
-                                    <p>
-                                        Fundó y dirigió la consultora ABECEB, que asiste a directivos de empresas, cámaras y diversas organizaciones en la formulación y definición de estrategias de negocios.
-                                    </p>
-                                    <p>
-                                        Es profesor adjunto de la Cátedra de Macroeconomía I de la Facultad de Ciencias Económicas de la Universidad Nacional de
-                                        La Plata y profesor invitado en Facultades Nacionales y Extranjeras de Postgrado.
-                                    </p>
-                                    <p>
-                                        Actualmente es el Presidente del
-                                        Advisory Board de ABECEB.    
-                                    </p>
-                                </div>
+                            <div class="title-icon right">
+                                <img src="assets/img/icons/adn-green.svg" alt="">
+                            </div>            
+                        </div>
+                        <hr>
+                        <div class="content-description">
+                            <div class="partners-elipsis-text">
+                                <p>
+                                    Fue ministro de Producción y Trabajo
+                                    de la Nación.
+                                </p>
+                                <p>
+                                    Es uno de los principales referentes económicos
+                                    de la Argentina y los países de la región,
+                                    tanto para el sector público como el
+                                    sector privado.
+                                </p>
+                                <p>
+                                    Es experto en desarrollo, política
+                                    industrial y negociaciones
+                                    internacionales.
+                                </p>
+                            
+                                <p>
+                                    Fundó y dirigió la consultora ABECEB, que asiste a directivos de empresas, cámaras y
+                                    diversas organizaciones en la formulación y definición de estrategias de negocios.
+                                </p>
+                                <p>
+                                    Es profesor adjunto de la Cátedra de Macroeconomía I de la Facultad de Ciencias
+                                    Económicas de la Universidad Nacional de
+                                    La Plata y profesor invitado en Facultades Nacionales y Extranjeras de Postgrado.
+                                </p>
+                                <p>
+                                    Actualmente es el Presidente del
+                                    Advisory Board de ABECEB.
+                                </p>
                             </div>
-                            <a class="partners-figure__content--icon">
-                                <img src="assets/img/icons/linkeding-icon-white.svg" alt="">
-                            </a>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="us_valores">
-                <div class="container">
-                    <div class="slider-container">
-                        <h3>Valores</h3>
-                    
-                    <div id="slider">
-                        
-                        <div>
-                        <div class="item">Honestidad intelectual</div> 
-                        </div>
-                        <div>
-                        <div class="item">Creatividad e innovación</div>
-                        </div>
-                        <div>
-                        <div class="item">Compromiso con la calidad</div>  
-                        </div>
-                        <div>
-                            <div class="item">Profesionalismo</div>  
-                        </div>
-                        <div>
-                            <div class="item">Foco en el cliente</div>  
-                        </div>
-                                    
                     </div> 
+                    <!--Mariana Camino-->          
+                    <div class="panel-text">
+                        <div class="title-box">
+                            <div class="title-icon right">
+                                <img src="assets/img/icons/adn-green-2.svg" alt="">
+                            </div>    
+                            <div class="title-1">
+                                <a>
+                                    <img src="assets/img/icons/linkeding-icon-white.svg" alt="">
+                                </a>
+                                <div>
+                                    <h6>Mariana Camino</h6>
+                                    <span>Presidenta y CEO</span>
+                                </div>
+                            </div>                                      
+                        </div>
+                        <hr>
+                        <div class="content-description">
+                            <div class="partners-elipsis-text">
+                                <p>
+                                    Fue ministro de Producción y Trabajo
+                                    de la Nación.
+                                </p>
+                                <p>
+                                    Es uno de los principales referentes económicos
+                                    de la Argentina y los países de la región,
+                                    tanto para el sector público como el
+                                    sector privado.
+                                </p>
+                                <p>
+                                    Es experto en desarrollo, política
+                                    industrial y negociaciones
+                                    internacionales.
+                                </p>
+                        
+                                <p>
+                                    Fundó y dirigió la consultora ABECEB, que asiste a directivos de empresas, cámaras y
+                                    diversas organizaciones en la formulación y definición de estrategias de negocios.
+                                </p>
+                                <p>
+                                    Es profesor adjunto de la Cátedra de Macroeconomía I de la Facultad de Ciencias
+                                    Económicas de la Universidad Nacional de
+                                    La Plata y profesor invitado en Facultades Nacionales y Extranjeras de Postgrado.
+                                </p>
+                                <p>
+                                    Actualmente es el Presidente del
+                                    Advisory Board de ABECEB.
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>	               
+            </div>	
+        </section>
+    
+        <section id="us_valores">
+            <div class="container">              
+                    <h3>Valores</h3>
+                    <div class="slider-container">
+                        <div class="item_us_values item">Honestidad intelectual</div>
+                        <div class="item_us_values">Creatividad e innovación</div>
+                        <div class="item_us_values">Compromiso con la calidad</div>
+                        <div class="item_us_values">Profesionalismo</div>
+                        <div class="item_us_values">Foco en el cliente</div>    
                     </div>
-                </div>
-            </section>
-
-
-
+                </div>           
+        </section>
+        
         <section class="us-clientes" id="us-clientes">
-                    <div class="us-clientes__left">
-                        <h4>Hacemos que <span>nuestros clientes</span> <strong>puedan tomar mejores decisiones de negocios</strong></h4>
-                        <p>Apalancados en nuestra experiencia, conocimiento y redes, les facilitamos el desarrollo de estrategias de crecimiento en Latinoamérica y Europa.</p>
-                    </div>
-                    <div class="us-clientes__right">
-                        <img src="assets/img/us-clientes.png" alt="clientes" class="us-clientes__right--bg">
-                        <img src="assets/img/moleculas-us-clientes.png" alt="clientes" class="us-clientes__right--moleculas">
-                    </div>
+            <div class="us-clientes__left">
+                <h4>Hacemos que <span>nuestros clientes</span> <strong>puedan tomar mejores decisiones de
+                        negocios</strong></h4>
+                <p>Apalancados en nuestra experiencia, conocimiento y redes, les facilitamos el desarrollo de
+                    estrategias de crecimiento en Latinoamérica y Europa.</p>
+            </div>
+            <div class="us-clientes__right">
+                <img src="assets/img/us-clientes.png" alt="clientes" class="us-clientes__right--bg">
+                <img src="assets/img/moleculas-us-clientes.png" alt="clientes" class="us-clientes__right--moleculas">
+            </div>
         </section>
 
         <!-- <section id="us_clientes">
@@ -202,13 +200,15 @@
         <section id="us_directores">
             <div class="container">
                 <h3>Directores</h3>
-                <p>El equipo directivo está conformado por profesionales que acompañan a nuestros clientes a lograr mayor impacto y un mejor desarrollo de negocios en la región.</p>
+                <p>El equipo directivo está conformado por profesionales que acompañan a nuestros clientes a lograr
+                    mayor impacto y un mejor desarrollo de negocios en la región.</p>
                 <div class="large-card-container">
                     <div class="large-card">
                         <div class="large-card__info">
                             <div class="large-card__info--name">Gustavo Perego</div>
                             <div class="large-card__info--job">Director de Negocios LatAm</div>
-                            <div class="large-card__info--linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                            <div class="large-card__info--linkedin"><a href="#"><img
+                                        src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
                         <div class="large-card__staff">
                             <img src="assets/img/staff/gustavo-perego.png" alt="gustavo perego">
@@ -221,7 +221,8 @@
                         <div class="large-card__info">
                             <div class="large-card__info--name">Natacha Ixquierdo González</div>
                             <div class="large-card__info--job">Directora de Operaciones</div>
-                            <div class="large-card__info--linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                            <div class="large-card__info--linkedin"><a href="#"><img
+                                        src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +231,8 @@
                         <div class="large-card__info">
                             <div class="large-card__info--name">Soledad Perez Duhalde</div>
                             <div class="large-card__info--job">Directora Inteligencia de Mercado LatAm</div>
-                            <div class="large-card__info--linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                            <div class="large-card__info--linkedin"><a href="#"><img
+                                        src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
                         <div class="large-card__staff">
                             <img src="assets/img/staff/soledad-perez-duhalde.png" alt="soledad perez dualde picture">
@@ -243,7 +245,8 @@
                         <div class="large-card__info">
                             <div class="large-card__info--name">Paula Iturria</div>
                             <div class="large-card__info--job">Directora de Marketing y Comunicación</div>
-                            <div class="large-card__info--linkedin"><a href="#"><img src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
+                            <div class="large-card__info--linkedin"><a href="#"><img
+                                        src="assets/img/icons/linkedin-icon-us.svg" alt="Linkedin icon"></a></div>
                         </div>
                     </div>
                 </div>
@@ -264,131 +267,131 @@
                         <div class="card__text-box">
                             <div class="card__text-box--name">Dante Sica</div>
                             <div class="card__text-box--job">
-                                <span>Presidente de Board</span> 
+                                <span>Presidente de Board</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/dante-sica.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Mariana Camino</div>
                             <div class="card__text-box--job">
-                                <span>Directora Ejecutiva</span> 
+                                <span>Directora Ejecutiva</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/mariana-camino.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Federico Pinedo</div>
                             <div class="card__text-box--job">
-                                <span>Política y Relaciones Internacionales</span> 
+                                <span>Política y Relaciones Internacionales</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/federico-pinedo.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Ricardo Martinez Rico</div>
                             <div class="card__text-box--job">
-                                <span>Negocios y Europa</span> 
+                                <span>Negocios y Europa</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/ricardo-martinez-rico.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Gabriela Bardin</div>
                             <div class="card__text-box--job">
-                                <span>Negocios y Consumo Masivo</span> 
+                                <span>Negocios y Consumo Masivo</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/gabriela-bardin.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Andrés Malamud</div>
                             <div class="card__text-box--job">
-                                <span>Política y Latam</span> 
+                                <span>Política y Latam</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/andrés-malamud.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Laura Ge</div>
                             <div class="card__text-box--job">
-                                <span>Estrategia</span> 
+                                <span>Estrategia</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/laura-ge.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Norberto Sosa</div>
                             <div class="card__text-box--job">
-                                <span>Finanzas</span> 
+                                <span>Finanzas</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/norberto-sosa.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Julia Bearzi</div>
                             <div class="card__text-box--job">
-                                <span>Tecnología y Emprendedurismo</span> 
+                                <span>Tecnología y Emprendedurismo</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/julia-bearzi.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                     <div class="card ">
                         <div class="card__text-box">
                             <div class="card__text-box--name">Aleandra Scafati</div>
                             <div class="card__text-box--job">
-                                <span>Sustentabilidad</span> 
+                                <span>Sustentabilidad</span>
                                 <a href="#">
                                     <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
                                 </a>
                             </div>
                         </div>
                         <img class="card__img" src="assets/img/staff/alejandra-scafati.png" alt="">
-                    <div class="card__img-opacity"></div>
+                        <div class="card__img-opacity"></div>
                     </div>
                 </div>
             </div>
@@ -397,89 +400,91 @@
 
         <section id="us_talento">
             <div class="container">
-            <h3>Talento sectorial</h3>
-            <p>Trabajar junto a los actores del ecosistema sectorial nos posibilita interpretar mejor que nadie los sucesos económicos, los vectores de transformación y la velocidad del cambio que atraviesa cada industria.</p>
-            <div class="talento-grid">
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Elisabeth Bacigalupo</div>
-                        <div class="card__text-box--job">
-                            <span>Directora Ejecutiva</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                <h3>Talento sectorial</h3>
+                <p>Trabajar junto a los actores del ecosistema sectorial nos posibilita interpretar mejor que nadie los
+                    sucesos económicos, los vectores de transformación y la velocidad del cambio que atraviesa cada
+                    industria.</p>
+                <div class="talento-grid">
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Elisabeth Bacigalupo</div>
+                            <div class="card__text-box--job">
+                                <span>Directora Ejecutiva</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/elisabeth-bacigalupo.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/elisabeth-bacigalupo.png" alt="">
-                    <div class="card__img-opacity"></div>
-                </div>
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Andrés Civetta</div>
-                        <div class="card__text-box--job">
-                            <span>Movilidad</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Andrés Civetta</div>
+                            <div class="card__text-box--job">
+                                <span>Movilidad</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/andres-civetta.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/andres-civetta.png" alt="">
-                    <div class="card__img-opacity"></div>
-                </div>
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Maximiliano Scarlan</div>
-                        <div class="card__text-box--job">
-                            <span>Innovación</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Maximiliano Scarlan</div>
+                            <div class="card__text-box--job">
+                                <span>Innovación</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/maximiliano-scarlan.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/maximiliano-scarlan.png" alt="">
-                    <div class="card__img-opacity"></div>
-                </div>
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Karina Prieto</div>
-                        <div class="card__text-box--job">
-                            <span>Responsable de Proyectos</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Karina Prieto</div>
+                            <div class="card__text-box--job">
+                                <span>Responsable de Proyectos</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/andres-civetta.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/andres-civetta.png" alt="">
-                    <div class="card__img-opacity"></div>
-                </div>
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Fernando Bazan Torres</div>
-                        <div class="card__text-box--job">
-                            <span>Políticas Públicas</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Fernando Bazan Torres</div>
+                            <div class="card__text-box--job">
+                                <span>Políticas Públicas</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/fernando-bazan-torres.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/fernando-bazan-torres.png" alt="">
-                    <div class="card__img-opacity"></div>
-                </div>
-                <div class="card ">
-                    <div class="card__text-box">
-                        <div class="card__text-box--name">Guillermo Watanabe</div>
-                        <div class="card__text-box--job">
-                            <span>Políticas públicas</span> 
-                            <a href="#">
-                                <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
-                            </a>
+                    <div class="card ">
+                        <div class="card__text-box">
+                            <div class="card__text-box--name">Guillermo Watanabe</div>
+                            <div class="card__text-box--job">
+                                <span>Políticas públicas</span>
+                                <a href="#">
+                                    <img src="assets/img/icons/linkedin-board.svg" alt="linkedin">
+                                </a>
+                            </div>
                         </div>
+                        <img class="card__img" src="assets/img/staff/guillermo-watanabe.png" alt="">
+                        <div class="card__img-opacity"></div>
                     </div>
-                    <img class="card__img" src="assets/img/staff/guillermo-watanabe.png" alt="">
-                    <div class="card__img-opacity"></div>
                 </div>
             </div>
-        </div>
         </section>
 
 
@@ -564,20 +569,21 @@
                         <span class="form-field">
                             <select id="inputContact5" name="inputContact5">
                                 <option value=""></option>
-                                <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
+                                <option value="Insights para la toma de decisiones">Insights para la toma de decisiones
+                                </option>
                                 <option value="Nuevos negocios">Nuevos negocios</option>
                             </select>
                             <span class="form-field__error-text">
                                 Por favor, llená este campo
                             </span>
                         </span>
-                        <label >en mi empresa. </label>
+                        <label>en mi empresa. </label>
                     </div>
                 </div>
                 <span>
-                    <label for="inputContact6">Mi correo electrónico es</label> 
+                    <label for="inputContact6">Mi correo electrónico es</label>
                     <span class="form-field">
-                        <input type="text"  name="inputContact6" id="inputContact6">
+                        <input type="text" name="inputContact6" id="inputContact6">
                         <span class="form-field__error-text">
                             Por favor, llená este campo
                         </span>
@@ -606,10 +612,7 @@
 
         </section>
 
-
-
-
-
+        
         <footer>
             <div class="footer-container" id="footer">
 
@@ -651,7 +654,7 @@
                     <ul class="footer-column">
                         <li class="title">¿Hablamos?</li>
                         <li>Contacto</li>
-                    </ul>                        
+                    </ul>
                 </div>
                 <ul class="footer-column last">
                     <li><img src="assets/img/abeceb-logo-footer.svg" alt="abeceb logo"></li>
@@ -667,67 +670,27 @@
                 </ul>
             </div>
         </footer>
+    
+    </div>
 
-
-    </main>
-
-
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+    
+   <!-- <script src="assets/js/jquery-1.11.0.min.js"></script>-->
     <script src="assets/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/lenis.min.js"></script>
+    <!--<script src="assets/js/main.js"></script>
+    <script src="assets/js/lenis.min.js"></script>-->
+    <!-- gsap-->
+    <script src="assets/js/gsap/trigger-nosotros.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
 
+ 
 
+   
 
-    <script>
-        $(document).ready(function () {
-
-            const slider = $("#slider");
-            slider
-            .slick({
-                dots: false,
-                vertical: true,
-                infinite: false,
-                centerMode: true,
-
-                arrows:false,
-                centerPadding: '40px',
-            });
-
-            slider.on('wheel', (function(e) {
-            e.preventDefault();
-
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
-            }));
-
-        })
-
-    </script>
-
-    <script src="assets/js/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis({
-            // Valeur entre 0 et 1
-            // Valeur par défaut : 0,1
-            // Plus la valeur est faible, plus le scroll sera fluide
-            lerp: 0.05,
-            // Valeur par défaut : 1
-            // Plus la valeur est haute, plus le défilement sera rapide 
-            smooth: true,
-            direction: "vertical"
-        });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
-    </script>
+    
 </body>
 
 </html>
