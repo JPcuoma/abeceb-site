@@ -3,22 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
  
     gsap.registerPlugin(ScrollTrigger);
 
-    const scroller = document.querySelector('.scroller');
+    // const scroller = document.querySelector('.scroller');
 
-    const bodyScrollBar = Scrollbar.init(scroller, { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
+    // const bodyScrollBar = Scrollbar.init(scroller, { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
     
-    ScrollTrigger.scrollerProxy(".scroller", {
-      scrollTop(value) {
-        if (arguments.length) {
-          bodyScrollBar.scrollTop = value;
-        }
-        return bodyScrollBar.scrollTop;
-      }
-    });
+    // ScrollTrigger.scrollerProxy(".scroller", {
+    //   scrollTop(value) {
+    //     if (arguments.length) {
+    //       bodyScrollBar.scrollTop = value;
+    //     }
+    //     return bodyScrollBar.scrollTop;
+    //   }
+    // });
     
-    bodyScrollBar.addListener(ScrollTrigger.update);
+    // bodyScrollBar.addListener(ScrollTrigger.update);
     
-    ScrollTrigger.defaults({ scroller: scroller });
+    // ScrollTrigger.defaults({ scroller: scroller });
 
      // HERO
      function sectionHeroUs() {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.5,
             scrollTrigger: {
                 trigger: "#us_partners",
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center-=100",
                 end: () => "bottom center",
                 scrub: true,
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
                 scrollTrigger: {
                     trigger: "section.us_partners_animate",
-                    scroller: ".scroller",
+                    // scroller: ".scroller",
                     start: () => "top -" + (window.innerHeight*i),
                     end: () => "+=" + window.innerHeight,
                     scrub: true,
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         tl
         .to(text, { duration: 0.33, opacity: 1, y:"50%" })  
-        .to(text, { duration: 2, y:"-100%" })
+        .to(text, { duration: 5, y:"-100%" })
         ;
         
         });
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ScrollTrigger.create({
 
             trigger: "section.us_partners_animate",
-            scroller: ".scroller",
+            // scroller: ".scroller",
             scrub: true,
             // markers: true,
             pin: true,
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({
             scrollTrigger: {     
                 trigger: "#us-clientes", 
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center-=100",
                 end: () => "bottom center",
                 scrub: false,
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
             x: 100,
             scrollTrigger: {
                 trigger: "#us-clientes",  
-                scroller: ".scroller",              
+                // scroller: ".scroller",              
                 toggleActions: "play none none reverse",
                 scrub: true 
             }  
@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({
             scrollTrigger: {     
                 trigger: "#us_directores", 
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center",
                 end: () => "center+=100 center",
                 scrub: true,
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({
             scrollTrigger: {     
                 trigger: "#us_advisory", 
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center",
                 end: () => "bottom+=100 center",
                 scrub: true,
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({
             scrollTrigger: {     
                 trigger: "#us_talento", 
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center",
                 end: () => "bottom+=100 center",
                 scrub: true,
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({
             scrollTrigger: {     
                 trigger: "#us_work", 
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: () => "top center",
                 end: () => "center center",
                 scrub: true,
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.5,
             scrollTrigger: {
                 trigger: "#form",
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: "top+=150 center",
                 toggleActions: "play none none reverse",
                 //  markers: true
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.2,
             scrollTrigger: {
                 trigger: "#footer",
-                scroller: ".scroller",
+                // scroller: ".scroller",
                 start: "top-=100 center",
                 toggleActions: "play none none reverse",
                 //  markers: true
