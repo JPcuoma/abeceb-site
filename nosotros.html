@@ -39,12 +39,12 @@
     
         <section id="us_equipo" class="bg-nosotros">
             <div class="container">
-                <h1>Equipo <strong>ABECEB</strong></h1>
+                <h1 class="title_animate">Equipo <strong>ABECEB</strong></h1>
                 <ul>
-                    <li><a href="#us_partners" onclick="lenis.scrollTo('#us_partners')">Partners</a></li>
-                    <li><a href="#us_advisory" onclick="lenis.scrollTo('#us_advisory')">Advisory board</a></li>
-                    <li><a href="#us_talento" onclick="lenis.scrollTo('#us_talento')">Talento sectorial</a></li>
-                    <li><a href="#us_work" onclick="lenis.scrollTo('#us_work')">Trabajá con nosotros</a></li>
+                    <li class="item_animate"><a href="#us_partners" onclick="lenis.scrollTo('#us_partners')">Partners</a></li>
+                    <li class="item_animate"><a href="#us_advisory" onclick="lenis.scrollTo('#us_advisory')">Advisory board</a></li>
+                    <li class="item_animate"><a href="#us_talento" onclick="lenis.scrollTo('#us_talento')">Talento sectorial</a></li>
+                    <li class="item_animate"><a href="#us_work" onclick="lenis.scrollTo('#us_work')">Trabajá con nosotros</a></li>
                 </ul>
             </div>
         </section>
@@ -53,13 +53,13 @@
             <div class="container">
                 <div class="text-box">
                     <h3>Partners</h3>
-                    <h4>Somos Partners</h4>
-                    <h5>Nos define un ADN emprendedor</h5>
-                    <p>
+                    <h4 class="item_animate">Somos Partners</h4>
+                    <h5 class="item_animate">Nos define un ADN emprendedor</h5>
+                    <p class="item_animate">
                         Cultivamos una mirada de innovación desde nuestros orígenes
                         y generamos la capacidad de transferir esos cambios a nuestra propuesta de valor.
                     </p>
-                    <p>
+                    <p class="item_animate">
                         Creamos una cultura emprendedora con foco en la búsqueda de la excelencia
                         y un fuerte compromiso con el cliente. Hemos evolucionado la estrategia,
                         crecido en talentos y acompañado la demanda del mercado en cada ciclo,
@@ -182,20 +182,48 @@
                 </div>	               
             </div>	
         </section>
-    
+
+        <section id="us_valores">
+            <div class="container">
+                <div class="slider-container">
+                    <h3>Valores</h3>
+
+                    <div id="slider">
+
+                        <div>
+                            <div class="item">Honestidad intelectual</div>
+                        </div>
+                        <div>
+                            <div class="item">Creatividad e innovación</div>
+                        </div>
+                        <div>
+                            <div class="item">Compromiso con la calidad</div>
+                        </div>
+                        <div>
+                            <div class="item">Profesionalismo</div>
+                        </div>
+                        <div>
+                            <div class="item">Foco en el cliente</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
         <section id="us_valores">
             <div class="container">              
-                    <h3>Valores</h3>
-                    <div class="slider-container">
-                        <div class="item_us_values item">Honestidad intelectual</div>
-                        <div class="item_us_values">Creatividad e innovación</div>
-                        <div class="item_us_values">Compromiso con la calidad</div>
-                        <div class="item_us_values">Profesionalismo</div>
-                        <div class="item_us_values">Foco en el cliente</div>    
-                    </div>
-                </div>           
+                <h3>Valores</h3>
+                <div class="animation-container">
+                    <div class="item_us_values">Honestidad intelectual</div>
+                    <div class="item_us_values">Creatividad e innovación</div>
+                    <div class="item_us_values">Compromiso con la calidad</div>
+                    <div class="item_us_values">Profesionalismo</div>
+                    <div class="item_us_values">Foco en el cliente</div>    
+                </div>
+            </div>           
         </section>
-        
+        -->     
         <section class="us-clientes" id="us-clientes">
             <div class="us-clientes__left">
                 <h4>Hacemos que <span>nuestros clientes</span> <strong>puedan tomar mejores decisiones de
@@ -223,7 +251,7 @@
         <section id="us_directores">
             <div class="container">
                 <h3>Directores</h3>
-                <p>El equipo directivo está conformado por profesionales que acompañan a nuestros clientes a lograr
+                <p class="us_directores_description" >El equipo directivo está conformado por profesionales que acompañan a nuestros clientes a lograr
                     mayor impacto y un mejor desarrollo de negocios en la región.</p>
                 <div class="large-card-container">
                     <div class="large-card">
@@ -280,7 +308,7 @@
         <section id="us_advisory">
             <div class="container">
                 <h3>Advisory Board</h3>
-                <p>Creamos un Advisory Board para fomentar una cultura de aprendizaje continuo, sumar miradas,
+                <p class="us_advisory_description">Creamos un Advisory Board para fomentar una cultura de aprendizaje continuo, sumar miradas,
                     interdisciplina y talento. Buscamos innovar en el enfoque y las prácticas que desarrollamos
                     para optimizar el diseño de soluciones para nuestros clientes.</p>
 
@@ -424,7 +452,7 @@
         <section id="us_talento">
             <div class="container">
                 <h3>Talento sectorial</h3>
-                <p>Trabajar junto a los actores del ecosistema sectorial nos posibilita interpretar mejor que nadie los
+                <p class="us_talento_description">Trabajar junto a los actores del ecosistema sectorial nos posibilita interpretar mejor que nadie los
                     sucesos económicos, los vectores de transformación y la velocidad del cambio que atraviesa cada
                     industria.</p>
                 <div class="talento-grid">
@@ -727,7 +755,7 @@
                 </ul>
             </div>
         </footer>
-    
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -763,6 +791,36 @@
         requestAnimationFrame(raf);
 
     </script> -->
+
+    
+    <script>
+        $(document).ready(function () {
+
+            const slider = $("#slider");
+            slider
+                .slick({
+                    dots: false,
+                    vertical: true,
+                    infinite: false,
+                    centerMode: true,
+
+                    arrows: false,
+                    centerPadding: '40px',
+                });
+
+            slider.on('wheel', (function (e) {
+                e.preventDefault();
+
+                if (e.originalEvent.deltaY < 0) {
+                    $(this).slick('slickPrev');
+                } else {
+                    $(this).slick('slickNext');
+                }
+            }));
+
+        })
+
+    </script>
    
 <script>
         const burgerToggle = document.querySelector('#burger-toggle');

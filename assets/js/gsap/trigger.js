@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.2,
             scrollTrigger: {
                 trigger: "#footer",
-                start: "top center",
+                start: "top-=100 center",
                 toggleActions: "play none none reverse",
                 //  markers: true
             }
