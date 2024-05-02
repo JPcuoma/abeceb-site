@@ -91,10 +91,25 @@ html {
   -webkit-box-orient: vertical;
 }
 
+.nav-container {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: transparent;
+}
+@media (max-width: 1000px) {
+  .nav-container {
+    top: -120px;
+  }
+}
+
 .nav-menu {
   display: flex;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   top: 35px;
   right: 125px;
   z-index: 50;
@@ -103,6 +118,7 @@ html {
 }
 @media (max-width: 1000px) {
   .nav-menu {
+    position: fixed;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -161,7 +177,7 @@ html {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 30px;
-  font-size: 22px;
+  font-size: 18px;
   transition: all 0.2s ease-in;
 }
 .nav-menu ul li a.btn {
@@ -181,7 +197,7 @@ html {
 }
 
 .nav-logo-box {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 60px;
   z-index: 40;
@@ -192,6 +208,7 @@ html {
 }
 @media (max-width: 1000px) {
   .nav-logo-box {
+    position: fixed;
     top: 0;
     left: 0;
   }
@@ -206,11 +223,7 @@ html {
     display: none;
   }
 }
-.nav-logo-box__desk--america {
-  width: 61px;
-  margin-right: 2px;
-}
-.nav-logo-box__desk--abeceb-white {
+.nav-logo-box__desk--logo {
   width: 180px;
 }
 .nav-logo-box__mob {
@@ -223,8 +236,8 @@ html {
 }
 
 .nav-burger-toggle {
-  position: fixed;
-  top: 60px;
+  position: absolute;
+  top: 55px;
   right: 50px;
   z-index: 100;
   cursor: pointer;
@@ -235,10 +248,11 @@ html {
   transform: rotateY(0deg);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav-burger-toggle {
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
   }
 }
 .nav-burger-toggle__burger {
@@ -266,13 +280,6 @@ html {
 }
 .nav-burger-toggle.open .nav-burger-toggle__close {
   opacity: 1;
-}
-
-.nav-logo-desktop {
-  position: fixed;
-  top: 50px;
-  left: 120px;
-  mix-blend-mode: difference;
 }
 
 #form {
@@ -377,12 +384,7 @@ html {
   background-color: rgba(44, 57, 71, 0.8196078431);
 }
 #form form #inputContact1 {
-  max-width: 200px;
-}
-@media (max-width: 570px) {
-  #form form #inputContact1 {
-    max-width: 90%;
-  }
+  width: 80%;
 }
 #form form #inputContact2 {
   max-width: 320px;

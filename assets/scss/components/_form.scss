@@ -116,10 +116,11 @@
             
         }
         #inputContact1{
-            max-width: 200px;
-            @media (max-width:570px) {
-                max-width: 90%;
-            }
+            width: 80%;
+            // max-width: 80%;
+            // @media (max-width:570px) {
+            //     max-width: 80%;
+            // }
         }
         #inputContact2{
             max-width: 320px;

@@ -233,6 +233,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to('#brand-logo-sticky',{
                     opacity: 1  
                 })
+                .to('#nav-container',{
+                    backgroundColor:' rgb(62, 117, 120, .4)'           
+                })
                 .to('.anm_heading_title_1',{
                     opacity: 0,
                     // scrub: 2
