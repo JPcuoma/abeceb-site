@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     sectionFooter();
 
-    // set time line Hero Home
+    // set time line Nav bar
     const tlHomeHero = gsap.timeline({
         scrollTrigger: {           
             start: 'top+=250 top+=150',	

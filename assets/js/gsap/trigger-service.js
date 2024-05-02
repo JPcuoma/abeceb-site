@@ -174,18 +174,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // let mm = gsap.matchMedia();
+    let mm = gsap.matchMedia();
 
-    // mm.add("(min-width: 800px)", () => {
-    //         // desktop setup code here...
+    mm.add("(min-width: 800px)", () => {
+            // desktop setup code here...
+            const tlNavBar = gsap.timeline({
+                scrollTrigger: {           
+                    start: 'top+=250 top+=150',	
+                    end: '+=1',            			
+                    toggleActions: "play none none reverse",
+                    // markers: true   
+                }
+            }); 
+            tlNavBar.to('#nav-container',{
+                backgroundColor:' rgb(62, 117, 120, .4)'           
+            })
+
+        });
+
+    mm.add("(max-width: 799px)", () => {
+            // mobile setup code here...
 
 
-    //     });
-
-    // mm.add("(max-width: 799px)", () => {
-    //         // mobile setup code here...
-
-
-    //     });
+        });
 
 })

@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
  
-    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger); 
+
+        
 
     // const scroller = document.querySelector('.scroller');
 
@@ -114,32 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     sectionUsPatnerAnimate();
 
-    // Valores
-    // function sectionUsValues(){
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {     
-    //             trigger: "#us_valores", 
-    //             scroller: ".scroller",
-    //             start: () => "top center-=100",
-    //             end: () => "bottom center",
-    //             scrub: false,
-    //             // pin: true,
-    //             toggleActions: "play none none reverse",
-    //             toggleClass: {targets: "slider-container", className: "selected"},
-    //             markers: true,
-    //             // scrub: 2            
-    //         }
-    //     });
-    //     tl.from(".item_us_values", {
-    //         // opacity: 0, 
-    //         color: "#ff000",
-    //         // stagger: 0.5
-    //     });
-       
-        
-        
-    // };
-    // sectionUsValues();
+   
 
      // us-clientes
      function sectionClient() {       
@@ -147,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollTrigger: {     
                 trigger: "#us-clientes", 
                 // scroller: ".scroller",
-                start: () => "top center-=100",
+                start: () => "center center-=100",
                 end: () => "bottom center",
                 scrub: false,
                 toggleActions: "play none none reverse",
@@ -180,8 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollTrigger: {     
                 trigger: "#us_directores", 
                 // scroller: ".scroller",
-                start: () => "top center",
-                end: () => "center+=100 center",
+                start: () => "center center",
+                end: () => "bottom center",
                 scrub: true,
                 // toggleActions: "play none none reverse",
                 //  markers: true,         
@@ -254,11 +231,11 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollTrigger: {     
                 trigger: "#us_work", 
                 // scroller: ".scroller",
-                start: () => "top center",
-                end: () => "center center",
+                start: () => "center center",
+                end: () => "bottom center",
                 scrub: true,
                 // toggleActions: "play none none reverse",
-                //  markers: true,         
+                 markers: true,         
             }
         });
         tl.from(".title", {
@@ -310,18 +287,140 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    // let mm = gsap.matchMedia();
+    let mm = gsap.matchMedia();
 
-    // mm.add("(min-width: 800px)", () => {
-    //         // desktop setup code here...
+    mm.add("(min-width: 800px)", () => {
+            // desktop setup code here...
+            // set time line Nav bar
+            const tlNavBar = gsap.timeline({
+                scrollTrigger: {           
+                    start: 'top+=250 top+=150',	
+                    end: '+=1',            			
+                    toggleActions: "play none none reverse",
+                    // markers: true   
+                }
+            }); 
+            tlNavBar.to('#nav-container',{
+                backgroundColor:' rgb(62, 117, 120, .4)'           
+            })
+            // Valores
+                function sectionUsValues(){
+                    const tl = gsap.timeline({
+                        scrollTrigger: {     
+                            trigger: "#us_valores", 
+                            // scroller: ".scroller",
+                            start: () => "center center",
+                            end: () => "bottom center",
+                            scrub: true,
+                            pin: true,         
+                        }
+                    });
+
+                    let values = gsap.utils.toArray('#us_valores .item_us_values'); 
+                    
+                    values.forEach((item, i) => {
+
+                        tl.fromTo(item,
+                        {
+                        opacity: 0.5, 
+                        color: "#3E7578",
+                        },
+                        {
+                        opacity: 1, 
+                        fontSize: "60px",
+                        fontFamily: 'NexaBold',
+                        borderTop: "1px solid gray",
+                        borderBottom: "1px solid gray",
+                        color: "rgb(147 192 31)",
+                        stagger: 1,
+                            
+                    })  
+                    tl.to(item,
+                    {
+                    opacity: 0.5, 
+                    fontSize: "45px",
+                    color: "#3E7578",
+                    fontFamily: 'NexaLight',
+                    borderTop: "0",
+                    borderBottom: "0",
 
 
-    //     });
-
-    // mm.add("(max-width: 799px)", () => {
-    //         // mobile setup code here...
+                    })   
 
 
-    //     });
+                    });
+
+
+
+                    
+                    
+                };
+                sectionUsValues();
+
+
+        });
+
+    mm.add("(max-width: 799px)", () => {
+            // mobile setup code here...
+             // Valores
+                function sectionUsValues(){
+                    const tl = gsap.timeline({
+                        scrollTrigger: {     
+                            trigger: "#us_valores", 
+                            // scroller: ".scroller",
+                            start: () => "center center",
+                            end: () => "bottom center",
+                            scrub: 2,
+                            // delay: 0.5,
+                            pin: true,
+                            // markers: true,       
+                        }
+                    });
+
+                    let values = gsap.utils.toArray('#us_valores .item_us_values'); 
+                    
+                    values.forEach((item, i) => {
+
+                        tl.fromTo(item,
+                        {
+                        opacity: 0.5, 
+                        color: "#3E7578",
+                        textAling: "center",
+                        },
+                        {
+                        opacity: 1, 
+                        fontSize: "2rem",
+                        fontFamily: 'NexaBold',
+                        borderTop: "1px solid gray",
+                        borderBottom: "1px solid gray",
+                        textAling: "center",
+                        color: "rgb(147 192 31)",
+                        stagger: 1,
+                            
+                    })  
+                    tl.to(item,
+                        {
+                        opacity: 0.5, 
+                        fontSize: "1.5rem",
+                        color: "#3E7578",
+                        fontFamily: 'NexaLight',
+                        borderTop: "0",
+                        borderBottom: "0",
+
+
+                        })   
+
+
+                    });
+
+
+
+                    
+                    
+                };
+                sectionUsValues();
+
+
+        });
 
 })
