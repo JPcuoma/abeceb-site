@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tl
         .to(text, { duration: 0.33, opacity: 1, y:"50%" })  
         .to(text, { duration: 5, y:"-100%" })
+        .to(text, { opacity: 0 })
         ;
         
         });
