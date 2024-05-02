@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 end: () => "bottom center",
                 scrub: true,
                 // toggleActions: "play none none reverse",
-                 markers: true,         
+                //  markers: true,         
             }
         });
         tl.from(".title", {
