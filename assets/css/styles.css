@@ -379,6 +379,11 @@ html {
 #form form #inputContact1 {
   max-width: 200px;
 }
+@media (max-width: 570px) {
+  #form form #inputContact1 {
+    max-width: 90%;
+  }
+}
 #form form #inputContact2 {
   max-width: 320px;
 }
@@ -494,7 +499,7 @@ html {
   width: 100%;
   max-width: 749px;
   text-align: center;
-  padding: 0px 20px;
+  padding: 7px 20px;
   font-size: clamp(16px, 2vw, 18px);
   font-family: "NexaBold";
   border-radius: 30px;
@@ -2249,7 +2254,6 @@ footer .footer-column.last .mail {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
 }
 @media (max-width: 786px) {
   .dropdown__content--list {
@@ -2366,7 +2370,7 @@ footer .footer-column.last .mail {
   flex-wrap: nowrap;
   gap: 0px;
   position: relative;
-  max-width: 938px;
+  max-width: 1300px;
   padding: 0 20px;
 }
 @media (max-width: 786px) {
