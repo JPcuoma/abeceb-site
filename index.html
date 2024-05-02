@@ -11,7 +11,43 @@
 </head>
 
 <body>
-    <div class="nav-container">
+        <!-- <nav id="menu" class="hide">
+            <a href="./" class="nav-logo">
+                <img src="assets/img/icons/abeceb-close-menu.svg" alt="abeceb logo" />
+            </a>
+            <ul>
+                <li><a href="./" class="back-home">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
+                <li id="hamb-toggle" class="hamb-close-toggle">
+                    <img src="assets/img/icons/close-nav.svg" alt="cerrar">
+                </li>
+            </ul>
+        </nav> -->
+        <nav class="nav-menu hide" id="menu">
+            <ul>
+                <li><a href="./" class="item-inicio">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
+            </ul>
+        </nav>
+        <a href="./" class="nav-logo-box" id="brand-logo-sticky">
+            <div class="nav-logo-box__desk">
+                <img src="assets/img/menu-america.png" alt="logo menu" class="nav-logo-box__desk--america">
+                <!-- <img src="assets/img/abeceb-dark.png" alt="logo menu" class="nav-logo-box__desk--abeceb-dark"> -->
+                <img src="assets/img/abeceb-white.png" alt="logo menu" class="nav-logo-box__desk--abeceb-white">
+            </div>
+            <div class="nav-logo-box__mob">
+                <img src="assets/img/abeceb-logo-mob.png" alt="logo menu">
+            </div>
+        </a>
+        <div class="nav-burger-toggle" id="burger-toggle">
+            <img src="assets/img/icons/hamburger.svg" alt="abrir menu" class="nav-burger-toggle__burger">
+            <img src="assets/img/icons/close-nav.svg" alt="cerrar menu" class="nav-burger-toggle__close">
+        </div>
+    <!-- <div class="nav-container">
         <nav id="menu" class="hide">
             <img class="bg-img-mob" src="./assets/img/moleculas-bg-nav.png" alt="">
             <a href="./" class="nav-logo">
@@ -21,8 +57,6 @@
                 <li><a href="./" class="back-home">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./services.html">Servicios</a></li>
-                <!-- <li><a href="#">Insights</a></li> -->
-                <!-- <li><a href="#">Foro</a></li> -->
                 <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
                 <li id="hamb-toggle" class="hamb-close-toggle"><img src="assets/img/icons/close-nav.svg" alt="cerrar"></li>
             </ul>
@@ -34,8 +68,9 @@
         <div class="hamb-toggle" id="hamb-toggle">
             <img src="assets/img/icons/hamburger.svg" alt="menu">
         </div>
-    </div>
+    </div> -->
     
+        <!-- <img src="assets/img/abeceb-white.png" class="nav-logo-desktop" id="brand-logo-sticky"> -->
     <main>
         <div id="one" class="fullwidth-section section1 parallax__layer_hero" data-type="background" data-speed="2">
             <div class="fullwidth-container parallax__content_hero">
@@ -64,14 +99,14 @@
                     <div class="o-partners opt " style="display: block;">
                         <h3>Partners</h3>
                         <p>Nuestro prestigio y trayectoria hablan por nosotros.</p>
-                        <a href="#">ver partners</a>
+                        <a href="./nosotros.html#us_partners">ver partners</a>
                     </div>
                     <div class="o-advisory opt">
                         <h3>Advisory board</h3>
                         <p>Compuesto por expertos en diversas disciplinas que enriquece
                             nuestro enfoque empresarial y aporta valor al negocio de nuestros clientes.
                         </p>
-                        <a href="#">ver advisory board</a>
+                        <a href="./nosotros.html#us_advisory">ver advisory board</a>
                     </div>
                     <div class="o-talent opt">
                         <h3>Talento sectorial</h3>
@@ -79,7 +114,7 @@
                             en los ecosistemas, con la capacidad de traducir la inteligencia colectiva de todos los
                             actores representativos y generar insights.
                         </p>
-                        <a href="#">ver talento sectorial</a>
+                        <a href="./nosotros.html#us_talento">ver talento sectorial</a>
                     </div>
                 </div>
                 </div>
@@ -120,7 +155,7 @@
                         <p>Junto al mejor expertise sectorial de la región.</p>
                     </div>
                 </div>
-                <a href="#">ver todos los servicios</a>
+                <a href="./services.html">ver todos los servicios</a>
             </div>
         </section>
 
@@ -134,7 +169,7 @@
                     </h4>
                     <p>Somos una usina de pensamiento y conocimiento que capitalizamos a través de nuestra propuesta de
                         valor.</p>
-                    <a href="#">muy pronto</a>
+                    <a >muy pronto</a>
                 </div>
                 <div class="img-insights-desk">
                     <img src="assets/img/insights-img.png" alt="miscelanea">
@@ -158,7 +193,7 @@
                                         <h4>Foro</h4>
                                         <h5>El encuentro anual que reúne a las personalidades más relevantes del ámbito público
                                             y privado de Hispanoamérica en un espacio de networking sin igual.</h5>
-                                        <a href="#">muy pronto</a>
+                                        <a >muy pronto</a>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +207,7 @@
                                         <h4>Colaboraciones</h4>
                                         <h5>Contribuimos a los ecosistemas
                                             de las instituciones más influyentes.</h5>
-                                        <a href="#">muy pronto</a>
+                                        <a >muy pronto</a>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +221,7 @@
                                         <h4>ABECEB
                                             en los medios</h4>
                                         <h5>Nuestro aporte a la economía y negocios.</h5>
-                                        <a href="#">muy pronto</a>
+                                        <a >muy pronto</a>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +234,7 @@
                                     <div>
                                         <h4>Networking</h4>
                                         <h5>Generamos contactos de valor para potenciar negocios y alianzas estratégicas.</h5>
-                                        <a href="#">muy pronto</a>
+                                        <a >muy pronto</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +252,7 @@
                 <div class="group-1">
                     <span>
                         <label for="inputContact1">Soy</label>
-                        <span class="form-field active">
+                        <span class="form-field">
                             <input type="text" id="inputContact1">
                             <span class="form-field__error-text">
                                 Por favor, llená este campo
@@ -299,12 +334,12 @@
                 </span>
                 <span class="terminos form-field">
                     <input type="checkbox" value="1" name="terms" id="terms">
-                    <label for="terms">
+                    <a href="./terminosycondiciones.html" target="_blank">
                         Acepto los términos y condiciones
-                    </label>
+                    </a>
                 </span>
-                <input class="btn" type="submit" value="Contactanos">
-                <div class="form-message form-message__succes ">
+                <input class="btn" type="submit" value="Contactanos" id="form-submit">
+                <div class="form-message form-message__succes">
                     <img src="assets/img/icons/v-succes.svg" alt="succes">
                     <span>
                         ¡Formulario enviado con éxito!
@@ -326,11 +361,26 @@
                 <div class="footer-group">
                     <ul class="footer-column">
                         <li class="title">Nosotros</li>
-                        <li>Partners</li>
-                        <li>Advisory board</li>
-                        <li>Talento sectorial</li>
-                        <li>Trabajá
-                            en ABECEB</li>
+                        <li>
+                            <a href="./nosotros.html#us_partners">
+                                Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_advisory">
+                                Advisory board
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_talento" >
+                                Talento sectorial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_work" >
+                                Trabajá en ABECEB
+                            </a>
+                        </li>
                     </ul>
                     <!-- <ul class="footer-column">
                         <li class="title">Insights</li>
@@ -343,10 +393,24 @@
                 <div class="footer-group">
                     <ul class="footer-column">
                         <li class="title">Servicios</li>
-                        <li>Consultoría económica</li>
-                        <li>Consultoría estratégica</li>
-                        <li>Negocios</li>
-                        <li>Nuestra red</li>
+                        <li>
+                            <a href="./services.html#consultoria-economica">
+                                Consultoría económica</li>
+                            </a>
+                        <li>
+                            <a href="./services.html#consultoria-estrategica">
+                                Consultoría estratégica</li>
+                            </a>
+                        <li>
+                            <a href="./services.html#negocios">
+                                Negocios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#red-global">
+                                Nuestra red
+                            </a>
+                        </li>
                     </ul>
                     <!-- <ul class="footer-column">
                         <li class="title">Clientes</li>
@@ -359,9 +423,15 @@
                         <li>Foro ABECEB</li>
                     </ul> -->
                     <ul class="footer-column">
-                        <li class="title">¿Hablamos?</li>
-                        <li>Contacto</li>
-                    </ul>                        
+                        <li class="title">
+                            ¿Hablamos?
+                        </li>
+                        <li>
+                            <a href="#form">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <ul class="footer-column last">
                     <li><img src="assets/img/abeceb-logo-footer.svg" alt="abeceb logo"></li>
@@ -370,9 +440,9 @@
                     <li class="mail">info@abeceb.com</li>
                     <li class="tel">(+5411) 4312 0811</li>
                     <li class="redes">
-                        <a href="#"><img src="assets/img/icons/abeceb-youtube-icon.svg" alt="youtube"></a>
-                        <a href="#"><img src="assets/img/icons/abeceb-ilinkedin-logo.svg" alt="linkedin"></a>
-                        <a href="#"><img src="assets/img/icons/abeceb-instagram-logo.svg" alt="instagram"></a>
+                        <a href="https://www.youtube.com/@abeceb"><img src="assets/img/icons/abeceb-youtube-icon.svg" alt="youtube"></a>
+                        <a href="https://www.linkedin.com/company/abeceb-com/"><img src="assets/img/icons/abeceb-ilinkedin-logo.svg" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/abeceb_arg/"><img src="assets/img/icons/abeceb-instagram-logo.svg" alt="instagram"></a>
                     </li>
                 </ul>
             </div>

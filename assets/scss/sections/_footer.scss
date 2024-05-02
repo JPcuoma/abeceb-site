@@ -55,6 +55,16 @@ footer {
                 font-size: 14px;
             }
             
+            a{
+                cursor: pointer;
+                text-decoration: none;
+                color: inherit;
+
+                &:hover,&:active{
+                    color: $black-typo;
+                }
+            }
+
             &.title {
                 font-size: 16px;
                 color: $black-typo;

@@ -1,6 +1,6 @@
 
 #form {
-    height: 100%;
+    height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,7 @@
             width: 22px;
             border: 3px solid silver;
             flex: none;
+            cursor: pointer;
         }
 
         input[type="checkbox"]:checked {
@@ -153,8 +154,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            label {
+            
+            a {
                 cursor: pointer;
                 font-size: 15px;
                 color: #CCCCCC;
@@ -183,6 +184,12 @@
                 background-color: $dark-green;
             }
         }
+
+        input.btn.disabled{
+            cursor: default;
+            background-color: #ccccccaa;
+        }
+
 
 
         .form-field{
@@ -213,16 +220,28 @@
                 display: block;
             }
         }
+        .form-field{
+            input:focus-visible,select:focus-visible{
+                border-bottom: 1px solid $green;
+            }
+            input[type="checkbox"]:focus {
+                border: 3px solid $green;
+            }
+            input:focus-visible ~ .form-field__error-text,select:focus-visible ~ .form-field__error-text{
+                display: inline-block;
+            }
+        }
         .form-message{
             display: none;
             justify-content: center;
             align-items: center;
-            margin: 30px auto;
+            margin: 0px auto;
+            margin-top: 30px;
             width: 100%;
             max-width: 749px;
             text-align: center;
-            padding: 10px 20px;
-            font-size: clamp(18px, 2vw, 20px);
+            padding: 0px 20px;
+            font-size: clamp(16px, 2vw, 18px);
             font-family: "NexaBold";
             border-radius: 30px;
 
@@ -239,6 +258,9 @@
             }
         }
         .form-message.active{
+            display: flex;
+        }
+        .form-message.show{
             display: flex;
         }
 

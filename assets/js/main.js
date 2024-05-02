@@ -28,34 +28,65 @@
     });
 
 
-    
+    // menu
+    const burgerToggle = document.querySelector('#burger-toggle');
+    const navMenu = document.querySelector('#menu');
+
+    burgerToggle.addEventListener('click', ()=>{
+      if (burgerToggle.classList.contains('open')) {
+        burgerToggle.classList.remove('open')
+        navMenu.classList.add('hide')
+        return
+      }
+      burgerToggle.classList.add('open')
+      navMenu.classList.remove('hide')
+    })
 
   /* menu */
-    const hambToggle = document.querySelectorAll('#hamb-toggle');
-    const hambOpenMenu = document.querySelector('.hamb-toggle');
-    const hamburguer = document.querySelector('.header-logo-box');
-    const menu = document.querySelector('#menu');
-    const formBtn = document.querySelector('a[href="#form"]');
+    // const hambToggle = document.querySelectorAll('#hamb-toggle');
+    // const hambOpenMenu = document.querySelector('.hamb-toggle');
+    // const hamburguer = document.querySelector('.header-logo-box');
+    // const menu = document.querySelector('#menu');
+    // const formBtn = document.querySelector('a[href="#form"]');
     
-    hambToggle.forEach((btn) => {
-          btn.addEventListener('click', function() {
-            if( menu.classList.contains('hide')){
-              hamburguer.classList.add('hide')
-              hambOpenMenu.classList.add('hide')
-              menu.classList.remove('hide');
-            }else{
-              hambOpenMenu.classList.remove('hide')
-              hamburguer.classList.remove('hide')
-              menu.classList.add('hide')
-            }
-          });
-        }
-      )
-      formBtn.addEventListener('click', ()=>{
-        hambOpenMenu.classList.remove('hide')
-        hamburguer.classList.remove('hide')
-        menu.classList.add('hide')
+    // hambToggle.forEach((btn) => {
+    //       btn.addEventListener('click', function() {
+    //         if( menu.classList.contains('hide')){
+    //           hamburguer.classList.add('hide')
+    //           hambOpenMenu.classList.add('hide')
+    //           menu.classList.remove('hide');
+    //         }else{
+    //           hambOpenMenu.classList.remove('hide')
+    //           hamburguer.classList.remove('hide')
+    //           menu.classList.add('hide')
+    //         }
+    //       });
+    //     }
+    //   )
+    //   formBtn.addEventListener('click', ()=>{
+    //     hambOpenMenu.classList.remove('hide')
+    //     hamburguer.classList.remove('hide')
+    //     menu.classList.add('hide')
+    //   })
+
+
+      // form
+      const formSubmit = document.querySelector('#form-submit');
+      const formMsgSucces = document.querySelector('.form-message__succes');
+
+      formSubmit.addEventListener('click', (e)=>{
+        e.preventDefault()
+        formSubmit.classList.add("disabled")
+        setTimeout(() => {
+          formSubmit.classList.remove("disabled")
+          formMsgSucces.classList.add("show")
+        }, 2000);
+        setTimeout(() => {
+          formMsgSucces.classList.remove("show")
+        }, 5000);
+        return
       })
+
     
 
 // dropdowns

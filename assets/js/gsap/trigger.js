@@ -266,8 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to(".header-logo-box", {          
                     // background: "linear-gradient(0deg, rgba(0, 0, 0, 0) -9%, rgba(0, 0, 0, 1) 154%)",               
                 })
-                .to(".menu-close-logo-mob", {          
-                    opacity: 1,               
+                .to('#brand-logo-sticky',{
+                    opacity: 1  
                 })
                 .to('.anm_heading_title_1',{
                     opacity: 1,

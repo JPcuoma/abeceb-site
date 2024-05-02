@@ -111,7 +111,7 @@
         transition: all .2s ease-in-out;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: nowrap;
         gap: 40px;
         padding: clamp(30px, 5vw, 70px) 0;
@@ -123,24 +123,23 @@
         transition: all .4s ease;
 
         &--img{
-            flex: 1 0 40%;
-            min-width: 375px;
-            max-width: 700px;
+            // flex: 1 0 0;
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: flex-end;
+            overflow: hidden;
 
             @media (max-width:786px) {
                 display: none;
             }
 
             img{
-                width: auto;
                 height: 100%;
             }
         }
         &--list{
-            flex: 1 0 50%;
+            // flex: 1 0 0;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -156,7 +155,9 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
+                width: 100%;
                 max-width: 480px;
+                margin-bottom: 15px;
                 
                 @media (max-width:786px) {
                     max-width: 100%;
@@ -279,7 +280,7 @@
         }
         &__box-2{
             flex: 1 0 40%;
-            max-width: 420px;
+            max-width: 500px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -307,7 +308,7 @@
                 display: none;
                 max-width: 450px;
 
-                width: 102%;
+                width: 120%;
 
                 @media (max-width:786px) {
                     display: block;
@@ -320,7 +321,7 @@
             // top: 21%;
             // right: 7vw;
             width: 100%;
-            max-width: 420px;
+            max-width: 500px;
             @media (max-width:786px) {
                 max-width: 100%;
                 top: 105%;
@@ -331,8 +332,8 @@
             .modern-slider{
                 .slick-slide {
                   /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
-                  margin: 0 50px;
-    overflow: hidden;
+                     margin: 0 50px;
+                    overflow: hidden;
 
 
                     @media (max-width:786px) {
@@ -383,8 +384,8 @@
                     font-size: clamp(16px, 2vw, 20px);
                     font-weight: 400;
                     font-family: 'NexaBook';
-                    margin-bottom: 15px;
-                    margin-bottom: 15px;
+                    margin: 0;
+                    margin-bottom: 20px;
                 }
                 a{
                     display: block;
@@ -394,7 +395,7 @@
                     text-decoration: none;
                     width: fit-content;
                     margin-right: auto;
-                    margin-top: 15px;
+                    margin-top: 0;
                     transition: color .2s ease;
                     cursor: pointer;
             
