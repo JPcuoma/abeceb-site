@@ -3,21 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
  
     gsap.registerPlugin(ScrollTrigger);
 
-    let bodyScrollBar = Scrollbar.init(document.body, {
-        damping: 0.05,
-        delegateTo: document,
-    });
+    const scroller = document.querySelector('.scroller');
 
+    const bodyScrollBar = Scrollbar.init(scroller, { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
+    
     ScrollTrigger.scrollerProxy(".scroller", {
-        scrollTop(value) {
-            if (arguments.length) {
-            bodyScrollBar.scrollTop = value;
-            }
-            return bodyScrollBar.scrollTop;
-        },
+      scrollTop(value) {
+        if (arguments.length) {
+          bodyScrollBar.scrollTop = value;
+        }
+        return bodyScrollBar.scrollTop;
+      }
     });
-
+    
     bodyScrollBar.addListener(ScrollTrigger.update);
+    
+    ScrollTrigger.defaults({ scroller: scroller });
 
      // HERO
      function sectionHeroUs() {
