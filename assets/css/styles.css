@@ -92,15 +92,11 @@ html {
 }
 
 @keyframes bounceIn {
-  from, to {
-    animation-timing-function: cubic-bezier(0.31, 1.01, 0.69, 0.89);
-  }
-  0% {
-    opacity: 1;
-    transform: scale3d(1.1, 1.4, 1.1) rotateY(0deg);
+  from {
+    transform: scale3d(1.1, 1.4, 1.1);
   }
   to {
-    transform: scale3d(3, 3, 3) rotateY(-360deg);
+    transform: scale3d(2, 2, 2);
   }
 }
 .bounceIn {
@@ -111,10 +107,43 @@ html {
 
 @keyframes pulse {
   from {
-    transform: scale3d(3, 3, 3);
+    transform: scale3d(2, 2, 2);
   }
   to {
     transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes dropdownOpen {
+  0% {
+    z-index: -1;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    z-index: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@keyframes dropdownClose {
+  0% {
+    position: relative;
+    transform: translateY(0);
+    z-index: 1;
+    opacity: 1;
+  }
+  80% {
+    position: relative;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  to {
+    z-index: -1;
+    position: absolute;
   }
 }
 .nav-container {
@@ -2307,18 +2336,17 @@ footer .footer-column.last .mail {
 }
 .dropdown__content {
   width: 100%;
-  transition: all 0.4s ease-in;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: nowrap;
   gap: 40px;
-  padding: clamp(30px, 5vw, 70px) 0;
-  position: absolute;
-  z-index: -1;
+  position: relative;
+  padding: 0;
+  height: 0;
   transform: translateY(-100%);
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 .dropdown__content--img {
   display: flex;
@@ -2417,10 +2445,10 @@ footer .footer-column.last .mail {
   transform: rotate(-90deg);
 }
 .dropdown.active .dropdown__content {
-  position: relative;
+  height: 100%;
   transform: translateY(0);
-  z-index: 1;
   opacity: 1;
+  padding: clamp(30px, 5vw, 70px) 0;
 }
 
 #red-global {

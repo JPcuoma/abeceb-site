@@ -911,7 +911,9 @@
                     dropsClose.forEach(parent=>parent.classList.remove('active'))
                 }
                 parentContainer.classList.add('active')
-                lenis.scrollTo(parentContainer.offsetTop - 70)
+                setTimeout(() => {
+                    lenis.scrollTo(parentContainer.offsetTop -70)
+                }, 600);
                 }
             )
             }
