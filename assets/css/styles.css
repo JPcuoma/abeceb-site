@@ -788,7 +788,7 @@ html {
   gap: 0px;
   position: relative;
   padding: 0 20px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 @media (max-width: 1000px) {
   .nuestra-red-slider {
@@ -903,8 +903,8 @@ html {
   font-family: "NexaLight";
   font-weight: 300;
   color: #3E7578;
-  margin-top: 15px;
-  margin-bottom: clamp(10px, 3vw, 30px);
+  margin-top: 15px !important;
+  margin-bottom: clamp(10px, 3vw, 30px) !important;
 }
 .nuestra-red-slider__slider--slide p {
   font-size: clamp(16px, 2vw, 20px);
