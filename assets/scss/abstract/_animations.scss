@@ -1,0 +1,58 @@
+@keyframes bounceIn {
+    from,
+    // 20%,
+    // 50%,
+    // 60%,
+    // 80%,
+    to {
+        animation-timing-function: 
+        cubic-bezier(.31,1.01,.69,.89)
+            ;
+    }
+  
+    0% {
+      opacity: 1;
+      transform: scale3d(1.1, 1.4, 1.1) rotateY(0deg);
+    }
+    
+    // 50% {
+    //     // opacity: 1;
+    //     transform: scale3d(3, 3, 3) rotateY(-360deg);
+    // }
+    
+    // 40% {
+    //     // opacity: 1;
+    //     transform: scale3d(3, 3, 3) rotateY(-360deg);
+    // }
+    
+    // 60% {
+    //     transform: scale3d(2, 2, 2) rotateY(-360deg);
+
+    // }
+    // 80% {
+    //     opacity: 1;
+    // }
+  
+    to {
+    //   opacity: .7;
+    //   transform: scale3d(1, 1, 1);
+        transform: scale3d(3, 3, 3) rotateY(-360deg);
+    }
+  }
+  
+  .bounceIn {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: bounceIn;
+  }
+  
+
+  @keyframes pulse {
+    from {
+      transform: scale3d(3, 3, 3);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
