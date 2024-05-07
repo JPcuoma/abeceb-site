@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             end: () => "bottom center",
                             scrub: true,                             
                             pin: true, 
-                            markers: true        
+                            // markers: true        
                         }
                     });
 
