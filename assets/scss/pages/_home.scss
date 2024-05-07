@@ -14,16 +14,24 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column; 
-        // transform: translate(0px, 250px);
-        @media (max-width:768px) {
-            // transform: translate(0px, 150px);
-        }
+      
         .one-hero-wrapper{
             height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            @media (max-width:768px) {
+                height: 70vh;
+            }
+        }
+        .one-hero-wrapper-2{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
         }
     }
     .logo {
@@ -77,13 +85,13 @@
     &.parallax__layer_hero {
         position: relative;
         // height: 2300px;
-        height: 230vh;
+        height: 200vh;
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        // @media (max-width:768px) {
-        //     height: 1200px;
-        // } 
+        @media (max-width:768px) {
+            height: 150vh;
+        } 
 
         .parallax__image_hero {
             position: absolute;
@@ -101,6 +109,9 @@
                 object-fit: cover;
                 width: 100%;
                 height: 150%;
+                @media (max-width:768px) {
+                    height: 110%;
+                } 
             }
         }
     }
@@ -132,10 +143,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        transition: all .2s ease-in-out;
+        
         .opt {
             display: none;
             min-height: 450px;
+            transition: all .2s ease-in-out;
 
             h3 {
                 font-size: clamp(30px, 20vw, 70px);

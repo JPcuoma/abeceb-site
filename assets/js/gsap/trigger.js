@@ -278,10 +278,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 })
                 .to(".image_hero", {
                     // backgroundPosition: `50% ${-innerHeight / 2}px`,
-                    yPercent: -40,
+                    yPercent: -10,
                     ease: "none",
                     scrollTrigger: {
                         trigger: ".image_hero",
+                        // markers: true,
                         scrub: true 
                     },  
                 });    
