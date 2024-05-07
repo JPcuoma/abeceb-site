@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollTrigger: {
                 trigger: "#us_equipo",
                 start: "top+=150 center",
-                toggleActions: "play none none reverse",
+                toggleActions: "play none none rseverse",
                 // markers: true
             }
         });
@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let texts = gsap.utils.toArray('.panel-text'); 
         
         texts.forEach((text, i) => {
-
             const tl = gsap.timeline({
             
                 scrollTrigger: {
@@ -91,12 +90,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     toggleActions: "play none reverse none",
                     invalidateOnRefresh: true,     
                 }
+
+               
                 
             })
         
-        tl
-        .to(text, { duration: 0.33, opacity: 1, y:"50%" })  
-        .to(text, { duration: 5, y:"-100%" })
+        tl        
+        .to(text, { duration: 0.33, opacity: 1, y:"50%" })
+        // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
+        .to(text.children[2].children[0], {
+            y: "-110%", ease: "none"
+        })  
         .to(text, { opacity: 0 })
         ;
         
@@ -312,8 +316,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             // scroller: ".scroller",
                             start: () => "center center",
                             end: () => "bottom center",
-                            scrub: true,
-                            pin: true,         
+                            scrub: true,                             
+                            pin: true, 
+                            markers: true        
                         }
                     });
 
