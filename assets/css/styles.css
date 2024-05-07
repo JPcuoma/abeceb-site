@@ -2262,6 +2262,15 @@ footer .footer-column.last .mail {
   background-color: #2C3947;
 }
 
+#us_equipo.bg-servicios {
+  background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/services-bg.png);
+}
+@media (max-width: 786px) {
+  #us_equipo.bg-servicios {
+    background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/services-bg-mob.png);
+  }
+}
+
 .service-section {
   width: 100%;
   display: flex;
@@ -2297,6 +2306,7 @@ footer .footer-column.last .mail {
   color: #2C3947;
   font-size: clamp(28px, 3vw, 32px);
   text-align: center;
+  margin: 0;
 }
 .service-section .heading-services h2 {
   font-family: "NexaExtraLight";
@@ -2305,6 +2315,8 @@ footer .footer-column.last .mail {
   text-align: center;
   line-height: 0.8;
   font-weight: 200;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 .service-section .heading-services h2 strong {
   font-family: "NexaSlabBold";
@@ -2316,6 +2328,7 @@ footer .footer-column.last .mail {
   font-family: "NexaBook";
   font-size: clamp(18px, 2vw, 20px);
   text-align: center;
+  margin-top: 35px;
 }
 
 .dropdown {
