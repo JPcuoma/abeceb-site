@@ -871,7 +871,7 @@ html {
 }
 @media (max-width: 1000px) {
   .nuestra-red-slider__slider .modern-slider {
-    max-width: 100%;
+    max-width: 95vw;
   }
 }
 .nuestra-red-slider__slider .modern-slider .slick-slide {
