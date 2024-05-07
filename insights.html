@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <div class="nav-container" id="nav-container">
+        <nav class="nav-menu hide" id="menu">
+            <ul>
+                <li><a href="./" class="item-inicio">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./services.html">Servicios</a></li>
+                <li><a class="btn" href="#form" onclick="lenis.scrollTo('#form')">¿Hablamos?</a></li>
+            </ul>
+        </nav>
+        <a href="./" class="nav-logo-box" id="brand-logo-sticky">
+            <div class="nav-logo-box__desk">
+                <img src="assets/img/abeceb-logo-main.svg" alt="logo menu" class="nav-logo-box__desk--logo">
+                <!-- <img src="assets/img/abeceb-dark.png" alt="logo menu" class="nav-logo-box__desk--abeceb-dark"> -->
+                <!-- <img src="assets/img/abeceb-white.png" alt="logo menu" class="nav-logo-box__desk--abeceb-white"> -->
+            </div>
+            <div class="nav-logo-box__mob">
+                <img src="assets/img/abeceb-logo-mob.png" alt="logo menu">
+            </div>
+        </a>
+        <div class="nav-burger-toggle" id="burger-toggle">
+            <img src="assets/img/icons/hamburger.svg" alt="abrir menu" class="nav-burger-toggle__burger">
+            <img src="assets/img/icons/close-nav.svg" alt="cerrar menu" class="nav-burger-toggle__close">
+        </div>
+    </div>
+    
+    
+    <main>
+
+        <section id="us_equipo" class="bg-insights">
+            <div class="container">
+                <h1 class="title_animate"><strong>Insights</strong></h1>
+                <h2>Nuestro conocimiento a tu disposición</h2>
+                <hr>
+                <h3>
+                    Somos una usina de pensamiento y conocimiento <br>
+                    que capitalizamos a través de nuestra propuesta de valor
+                </h3>
+                <ul>
+                    <li class="item_animate"><a href="#consultoria-economica" onclick="lenis.scrollTo('#consultoria-economica')">Informes de coyuntura</a></li>
+                    <li class="item_animate"><a href="#red-global" onclick="lenis.scrollTo('#red-global')">Casos de éxito</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="informes">
+            <h4 class="informes__title">Informes de coyuntura</h4>
+            <div class="informes__box">
+                <div class="informes__box--left">
+                    <h5>Último informe quincenal</h5>
+                    <div>
+                        <h4>Las dos caras <br>del ajuste</h4>
+                        <p>25 DE ABRIL DE 2024</p>
+                    </div>
+                    <a href="#">descargar informe</a>
+                </div>
+                <div class="informes__box--right">
+                    <hr>
+                    <h6>Las finanzas respiran, la actividad se queda sin aire</h6>
+                    <p>11 DE ABRIL de 2024</p>
+                    <a href="#">descargar informe</a>
+                    <hr>
+                    <h6>Del modo emergencia al modo estabilización</h6>
+                    <p>14 de MARZO de 2024</p>
+                    <a href="#">descargar informe</a>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <h3>¿Hablamos?</h3>
+            <form action="" class="form_animation">
+                <div class="group-1">
+                    <span>
+                        <label for="inputContact1">Soy</label>
+                        <span class="form-field">
+                            <input type="text" id="inputContact1">
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inputContact2">y trabajo como</label>
+                        <span class="form-field">
+                            <select name="inputContact2" id="inputContact2">
+                                <option value=""></option>
+                                <option value="CEO">CEO</option>
+                                <option value="Board Member">Board Member</option>
+                                <option value="CFO">CFO</option>
+                                <option value="Director">Director</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Advisor">Advisor</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inputContact3">en la industria de</label>
+                        <span class="form-field">
+                            <select class="" id="inputContact3" name="inputContact3">
+                                <option value=""></option>
+                                <option value="Oil and Gas">Oil and Gas</option>
+                                <option value="Movilidad">Movilidad</option>
+                                <option value="Agro">Agro</option>
+                                <option value="Conocimiento">Conocimiento</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inputContact4">Estoy buscando soluciones de</label>
+                        <span class="form-field">
+                            <select class="" id="inputContact4" name="inputContact4">
+                                <option value=""></option>
+                                <option value="Consultoría Económica">Consultoría Económica</option>
+                                <option value="Consultoría Estratégica">Consultoría Estratégica</option>
+                                <option value="Desarrollo de Negocios">Desarrollo de Negocios</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
+                    </span>
+
+                    <label for="inputContact5">para generar</label>
+                    <div>
+                        <span class="form-field">
+                            <select id="inputContact5" name="inputContact5">
+                                <option value=""></option>
+                                <option value="Insights para la toma de decisiones">Insights para la toma de decisiones</option>
+                                <option value="Nuevos negocios">Nuevos negocios</option>
+                            </select>
+                            <span class="form-field__error-text">
+                                Por favor, llená este campo
+                            </span>
+                        </span>
+                        <label >en mi empresa. </label>
+                    </div>
+                </div>
+                <span>
+                    <label for="inputContact6">Mi correo electrónico es</label> 
+                    <span class="form-field">
+                        <input type="text"  name="inputContact6" id="inputContact6">
+                        <span class="form-field__error-text">
+                            Por favor, llená este campo
+                        </span>
+                    </span>
+                </span>
+                <span class="terminos form-field">
+                    <input type="checkbox" value="1" name="terms" id="terms">
+                    <a href="./terminosycondiciones.html" target="_blank">
+                        Acepto los términos y condiciones
+                    </a>
+                </span>
+                <input class="btn" type="submit" value="Contactanos" id="form-submit">
+                <div class="form-message form-message__succes">
+                    <img src="assets/img/icons/v-succes.svg" alt="succes">
+                    <span>
+                        ¡Formulario enviado!
+                    </span>
+                </div>
+                <div class="form-message form-message__error">
+                    <img src="assets/img/icons/x-error.svg" alt="error">
+                    <span>
+                        Por favor revisa tus datos
+                    </span>
+                </div>
+            </form>
+
+        </section>
+
+
+
+
+
+        <footer>
+            <div class="footer-container" id="footer">
+
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Nosotros</li>
+                        <li>
+                            <a href="./nosotros.html#us_partners">
+                                Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_advisory">
+                                Advisory board
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_talento" >
+                                Talento sectorial
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./nosotros.html#us_work" >
+                                Trabajá en ABECEB
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Insights</li>
+                        <li>ABECEB en los medios</li>
+                        <li>Informes de coyuntura</li>
+                        <li>Insights</li>
+                        <li>Casos de éxito</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <ul class="footer-column">
+                        <li class="title">Servicios</li>
+                        <li>
+                            <a href="#consultoria-economica" onclick="lenis.scrollTo('#consultoria-economica')">
+                                Consultoría económica</li>
+                            </a>
+                        <li>
+                            <a href="#consultoria-estrategica" onclick="lenis.scrollTo('#consultoria-estrategica')">
+                                Consultoría estratégica</li>
+                            </a>
+                        <li>
+                            <a href="#negocios" onclick="lenis.scrollTo('#negocios')">
+                                Negocios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#red-global" onclick="lenis.scrollTo('#red-global')">
+                                Nuestra red
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="footer-column">
+                        <li class="title">Clientes</li>
+                        <li>Nuestros clientes</li>
+                    </ul> -->
+                </div>
+                <div class="footer-group">
+                    <!-- <ul class="footer-column">
+                        <li class="title">Foro</li>
+                        <li>Foro ABECEB</li>
+                    </ul> -->
+                    <ul class="footer-column">
+                        <li class="title">
+                            ¿Hablamos?
+                        </li>
+                        <li>
+                            <a href="#form" onclick="lenis.scrollTo('#form')">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer-column last">
+                    <li><img src="assets/img/abeceb-logo-footer.svg" alt="abeceb logo"></li>
+                    <li class="direccion">Juana Manso 555 Piso 8° | Oficina F </li>
+                    <li class="localidad">Ciudad Autónoma de Buenos Aires<br>C1107CBK<br>Argentina</li>
+                    <li class="mail">info@abeceb.com</li>
+                    <li class="tel">(+5411) 4312 0811</li>
+                    <li class="redes">
+                        <a href="https://www.youtube.com/@abeceb" target="_blank"><img src="assets/img/icons/abeceb-youtube-icon.svg" alt="youtube"></a>
+                        <a href="https://www.linkedin.com/company/abeceb-com/" target="_blank"><img src="assets/img/icons/abeceb-ilinkedin-logo.svg" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/abeceb_arg/" target="_blank"><img src="assets/img/icons/abeceb-instagram-logo.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </main>
+
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+         <!-- gsap -->
+    <script src="assets/js/gsap/trigger-service.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+
+
+
+    <script>
+        $(document).ready(function () {
+
+            const slider = $('.modern-slider');
+            const slideItemsController = document.querySelectorAll('.svg-group')
+
+            slider.slick({
+                autoplay: true,
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                autoplaySpeed: 7000,
+                speed: 300,
+                pauseOnHover: true,
+                dots: false,
+                pauseOnDotsHover: true,
+                cssEase: 'ease-out',
+                fade:true,
+                draggable: true,
+                prevArrow: false,
+                nextArrow: false,
+            })
+            slider.on('beforeChange', function(event, slick, currentSlide){                
+                let leaveSvg = slideItemsController[currentSlide]
+                if (leaveSvg) {
+                    leaveSvg.classList.remove('active')
+                }
+            });
+            slider.on('afterChange', function(event, slick, currentSlide){                
+                let currentSvg = slideItemsController[currentSlide]
+                if (currentSvg) {
+                    currentSvg.classList.add('active')
+                }
+            });
+
+            slideItemsController.forEach(function ( currentSlide, i) {
+                currentSlide.addEventListener( 'click', ()=>{   
+                    slider.slick('slickGoTo', i)
+                })
+            });
+
+        })
+
+    </script>
+
+    <script src="assets/js/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis({
+            // Valeur entre 0 et 1
+            // Valeur par défaut : 0,1
+            // Plus la valeur est faible, plus le scroll sera fluide
+            lerp: 0.05,
+            // Valeur par défaut : 1
+            // Plus la valeur est haute, plus le défilement sera rapide 
+            smooth: true,
+            direction: "vertical"
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+
+    </script>
+    <script>
+            const dropLabel = document.querySelectorAll('.dropdown__label');
+            const dropsClose = document.querySelectorAll('.dropdown')
+            
+            dropLabel.forEach((dropDownBox)=>{
+                dropDownBox.addEventListener('click', ()=>{
+                    const parentContainer = dropDownBox.parentElement
+                    if (! parentContainer.classList.contains('active')) {
+                        setTimeout(() => {
+                            lenis.scrollTo(parentContainer.offsetTop -70)
+                        }, 500);    
+                    }
+                    parentContainer.classList.toggle('active')
+                    }
+                )
+            }
+        )
+    </script>
+</body>
+
+</html>

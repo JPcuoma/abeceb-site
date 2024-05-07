@@ -1,4 +1,10 @@
 
+#us_equipo.bg-servicios{
+    background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/services-bg.png);
+    @media (max-width:786px) {
+            background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/services-bg-mob.png);
+        }
+}
 .service-section{
     width: 100%;
     display: flex;
@@ -72,7 +78,7 @@
     z-index: 1;
     position: relative;
     backface-visibility: hidden;
-    
+
     span.line-divider{
         height: 1px;
         width: 90%;
