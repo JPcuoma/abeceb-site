@@ -39,6 +39,7 @@
             color: $black-typo;
             font-size: clamp(28px, 3vw, 32px);
             text-align: center;
+            margin: 0;
         }
         h2{
             font-family: "NexaExtraLight";
@@ -47,6 +48,8 @@
             text-align: center;
             line-height: .8;
             font-weight: 200;
+            margin: 0 auto;
+            margin-top: 80px;
 
             strong{
                 font-family: "NexaSlabBold";
@@ -60,6 +63,7 @@
             font-family: "NexaBook";
             font-size: clamp(18px, 2vw, 20px);
             text-align: center;
+            margin-top: 35px;
         }
     }
 }

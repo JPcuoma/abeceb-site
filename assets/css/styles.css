@@ -2292,6 +2292,7 @@ footer .footer-column.last .mail {
   color: #2C3947;
   font-size: clamp(28px, 3vw, 32px);
   text-align: center;
+  margin: 0;
 }
 .service-section .heading-services h2 {
   font-family: "NexaExtraLight";
@@ -2300,6 +2301,8 @@ footer .footer-column.last .mail {
   text-align: center;
   line-height: 0.8;
   font-weight: 200;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 .service-section .heading-services h2 strong {
   font-family: "NexaSlabBold";
@@ -2311,6 +2314,7 @@ footer .footer-column.last .mail {
   font-family: "NexaBook";
   font-size: clamp(18px, 2vw, 20px);
   text-align: center;
+  margin-top: 35px;
 }
 
 .dropdown {
