@@ -67,12 +67,6 @@
             background-image:url(../img/background-mob-us.png);
         }
 }
-#us_equipo.bg-servicios{
-    background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/services-bg.png);
-    @media (max-width:786px) {
-            background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/services-bg-mob.png);
-        }
-}
 
 .us_partners_animate {
     display: -webkit-box;
