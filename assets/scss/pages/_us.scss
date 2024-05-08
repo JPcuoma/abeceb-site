@@ -583,6 +583,7 @@
 
                 img{
                     width: clamp(120px, 17vw, 231px);
+                    border-radius: 50%;
                 }
             }
             &:nth-child(1){

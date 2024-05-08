@@ -2074,6 +2074,7 @@ footer .footer-column.last .mail {
 }
 #us_directores .large-card-container .large-card__staff img {
   width: clamp(120px, 17vw, 231px);
+  border-radius: 50%;
 }
 #us_directores .large-card-container .large-card:nth-child(1) {
   justify-content: flex-end;
