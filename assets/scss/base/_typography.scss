@@ -4,11 +4,13 @@
 
 @font-face {
     font-family: "NexaBook";
+    font-weight: 400;
     src: local("NexaBook"), url("../fonts/Nexa-Book.otf") format("opentype");
 }
 
 @font-face {
     font-family: "NexaSlabBold";
+    font-weight: 700;
     src:
         local("NexaSlabBold"),
         url("../fonts/NexaSlabBlack.ttf") format("opentype");
@@ -16,6 +18,7 @@
 
 @font-face {
     font-family: "NexaExtraLight";
+    font-weight: 300;
     src:
         local("NexaExtraLight"),
         url("../fonts/Nexa-ExtraLight.ttf") format("opentype");
@@ -23,6 +26,7 @@
 
 @font-face {
     font-family: "NexaLight";
+    font-weight: 300;
     src:
         local("NexaLight"),
         url("../fonts/Nexa-Light.otf") format("opentype");
@@ -30,6 +34,7 @@
 
 @font-face {
     font-family: "NexaRegular";
+    font-weight: 400;
     src:
         local("NexaRegular"),
         url("../fonts/NexaRegular.otf") format("opentype");
@@ -37,6 +42,7 @@
 
 @font-face {
     font-family: "NexaBold";
+    font-weight: 700;
     src:
         local("NexaBold"),
         url("../fonts/Nexa-Bold.otf") format("opentype");
@@ -44,6 +50,7 @@
 
 @font-face {
     font-family: "NexaBlack";
+    font-weight: 400;
     src:
         local("NexaBlack"),
         url("../fonts/NexaBlack.otf") format("opentype");
@@ -51,6 +58,7 @@
 
 @font-face {
     font-family: "NexaHeavy";
+    font-weight: 700;
     src:
         local("NexaHeavy"),
         url("../fonts/NexaHeavy.otf") format("opentype");
@@ -72,6 +80,7 @@
 
 @font-face {
     font-family: "NexaSlabxBold";
+    font-weight: 700;
     src:
         local("NexaSlabxBold"),
         url("../fonts/NexaSlab-xBold.otf") format("opentype");

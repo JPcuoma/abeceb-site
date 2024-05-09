@@ -141,21 +141,13 @@
                 margin: 0;
                 margin-bottom: 20px;
             }
-            a{
-                display: block;
-                color: $green;
-                font-family: 'NexaHeavy';
-                font-size: clamp(16px,2vw, 20px);
-                text-decoration: none;
-                width: fit-content;
-                margin-right: auto;
-                margin-top: 0;
-                transition: color .2s ease;
-                cursor: pointer;
-        
-                &:hover,&:active{
-                    color: $dark-green;
-                }
+        }
+        &--cta{
+            color: $green !important;
+            cursor: pointer !important;
+            transition: all .2s ease-in !important;
+            &:hover,&:active{
+                color: $dark-green !important;
             }
         }
     }

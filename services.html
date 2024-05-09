@@ -518,7 +518,7 @@
                                                 <p>
                                                     Empresa de consultoría que provee asesoría estratégica a gobiernos y empresas en materia de políticas públicas, comercio internacional y asuntos regulatorios y de inversión.
                                                 </p>
-                                                <a href="https://www.ansleyconsultores.com/" target="_blank">www.ansleyconsultores.com</a>
+                                                <a href="https://www.ansleyconsultores.com/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -533,7 +533,7 @@
                                                 <p>
                                                     Consultora especializada en estrategia y asesoramiento técnico en ámbitos económicos, financieros, fiscales y mercantiles.Su valor radica en resolver operaciones complejas con una visión global e integrada, brindando credibilidad y generando oportunidades de negocio.
                                                 </p>
-                                                <a href="https://www.equipoeconomico.com/" target="_blank">www.equipoeconomico.com/</a>
+                                                <a href="https://www.equipoeconomico.com/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -547,7 +547,7 @@
                                                 <h4>Estudio Abreu Abreu & Asociados</h4>
                                                 <p>
                                                     Dedicado a la prestación de servicios en el área del derecho y demás disciplinas asociadas, con una trayectoria de acreditado prestigio.                                            </p>
-                                                <a href="https://www.abreuip.com/es/inicio/" target="_blank">www.abreuip.com/es/inicio</a>
+                                                <a href="https://www.abreuip.com/es/inicio/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -563,7 +563,7 @@
                                                     Expertos en la búsqueda de espacios de colaboración entre el sector público y privado, provee de asesoría, análisis de coyuntura y acompañamiento en el área de asuntos públicos, comunicación estratégica y de relaciones
                                                     público-privadas de alto nivel.
                                                 </p>
-                                                <a href="https://www.imaginaccion.pe/" target="_blank">www.imaginaccion.pe</a>
+                                                <a href="https://www.imaginaccion.pe/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -585,7 +585,7 @@
                                                     y diseñan estrategias de
                                                     inserción internacional.
                                                 </p>
-                                                <a href="http://www.prospectiva.com/es/" target="_blank">www.prospectiva.com/es</a>
+                                                <a href="http://www.prospectiva.com/es/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -600,7 +600,7 @@
                                                 </h4>
                                                 <p>
                                                     Es la firma líder en servicios de asesoría empresarial en economía, finanzas y negocios que agrega valor en decisiones estratégicas, empresariales e institucionales, en el marco de relaciones de confianza y de largo plazo.                                            </p>
-                                                <a href="https://www.apoyoconsultoria.com/es/" target="_blank">www.apoyoconsultoria.com/es</a>
+                                                <a href="https://www.apoyoconsultoria.com/es/" target="_blank" class="nuestra-red-slider__slider--cta">ir a la web</a>
                                             </div>
                                         </div>
                                     </div>
@@ -908,11 +908,7 @@
             dropLabel.forEach((dropDownBox)=>{
                 dropDownBox.addEventListener('click', ()=>{
                     const parentContainer = dropDownBox.parentElement
-                    if (! parentContainer.classList.contains('active')) {
-                        setTimeout(() => {
-                            lenis.scrollTo(parentContainer.offsetTop -70)
-                        }, 500);    
-                    }
+
                     parentContainer.classList.toggle('active')
                     }
                 )
