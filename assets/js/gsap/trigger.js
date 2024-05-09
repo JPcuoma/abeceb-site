@@ -17,40 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //     y: `${+innerHeight}px`
     // });
 
-    gsap.from(".anm_heading_title_1 .char", 
-            {
-             delay: 0.55,
-             opacity: 0,
-             yPercent: 30, 
-             stagger: 0.03, 
-             ease: "back.out", 
-             scrollTrigger: {
-                    trigger: ".anm_heading_title_1",
-                    start: 'top-=100 center',
-                    end:'center center',
-                    // scrub: true,
-                    toggleActions: "play none none reverse",
-                    // markers: true               
-                },  
-            });
-
-    gsap.from(".anm_heading_title_2 .char",  {
-            delay:0.5,
-            opacity: 0,
-            yPercent: 30, 
-            stagger: 0.05, 
-            ease: "back.out",
-            scrollTrigger: {
-                    trigger: ".anm_heading_title_2",
-                    start: 'top center',
-                    end:'center center',
-                    scrub: 2,
-                    // toggleActions: "play none none reverse",
-                    // markers: true
-                   
-                },  
-          
-        });   
      
         
     
@@ -66,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionTwo();
+    // sectionTwo();
 
     function sectionThree(){
         const tlSectionThree = gsap.timeline({
@@ -93,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<');
         
         };
-    sectionThree();
+    // sectionThree();
     
     function parallaxThree(){
         gsap.to(".image_three", {
@@ -115,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 
         });
       }
-      parallaxThree(); 
+    //   parallaxThree(); 
 
     function sectionFour() {
         gsap.from(".box", {
@@ -130,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionFour();
+    // sectionFour();
 
     function sectionFive() {       
         const tlSectionFive = gsap.timeline({
@@ -158,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<');
 
     };
-    sectionFive();
+    // sectionFive();
 
     function sectionSix() {
         gsap.from(".six_animation", {
@@ -173,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionSix();
+    // sectionSix();
 
 
     function sectionForm() {       
@@ -189,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionForm();
+    // sectionForm();
 
     function sectionFooter() {       
         gsap.from(".footer-column", {
@@ -204,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionFooter();
+    // sectionFooter();
 
     // set time line Nav bar
     const tlHomeHero = gsap.timeline({
@@ -223,7 +189,41 @@ document.addEventListener("DOMContentLoaded", function () {
             // desktop setup code here...
             gsap.set('.anm_heading_title_2', {
                 opacity: 1
-            });        
+            }); 
+            gsap.to(".anm_heading_title_1 ", 
+                    {
+                    delay: 0.55,
+                    opacity: 1,
+                    yPercent: -50, 
+                    stagger: 0.03, 
+                    // ease: "back.out", 
+                     scrollTrigger: {
+                            trigger: ".anm_heading_title_1",
+                            start: 'top-=100 center',
+                            end:'center center',
+                            scrub: true,
+                            toggleActions: "play none none reverse",
+                            markers: true               
+                        },  
+                    });
+
+            gsap.to(".anm_heading_title_2",  {
+                    delay: 0.55,
+                    opacity: 1,
+                    yPercent: -40, 
+                    stagger: 0.03, 
+                    // ease: "back.out",
+                    scrollTrigger: {
+                            trigger: ".anm_heading_title_1",
+                            start: 'bootom center',
+                            end:'center center',
+                            scrub: 2,
+                            // toggleActions: "play none none reverse",
+                            // markers: true
+                        
+                        },  
+                
+                });          
            
             tlHomeHero      
                 .to('#anm_brand_home',{
@@ -263,6 +263,41 @@ document.addEventListener("DOMContentLoaded", function () {
             gsap.set('.image_three', {                
                   backgroundPositionX: `30%`,
             });
+
+            gsap.to(".anm_heading_title_1 ", 
+                    {
+                    delay: 0.55,
+                    opacity: 1,
+                    yPercent: -50, 
+                    stagger: 0.03, 
+                    // ease: "back.out", 
+                     scrollTrigger: {
+                            trigger: ".anm_heading_title_1",
+                            start: 'top-=100 center',
+                            end:'center center',
+                            scrub: true,
+                            // toggleActions: "play none none reverse",
+                            // markers: true               
+                        },  
+                    });
+
+            gsap.to(".anm_heading_title_2",  {
+                    delay: 0.55,
+                    opacity: 1,
+                    yPercent: -40, 
+                    stagger: 0.03, 
+                    // ease: "back.out",
+                    scrollTrigger: {
+                            trigger: ".anm_heading_title_1",
+                            start: 'bootom center',
+                            end:'center center',
+                            scrub: 2,
+                            // toggleActions: "play none none reverse",
+                            // markers: true
+                        
+                        },  
+                
+                });       
           
             
             tlHomeHero
