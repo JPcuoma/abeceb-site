@@ -90,13 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     toggleActions: "play none reverse none",
                     invalidateOnRefresh: true,     
                 }
-
-               
-                
             })
         
         tl        
-        .to(text, { duration: 0.33, opacity: 1, y:"50%" })
+        .to(text, { duration: 0.50, opacity: 1, y:"50%" })
         // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
         .to(text.children[2].children[0], {
             y: "-110%", ease: "none"
@@ -107,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         ScrollTrigger.create({
-
             trigger: "section.us_partners_animate",
             // scroller: ".scroller",
             scrub: true,
