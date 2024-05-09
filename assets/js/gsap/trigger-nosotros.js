@@ -71,54 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     // sectionUsPartner();
 
-     //  Us partners animate fix ping
-    function sectionUsPatnerAnimate() {
-       
-        gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
-
-        let texts = gsap.utils.toArray('.panel-text'); 
-        
-        texts.forEach((text, i) => {
-            const tl = gsap.timeline({
-            
-                scrollTrigger: {
-                    trigger: "section.us_partners_animate",
-                    // scroller: ".scroller",
-                    start: () => "top -" + (window.innerHeight*i),
-                    end: () => "+=" + window.innerHeight,
-                    scrub: true,
-                    toggleActions: "play none reverse none",
-                    invalidateOnRefresh: true,     
-                }
-            })
-        
-        tl        
-        .to(text, { duration: 0.50, opacity: 1, y:"60%" })
-        // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
-        .to(text.children[2].children[0], {
-            y: "-110%", 
-            ease: "none",
-            duration: 2
-        })  
-        .to(text, { opacity: 0 })
-        ;
-        
-        });
-        
-        ScrollTrigger.create({
-            trigger: "section.us_partners_animate",
-            // scroller: ".scroller",
-            scrub: true,
-            // markers: true,
-            pin: true,
-            start: () => "top top",
-            end: () => "+=" + ((texts.length) * window.innerHeight),
-            invalidateOnRefresh: false,
-
-        });
-    };
-    sectionUsPatnerAnimate();
-
+   
    
 
      // us-clientes
@@ -135,11 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // scrub: 2            
             }
         });
-        tl.from(".us-clientes__left", {
-            opacity: 0, 
-            y: 50,
-            stagger: 0.5
-        });
+        // tl.from(".us-clientes__left", {
+        //     opacity: 0, 
+        //     y: 50,
+        //     stagger: 0.5
+        // });
         tl.from(".us-clientes__right--moleculas", {
             opacity: 0, 
             x: 100,
@@ -152,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<');
 
     };
-    // sectionClient();
+    sectionClient();
 
      // us_directores
      function sectionDirect() {       
@@ -306,6 +259,55 @@ document.addEventListener("DOMContentLoaded", function () {
             tlNavBar.to('#nav-container',{
                 backgroundColor:' rgb(62, 117, 120, .4)'           
             })
+            // Partners BIOs
+              //  Us partners animate fix ping
+            function sectionUsPatnerAnimate() {
+            
+                gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
+
+                let texts = gsap.utils.toArray('.panel-text'); 
+                
+                texts.forEach((text, i) => {
+                    const tl = gsap.timeline({
+                    
+                        scrollTrigger: {
+                            trigger: "section.us_partners_animate",
+                            // scroller: ".scroller",
+                            start: () => "top -" + (window.innerHeight*i),
+                            end: () => "+=" + window.innerHeight,
+                            scrub: true,
+                            toggleActions: "play none reverse none",
+                            invalidateOnRefresh: true,     
+                        }
+                    })
+                
+                tl        
+                .to(text, { duration: 1, opacity: 1, y:"58%" })
+                // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
+                .to(text.children[2].children[0], {
+                    y: "-110%", 
+                    ease: "none",
+                    duration: 3
+                })  
+                .to(text, { opacity: 0 })
+                ;
+                
+                });
+                
+                ScrollTrigger.create({
+                    trigger: "section.us_partners_animate",
+                    // scroller: ".scroller",
+                    scrub: true,
+                    // markers: true,
+                    pin: true,
+                    start: () => "top top",
+                    end: () => "+=" + ((texts.length) * window.innerHeight),
+                    invalidateOnRefresh: false,
+
+                });
+            };
+            sectionUsPatnerAnimate();
+
             // Valores
                 function sectionUsValues(){
                     const tl = gsap.timeline({
@@ -360,7 +362,58 @@ document.addEventListener("DOMContentLoaded", function () {
 
     mm.add("(max-width: 799px)", () => {
             // mobile setup code here...
-             // Valores
+
+              // Partners BIOs
+              //  Us partners animate fix ping
+              function sectionUsPatnerAnimate() {
+            
+                gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
+
+                let texts = gsap.utils.toArray('.panel-text'); 
+                
+                texts.forEach((text, i) => {
+                    const tl = gsap.timeline({
+                    
+                        scrollTrigger: {
+                            trigger: "section.us_partners_animate",
+                            // scroller: ".scroller",
+                            start: () => "top -" + (window.innerHeight*i),
+                            end: () => "+=" + window.innerHeight,
+                            scrub: true,
+                            toggleActions: "play none reverse none",
+                            invalidateOnRefresh: true,     
+                        }
+                    })
+                
+                tl        
+                .to(text, { duration: 3, opacity: 1, y:"60%" })
+                // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
+                .to(text.children[2].children[0], {
+                    y: "-110%", 
+                    ease: "none",
+                    duration: 5
+                })  
+                .to(text, { opacity: 0 })
+                ;
+                
+                });
+                
+                ScrollTrigger.create({
+                    trigger: "section.us_partners_animate",
+                    // scroller: ".scroller",
+                    scrub: true,
+                    // markers: true,
+                    pin: true,
+                    start: () => "top top",
+                    end: () => "+=" + ((texts.length) * window.innerHeight),
+                    invalidateOnRefresh: false,
+
+                });
+            };
+            sectionUsPatnerAnimate();
+
+
+                // Valores
                 function sectionUsValues(){
                     const tl = gsap.timeline({
                         scrollTrigger: {     

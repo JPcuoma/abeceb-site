@@ -127,6 +127,9 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            @media (max-width:865px) {
+               margin-top: 4rem;
+            }
 
 
             &--desk {
@@ -199,30 +202,29 @@
                     background-color: rgb(0 0 0 / 56%);
 
                     @media (max-width:865px) {
-                        background-color: rgb(0 0 0 / 75%);
+                        background-color: #2C3947;
                     }
 
                     .title-1 {
                         h6 {
                             margin: 0;
                             font-family: 'NexaBold';
-                            font-size: clamp(25px, 2.5vw, 35px);
+                            font-size: clamp(20px, 2.5vw, 35px);
                         }
 
                         span {
                             font-family: 'NexaBold';
-                            font-size: clamp(18px, 2vw, 20px);
+                            font-size: clamp(16px, 2vw, 20px);
                         }
 
                         a {
                             position: absolute;
-                            left: 3rem;
+                            right: 90%;
                             top: 3rem;
 
                             @media (max-width:865px) {
-                                background-color: rgb(0 0 0 / 75%);
-                                position: absolute;
-                                left: 1.25rem;
+                              
+                                right: 4%;
                                 top: 3rem;
                                 cursor: pointer;
                                 text-decoration: none;
@@ -231,18 +233,25 @@
 
                             img {
                                 width: 30px;
+                                @media (max-width:865px) {
+                                    width: 15px;
+                                }
                             }
                         }
                     }
 
                     .title-icon {
+                        margin-left: 1.5rem;
+                        @media (max-width:865px) {
+                            margin-left:0;
+                        }
+                 
                         img {
                             width: clamp(2.5rem, 2.5455rem + 1.4545vw, 4rem);
                         }
 
-                        &.right {
-                            margin-left: 1.5rem;
-                        }
+                       
+                           
                     }
 
                 }
@@ -271,7 +280,8 @@
 
                     @media (max-width:865px) {
                         display: flex;
-                        background-color: rgb(0 0 0 / 85%);
+                        background-color: #2C3947;
+
                     }
 
                     p {
@@ -285,7 +295,7 @@
                     .partners-elipsis-text,
                     .partners-elipsis-text-2 {
                         // flex: 1 0 0;
-                        text-align: center;
+                        text-align: left;
                         width: 70%;
                         // height: 320px;
 
@@ -296,9 +306,9 @@
                             width: 90%;
                         }
 
-                        p {
-                            text-align: justify;
-                        }
+                        // p {
+                        //     text-align: justify;
+                        // }
 
                         &::before {
                             content: "";
