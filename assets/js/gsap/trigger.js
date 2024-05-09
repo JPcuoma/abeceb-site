@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<');
         
         };
-    // sectionThree();
+    sectionThree();
     
     function parallaxThree(){
         gsap.to(".image_three", {
