@@ -413,7 +413,7 @@
 
 #us_valores {
     background-color: #F2F2F2;
-    height: 100vh;
+    // height: 100vh;
     padding: clamp(80px, 7vw, 150px) 20px;
 
     h3 {
@@ -442,7 +442,7 @@
         // }
         .item_us_values {
             font-size: clamp(25px, 4vw, 45px);
-            // color:$dark-green;
+            color:$dark-green;
             font-family: 'NexaLight';
             padding: 20px 0;
             text-align: center;

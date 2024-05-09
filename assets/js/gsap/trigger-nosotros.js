@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionUsPartner();
+    // sectionUsPartner();
 
      //  Us partners animate fix ping
     function sectionUsPatnerAnimate() {
@@ -93,10 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         
         tl        
-        .to(text, { duration: 0.50, opacity: 1, y:"50%" })
+        .to(text, { duration: 0.50, opacity: 1, y:"60%" })
         // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
         .to(text.children[2].children[0], {
-            y: "-110%", ease: "none"
+            y: "-110%", 
+            ease: "none",
+            duration: 2
         })  
         .to(text, { opacity: 0 })
         ;
@@ -150,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<');
 
     };
-    sectionClient();
+    // sectionClient();
 
      // us_directores
      function sectionDirect() {       
@@ -175,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.5
         });
     };
-    sectionDirect();
+    // sectionDirect();
 
      // us_advisory
      function sectionAdvisory() {       
@@ -200,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.5
         });
     };
-    sectionAdvisory();
+    // sectionAdvisory();
     // us_talento
     function sectionTalent() {       
         const tl = gsap.timeline({
@@ -224,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.5
         });
     };
-    sectionTalent();
+    // sectionTalent();
 
      // us_work
      function sectionWork() {       
@@ -249,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 1          
         },'<');
     };
-    sectionWork();
+    // sectionWork();
 
     function sectionForm() {       
         gsap.from(".form_animation", {
@@ -265,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionForm();
+    // sectionForm();
 
     function sectionFooter() {       
         gsap.from(".footer-column", {
@@ -281,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionFooter();
+    // sectionFooter();
 
  
     
@@ -338,26 +340,20 @@ document.addEventListener("DOMContentLoaded", function () {
                             
                     })  
                     tl.to(item,
-                    {
-                    opacity: 0.5, 
-                    fontSize: "45px",
-                    color: "#3E7578",
-                    fontFamily: 'NexaLight',
-                    borderTop: "0",
-                    borderBottom: "0",
+                        {
+                        opacity: 0.5, 
+                        fontSize: "45px",
+                        color: "#3E7578",
+                        fontFamily: 'NexaLight',
+                        borderTop: "0",
+                        borderBottom: "0",
 
 
-                    })   
-
-
+                        })   
                     });
 
-
-
-                    
-                    
                 };
-                sectionUsValues();
+                // sectionUsValues();
 
 
         });
@@ -420,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     
                     
                 };
-                sectionUsValues();
+                // sectionUsValues();
 
 
         });

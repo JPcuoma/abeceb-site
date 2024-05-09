@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<')
 
     };
-    sectionConsultoria();
+    // sectionConsultoria();
     // consultoria-estrategica
     function section_estrategica() {
 
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<')
 
     };
-    section_estrategica();
+    // section_estrategica();
      // consultoria-negocios
      function section_negocios() {
 
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<')
 
     };
-    section_negocios();
+    // section_negocios();
      
     // consultoria-red-global
      function section_red() {
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },'<')
 
     };
-    section_red();
+    // section_red();
     
 
     function sectionForm() {       
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionForm();
+    // sectionForm();
 
     function sectionFooter() {       
         gsap.from(".footer-column", {
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     };
-    sectionFooter();
+    // sectionFooter();
   
 
     
