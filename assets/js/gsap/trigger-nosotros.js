@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to(text.children[2].children[0], {
                     y: "-110%", 
                     ease: "none",
-                    duration: 3
+                    duration: 8
                 })  
                 .to(text, { opacity: 0 })
                 ;
@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to(text.children[2].children[0], {
                     y: "-110%", 
                     ease: "none",
-                    duration: 5
+                    duration: 8
                 })  
                 .to(text, { opacity: 0 })
                 ;
