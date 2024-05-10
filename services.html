@@ -940,6 +940,9 @@
             dropLabel.forEach((dropDownBox)=>{
                 dropDownBox.addEventListener('click', ()=>{
                     const parentContainer = dropDownBox.parentElement
+                    if (!parentContainer.classList.contains('active')) {
+                        lenis.scrollTo(parentContainer.offsetTop - 80)
+                    }
 
                     parentContainer.classList.toggle('active')
                     }
