@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             end:'center center',
                             scrub: true,
                             toggleActions: "play none none reverse",
-                            markers: true               
+                            // markers: true               
                         },  
                     });
 
