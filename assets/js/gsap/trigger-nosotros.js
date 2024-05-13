@@ -281,15 +281,15 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     })
                 
-                tl        
-                .to(text, { duration: 1, opacity: 1, y:"58%" })
+                tl
+                .to(text, { delay: 0.55, duration: 3, opacity: 1, y:"58%" })
                 // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
                 .to(text.children[2].children[0], {
                     y: "-110%", 
                     ease: "none",
                     duration: 8
                 })  
-                .to(text, { opacity: 0 })
+                .to(text, { delay: 0.55, duration: 3, opacity: 0 })
                 ;
                 
                 });
@@ -386,14 +386,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     })
                 
                 tl        
-                .to(text, { duration: 3, opacity: 1, y:"60%" })
+                .to(text, { delay: 0.55, duration: 3, opacity: 1, y:"60%" })
                 // .fromTo(text.children[2].children[0],{duration: 0.03,opacity: 0},{duration: 0.03,opacity: 1})  
                 .to(text.children[2].children[0], {
                     y: "-110%", 
                     ease: "none",
                     duration: 8
                 })  
-                .to(text, { opacity: 0 })
+                .to(text, { delay: 0.55, duration: 1 ,opacity: 0 })
                 ;
                 
                 });

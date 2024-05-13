@@ -194,36 +194,36 @@ document.addEventListener("DOMContentLoaded", function () {
                     {
                     delay: 0.55,
                     opacity: 1,
-                    yPercent: -50, 
-                    stagger: 0.03, 
-                    // ease: "back.out", 
+                    // yPercent: 50, 
+                    // stagger: 0.03, 
+                    ease: "none", 
                      scrollTrigger: {
-                            trigger: ".anm_heading_title_1",
+                            trigger: ".one-hero-wrapper-1",
                             start: 'top-=100 center',
                             end:'center center',
-                            scrub: true,
+                            // scrub: true,
                             toggleActions: "play none none reverse",
                             // markers: true               
                         },  
                     });
 
-            gsap.to(".anm_heading_title_2",  {
-                    delay: 0.55,
-                    opacity: 1,
-                    yPercent: -40, 
-                    stagger: 0.03, 
-                    // ease: "back.out",
-                    scrollTrigger: {
-                            trigger: ".anm_heading_title_1",
-                            start: 'bootom center',
-                            end:'center center',
-                            scrub: 2,
-                            // toggleActions: "play none none reverse",
-                            // markers: true
+            // gsap.to(".anm_heading_title_2",  {
+            //         delay: 0.55,
+            //         opacity: 1,
+            //         yPercent: -40, 
+            //         stagger: 0.03, 
+            //         // ease: "back.out",
+            //         scrollTrigger: {
+            //                 trigger: ".anm_heading_title_1",
+            //                 start: 'bootom center',
+            //                 end:'center center',
+            //                 scrub: 2,
+            //                 // toggleActions: "play none none reverse",
+            //                 // markers: true
                         
-                        },  
+            //             },  
                 
-                });          
+            //     });          
            
             tlHomeHero      
                 .to('#anm_brand_home',{
@@ -236,10 +236,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 .to('#nav-container',{
                     backgroundColor:' rgb(62, 117, 120, .4)'           
                 })
-                .to('.anm_heading_title_1',{
-                    opacity: 0,
-                    // scrub: 2
-                })
+                // .to('.anm_heading_title_1',{
+                //     opacity: 0,
+                //     // scrub: 2
+                // })
                 .to(".image_hero", {
                     // backgroundPosition: `50% ${-innerHeight / 2}px`,
                     yPercent: -40,
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     mm.add("(max-width: 799px)", () => {
-            // mobile setup code here...
+        // mobile setup code here...
             gsap.set('.anm_heading_title_2', {
                 opacity: 1                
             });
@@ -268,9 +268,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     {
                     delay: 0.55,
                     opacity: 1,
-                    yPercent: -50, 
-                    stagger: 0.03, 
-                    // ease: "back.out", 
+                    // yPercent: -50, 
+                    // stagger: 0.03, 
+                    ease: "none", 
                      scrollTrigger: {
                             trigger: ".anm_heading_title_1",
                             start: 'top-=100 center',
@@ -281,23 +281,23 @@ document.addEventListener("DOMContentLoaded", function () {
                         },  
                     });
 
-            gsap.to(".anm_heading_title_2",  {
-                    delay: 0.55,
-                    opacity: 1,
-                    yPercent: -40, 
-                    stagger: 0.03, 
-                    // ease: "back.out",
-                    scrollTrigger: {
-                            trigger: ".anm_heading_title_1",
-                            start: 'bootom center',
-                            end:'center center',
-                            scrub: 2,
-                            // toggleActions: "play none none reverse",
-                            // markers: true
+            // gsap.to(".anm_heading_title_2",  {
+            //         delay: 0.55,
+            //         opacity: 1,
+            //         yPercent: -40, 
+            //         stagger: 0.03, 
+            //         // ease: "back.out",
+            //         scrollTrigger: {
+            //                 trigger: ".anm_heading_title_1",
+            //                 start: 'bootom center',
+            //                 end:'center center',
+            //                 scrub: 2,
+            //                 // toggleActions: "play none none reverse",
+            //                 // markers: true
                         
-                        },  
+            //             },  
                 
-                });       
+            //     });       
           
             
             tlHomeHero
