@@ -773,12 +773,11 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>-->
+
     
-   <!-- <script src="assets/js/jquery-1.11.0.min.js"></script>-->
+   <!-- <script src="assets/js/jquery-1.11.0.min.js"></script> -->
     <script src="assets/slick/slick.min.js"></script>
+    <!-- import lenis min antes que main -->
     <script src="assets/js/lenis.min.js"></script> 
     <script src="assets/js/main.js"></script>
       <!-- gsap -->
@@ -786,45 +785,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
 
+
     <script>
-        // form
-        const formSubmit = document.querySelector('#form-submit');
-        const formMsgSucces = document.querySelector('.form-message__succes');
-
-        formSubmit.addEventListener('click', (e)=>{
-            e.preventDefault()
-            formSubmit.classList.add("disabled")
-            setTimeout(() => {
-            formSubmit.classList.remove("disabled")
-            formMsgSucces.classList.add("show")
-            }, 2000);
-            setTimeout(() => {
-            formMsgSucces.classList.remove("show")
-            }, 5000);
-            return
-        })
-    </script>
-  <!-- -->
-   <script>
-        const lenis = new Lenis({
-            // Valeur entre 0 et 1
-            // Valeur par défaut : 0,1
-            // Plus la valeur est faible, plus le scroll sera fluide
-            lerp: 0.05,
-            // Valeur par défaut : 1
-            // Plus la valeur est haute, plus le défilement sera rapide 
-            smooth: true,
-            direction: "vertical"
-        });
-
-        function raf(time=0) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
-    </script> 
-     <script>
         $(document).ready(function () {
 
             const slider = $("#slider");
@@ -851,23 +813,7 @@
 
         })
 
-    </script>
-   
-<!-- <script>
-        const burgerToggle = document.querySelector('#burger-toggle');
-    const navMenu = document.querySelector('#menu');
-
-    burgerToggle.addEventListener('click', ()=>{
-      if (burgerToggle.classList.contains('open')) {
-        burgerToggle.classList.remove('open')
-        navMenu.classList.add('hide')
-        return
-      }
-      burgerToggle.classList.add('open')
-      navMenu.classList.remove('hide')
-    })
-</script> -->
-    
+    </script>    
 </body>
 
 </html>

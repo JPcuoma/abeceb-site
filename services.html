@@ -861,8 +861,9 @@
 
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- import lenis min antes que main -->
     <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/main.js"></script>
          <!-- gsap -->
     <script src="assets/js/gsap/trigger-service.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -912,28 +913,6 @@
             });
 
         })
-    </script>
-
-<!-- scroll effect -->
-    <script src="assets/js/lenis.min.js"></script>
-    <script>
-        const lenis = new Lenis({
-            // Valeur entre 0 et 1
-            // Valeur par défaut : 0,1
-            // Plus la valeur est faible, plus le scroll sera fluide
-            lerp: 0.05,
-            // Valeur par défaut : 1
-            // Plus la valeur est haute, plus le défilement sera rapide 
-            smooth: true,
-            direction: "vertical"
-        });
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
     </script>
 
     <!-- dropdowns -->
