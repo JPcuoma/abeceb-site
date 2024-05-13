@@ -319,52 +319,7 @@
 
 
 
-    <script>
-        $(document).ready(function () {
-
-            const slider = $('.modern-slider');
-            const slideItemsController = document.querySelectorAll('.svg-group')
-
-            slider.slick({
-                autoplay: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1,
-                autoplaySpeed: 7000,
-                speed: 300,
-                pauseOnHover: true,
-                dots: false,
-                pauseOnDotsHover: true,
-                cssEase: 'ease-out',
-                fade:true,
-                draggable: true,
-                prevArrow: false,
-                nextArrow: false,
-            })
-            slider.on('beforeChange', function(event, slick, currentSlide){                
-                let leaveSvg = slideItemsController[currentSlide]
-                if (leaveSvg) {
-                    leaveSvg.classList.remove('active')
-                }
-            });
-            slider.on('afterChange', function(event, slick, currentSlide){                
-                let currentSvg = slideItemsController[currentSlide]
-                if (currentSvg) {
-                    currentSvg.classList.add('active')
-                }
-            });
-
-            slideItemsController.forEach(function ( currentSlide, i) {
-                currentSlide.addEventListener( 'click', ()=>{   
-                    slider.slick('slickGoTo', i)
-                })
-            });
-
-        })
-
-    </script>
-
-    <script src="assets/js/lenis.min.js"></script>
+<!-- scroll effect -->
     <script>
         const lenis = new Lenis({
             // Valeur entre 0 et 1
@@ -384,24 +339,7 @@
         requestAnimationFrame(raf);
 
     </script>
-    <script>
-            const dropLabel = document.querySelectorAll('.dropdown__label');
-            const dropsClose = document.querySelectorAll('.dropdown')
-            
-            dropLabel.forEach((dropDownBox)=>{
-                dropDownBox.addEventListener('click', ()=>{
-                    const parentContainer = dropDownBox.parentElement
-                    if (! parentContainer.classList.contains('active')) {
-                        setTimeout(() => {
-                            lenis.scrollTo(parentContainer.offsetTop -70)
-                        }, 500);    
-                    }
-                    parentContainer.classList.toggle('active')
-                    }
-                )
-            }
-        )
-    </script>
+    
 </body>
 
 </html>
