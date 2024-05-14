@@ -52,16 +52,6 @@
   font-weight: 700;
   src: local("NexaSlabxBold"), url("../fonts/NexaSlab-xBold.otf") format("opentype");
 }
-@font-face {
-  font-family: "NexaBoldItalic";
-  font-weight: 700;
-  src: local("NexaBoldItalic"), url("../fonts/NexaBoldItalic.ttf") format("opentype");
-}
-@font-face {
-  font-family: "NexaThinItalic";
-  font-weight: 300;
-  src: local("NexaThinItalic"), url("../fonts/NexaThinItalic.ttf") format("opentype");
-}
 ul {
   padding: 0px;
 }
@@ -2932,7 +2922,7 @@ footer .footer-column.last .mail {
   }
 }
 .section-casos-de-exito__note--p {
-  font-family: "NexaThinItalic";
+  font-family: "NexaBook";
   font-size: clamp(20px, 2.4vw, 25px);
   color: #3E7578;
   text-align: center;
@@ -2945,7 +2935,7 @@ footer .footer-column.last .mail {
   }
 }
 .section-casos-de-exito__note--p strong {
-  font-family: "NexaBoldItalic";
+  font-family: "NexaHeavy";
 }
 .section-casos-de-exito__note--img {
   width: 80px;
@@ -2962,7 +2952,7 @@ footer .footer-column.last .mail {
   margin-top: 5px;
   color: #3E7578;
   font-family: "NexaRegular";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #us_equipo.bg-foro {
