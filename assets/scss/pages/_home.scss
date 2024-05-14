@@ -5,6 +5,7 @@
 #one {
     overflow: hidden;
     position: relative;
+
     .fullwidth-container {
         height: 100%;
         width: 100%;
@@ -13,54 +14,55 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        flex-direction: column; 
-      
-        .one-hero-wrapper{
+        flex-direction: column;
+
+        .one-hero-wrapper {
             height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             @media (max-width:768px) {
                 height: 70vh;
             }
         }
-        .one-hero-wrapper-1{
+
+        .one-hero-wrapper-1 {
             height: 50vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             @media (max-width:768px) {
                 height: 70vh;
             }
         }
-        .one-hero-wrapper-2{
+
+        .one-hero-wrapper-2 {
             height: 50vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+
         }
     }
+
     .logo {
         width: clamp(250px, 70%, 400px);
-        // padding-top: 8rem;
-        @media (max-width:768px) {
-        //    padding-bottom: 1.5rem;
-        }
-        img{
+
+        img {
             width: 100%;
         }
     }
 
-
-    h1{
+    h1 {
         text-align: center;
         color: $white;
-        transition: opacity 0.5s ease;    
-        font-family: 'NexaBook';
+        transition: opacity 0.5s ease;
+        font-family: 'NexaBook', sans-serif;
         font-weight: 400;
         font-size: clamp(24px, 4vw, 60px);
 
@@ -68,10 +70,11 @@
             display: block;
             text-align: center;
             font-size: clamp(42px, 5vw, 100px);
-            font-family: 'NexaSlabxBold';
+            font-family: 'NexaSlabxBold', sans-serif;
             margin-top: 10px;
             margin-bottom: 0px;
         }
+
         &.scroll-transition {
             position: absolute;
             bottom: 87px;
@@ -79,29 +82,29 @@
             top: auto;
         }
 
-        &.anm_heading_title_1{
+        &.anm_heading_title_1 {
             opacity: 0;
         }
-        &.anm_heading_title_2{
+
+        &.anm_heading_title_2 {
             opacity: 0;
-            // padding-top: 12rem;
-            // position: absolute;   
+
             @media (max-width:768px) {
                 padding-top: 0rem;
-            }        
+            }
         }
     }
 
     &.parallax__layer_hero {
         position: relative;
-        // height: 2300px;
         height: 200vh;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+
         @media (max-width:768px) {
             height: 150vh;
-        } 
+        }
 
         .parallax__image_hero {
             position: absolute;
@@ -119,13 +122,13 @@
                 object-fit: cover;
                 width: 100%;
                 height: 150%;
+
                 @media (max-width:768px) {
                     height: 110%;
-                } 
+                }
             }
         }
     }
-
 }
 
 
@@ -136,13 +139,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // place-content: center;
     flex-direction: column;
 
     h3 {
         text-align: center;
         font-size: clamp(28px, 3vw, 32px);
-        font-family: 'NexaBlack';
+        font-family: 'NexaBlack', sans-serif;
         color: $black-typo;
         margin-bottom: 6vw;
     }
@@ -153,7 +155,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        
+
         .opt {
             display: none;
             min-height: 450px;
@@ -162,7 +164,7 @@
             h3 {
                 font-size: clamp(30px, 20vw, 70px);
                 color: #2C3947;
-                font-family: 'NexaBook';
+                font-family: 'NexaBook', sans-serif;
                 margin-bottom: 40px;
                 margin-top: 87px;
             }
@@ -170,7 +172,7 @@
             p {
                 font-size: clamp(18px, 4vw, 20px);
                 color: #2C3947;
-                font-family: 'NexaBook';
+                font-family: 'NexaBook', sans-serif;
                 max-width: 722px;
                 text-align: center;
                 margin: 0 auto;
@@ -183,12 +185,13 @@
                 margin: 0 auto;
                 margin-top: clamp(60px, 5vw, 90px);
                 color: $green;
-                font-family: 'NexaHeavy';
+                font-family: 'NexaHeavy', sans-serif;
                 font-size: 20px;
                 text-decoration: none;
                 transition: all .2s ease;
 
-                &:hover,&:active{
+                &:hover,
+                &:active {
                     color: $dark-green;
                 }
             }
@@ -205,21 +208,17 @@
             li {
                 flex: 1 0 0;
                 font-size: clamp(15px, 3vw, 18px);
-                font-family: 'NexaBold';
+                font-family: 'NexaBold', sans-serif;
                 color: $dark-green;
                 width: auto;
                 text-align: center;
-                padding: 15px ;
+                padding: 15px;
                 cursor: pointer;
                 border-radius: 30px;
                 transition: all .2s ease-in-out;
 
                 @media (max-width:375px) {
                     font-size: clamp(12px, 3vw, 18px);
-                }
-
-                &:hover {
-                    color: $dark-green
                 }
 
                 &.active {
@@ -239,7 +238,7 @@
 
                 span {
                     display: block;
-                    font-family: 'NexaBold';
+                    font-family: 'NexaBold', sans-serif;
                 }
             }
         }
@@ -255,6 +254,7 @@
     &.parallax__layer_three {
         position: relative;
         height: 963px;
+
         .parallax__image_three {
             position: absolute;
             top: 0;
@@ -265,22 +265,26 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            img, .image_three {
+
+            img,
+            .image_three {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                }   
             }
+        }
     }
+
     h3 {
         font-size: clamp(35px, 10vw, 50px);
-        font-family: 'NexaLight';
+        font-family: 'NexaLight', sans-serif;
         font-weight: 300;
         text-align: center;
         color: $white;
 
-        br{
+        br {
             display: none;
+
             @media (max-width:768px) {
                 display: block;
             }
@@ -288,13 +292,13 @@
 
         strong {
             display: block;
-            font-family: 'NexaSlabBlack';
+            font-family: 'NexaSlabBlack', sans-serif;
         }
     }
 
     a.btn {
         font-size: clamp(18px, 2vw, 20px);
-        font-family: 'NexaBold';
+        font-family: 'NexaBold', sans-serif;
         color: $white;
         padding: 20px;
         text-decoration: none;
@@ -306,12 +310,13 @@
         width: clamp(280px, 80vw, 277px);
         transition: background-color .2s ease;
 
-        &:hover, &:active{
+        &:hover,
+        &:active {
             background-color: $dark-green;
         }
-        
+
         @media (max-width:768px) {
-            padding: 20px ;
+            padding: 20px;
         }
     }
 }
@@ -323,7 +328,7 @@
     h3 {
         color: $black-typo;
         font-size: 32px;
-        font-family: 'NexaBlack';
+        font-family: 'NexaBlack', sans-serif;
         text-align: center;
         margin-bottom: clamp(52px, 6vw, 112px);
     }
@@ -332,7 +337,7 @@
         text-align: center;
         display: block;
         color: $green;
-        font-family: 'NexaHeavy';
+        font-family: 'NexaHeavy', sans-serif;
         font-size: 20px;
         text-decoration: none;
         width: fit-content;
@@ -340,7 +345,8 @@
         margin-top: 90px;
         transition: all .2s ease;
 
-        &:hover,&:active{
+        &:hover,
+        &:active {
             color: $dark-green;
         }
     }
@@ -351,16 +357,18 @@
         justify-content: center;
         flex-wrap: nowrap;
         gap: 4vw;
+
         @media (max-width:1200px) {
             flex-direction: column;
         }
+
         @media (max-width:768px) {
             gap: 82px;
         }
 
         .box {
             color: $green;
-            font-family: 'NexaSlabBook';
+            font-family: 'NexaSlabBook', sans-serif;
             flex: 1 0 300px;
             max-width: 392px;
             font-size: clamp(40px, 12vw, 60px);
@@ -369,7 +377,7 @@
             span {
                 color: $dark-green;
                 display: block;
-                font-family: 'NexaLight';
+                font-family: 'NexaLight', sans-serif;
                 font-size: clamp(30px, 8vw, 50px);
                 max-width: 352px;
                 margin: 0 auto;
@@ -378,7 +386,7 @@
             p {
                 font-size: 24px;
                 color: #2C3947;
-                font-family: 'NexaRegular';
+                font-family: 'NexaRegular', sans-serif;
                 padding: 0px;
                 line-height: 1;
             }
@@ -397,7 +405,7 @@
 
     h3 {
         font-size: 32px;
-        font-family: 'NexaBlack';
+        font-family: 'NexaBlack', sans-serif;
         color: $black-typo;
         text-align: center;
         margin-top: 0;
@@ -438,7 +446,7 @@
         h4 {
             font-size: clamp(40px, 10vw, 60px);
             line-height: 1;
-            font-family: "NexaExtraLight";
+            font-family: "NexaExtraLight", sans-serif;
             margin-bottom: 20px;
             color: #2C3947;
 
@@ -448,15 +456,15 @@
 
             strong {
                 font-size: clamp(40px, 6vw, 50px);
-                font-family: 'NexaHeavy';
+                font-family: 'NexaHeavy', sans-serif;
             }
         }
 
         p {
-            font-family: 'NexaRegular';
+            font-family: 'NexaRegular', sans-serif;
             font-size: clamp(18px, 2.2vw, 24px);
 
-            
+
             @media (max-width:768px) {
                 text-align: center;
             }
@@ -464,9 +472,8 @@
 
         a {
             display: block;
-            // color: $green;
-            cursor:default ;
-            font-family: 'NexaHeavy';
+            cursor: default;
+            font-family: 'NexaHeavy', sans-serif;
             font-size: 20px;
             text-decoration: none;
             width: fit-content;
@@ -475,11 +482,12 @@
             transition: all .2s ease;
             color: $dark-green;
 
-    
-            &:hover,&:active{
+
+            &:hover,
+            &:active {
                 color: $dark-green;
             }
-            
+
             @media (max-width:768px) {
                 margin: 0 auto;
                 margin-top: 40px;
@@ -501,11 +509,11 @@
     h3 {
         font-size: 32px;
         color: $black-typo;
-        font-family: 'NexaBlack';
+        font-family: 'NexaBlack', sans-serif;
         text-align: center;
-        margin-bottom: clamp(80px, 10vw,112px);
+        margin-bottom: clamp(80px, 10vw, 112px);
 
-        br{
+        br {
             display: none;
 
             @media (max-width:768px) {
@@ -513,15 +521,17 @@
             }
         }
     }
-    .slick-container{
+
+    .slick-container {
         position: relative;
         height: 400px;
+
         @media (max-width:768px) {
             height: 100%;
         }
 
 
-        &__overlay{
+        &__overlay {
             position: absolute;
             top: 0;
             left: 50%;
