@@ -381,7 +381,7 @@
         }
 
         &--p{
-            font-family: 'NexaBook';
+            font-family: 'NexaThinItalic';
             font-size: clamp(20px, 2.4vw, 25px);
             color: $dark-green;
             text-align: center;
@@ -393,7 +393,7 @@
             }
 
             strong{
-                font-family: 'NexaHeavy';
+                font-family: 'NexaHeavyItalic';
             }
         }
         &--img{

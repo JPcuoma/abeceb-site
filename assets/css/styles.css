@@ -52,6 +52,16 @@
   font-weight: 700;
   src: local("NexaSlabxBold"), url("../fonts/NexaSlab-xBold.otf") format("opentype");
 }
+@font-face {
+  font-family: "NexaHeavyItalic";
+  font-weight: 700;
+  src: local("NexaHeavyItalic"), url("../fonts/NexaHeavyItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "NexaThinItalic";
+  font-weight: 300;
+  src: local("NexaThinItalic"), url("../fonts/NexaThinItalic.otf") format("opentype");
+}
 ul {
   padding: 0px;
 }
@@ -2922,7 +2932,7 @@ footer .footer-column.last .mail {
   }
 }
 .section-casos-de-exito__note--p {
-  font-family: "NexaBook";
+  font-family: "NexaThinItalic";
   font-size: clamp(20px, 2.4vw, 25px);
   color: #3E7578;
   text-align: center;
@@ -2935,7 +2945,7 @@ footer .footer-column.last .mail {
   }
 }
 .section-casos-de-exito__note--p strong {
-  font-family: "NexaHeavy";
+  font-family: "NexaHeavyItalic";
 }
 .section-casos-de-exito__note--img {
   width: 80px;

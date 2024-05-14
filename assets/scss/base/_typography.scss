@@ -85,17 +85,17 @@
         local("NexaSlabxBold"),
         url("../fonts/NexaSlab-xBold.otf") format("opentype");
 }
-// @font-face {
-//     font-family: "NexaBoldItalic";
-//     font-weight: 700;
-//     src:
-//         local("NexaBoldItalic"),
-//         url("../fonts/NexaBoldItalic.ttf") format("opentype");
-// }
-// @font-face {
-//     font-family: "NexaThinItalic";
-//     font-weight: 300;
-//     src:
-//         local("NexaThinItalic"),
-//         url("../fonts/NexaThinItalic.ttf") format("opentype");
-// }
+@font-face {
+    font-family: "NexaHeavyItalic";
+    font-weight: 700;
+    src:
+        local("NexaHeavyItalic"),
+        url("../fonts/NexaHeavyItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: "NexaThinItalic";
+    font-weight: 300;
+    src:
+        local("NexaThinItalic"),
+        url("../fonts/NexaThinItalic.otf") format("opentype");
+}
