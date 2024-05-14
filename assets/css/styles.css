@@ -52,6 +52,16 @@
   font-weight: 700;
   src: local("NexaSlabxBold"), url("../fonts/NexaSlab-xBold.otf") format("opentype");
 }
+@font-face {
+  font-family: "NexaBoldItalic";
+  font-weight: 700;
+  src: local("NexaBoldItalic"), url("../fonts/NexaBoldItalic.ttf") format("opentype");
+}
+@font-face {
+  font-family: "NexaThinItalic";
+  font-weight: 300;
+  src: local("NexaThinItalic"), url("../fonts/NexaThinItalic.ttf") format("opentype");
+}
 ul {
   padding: 0px;
 }
@@ -2739,9 +2749,8 @@ footer .footer-column.last .mail {
 
 .section-casos-de-exito {
   height: 100%;
-  max-height: 880px;
   width: 100%;
-  padding: clamp(45px, 4vw, 72px) 0;
+  padding: clamp(45px, 4vw, 72px) 20px;
   background-color: #f2f2f2;
 }
 .section-casos-de-exito__title {
@@ -2756,7 +2765,7 @@ footer .footer-column.last .mail {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1000px;
   justify-content: center;
   align-items: center;
 }
@@ -2796,9 +2805,9 @@ footer .footer-column.last .mail {
 }
 .section-casos-de-exito__box--text h6 {
   font-family: "NexaHeavy";
-  font-size: clamp(22px, 2.5vw, 30px);
+  font-size: clamp(28px, 4.5vw, 50px);
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   text-align: left;
   color: #2C3947;
 }
@@ -2838,6 +2847,139 @@ footer .footer-column.last .mail {
 }
 .section-casos-de-exito__box--text a:hover, .section-casos-de-exito__box--text a:active {
   color: #3E7578;
+}
+.section-casos-de-exito__p {
+  width: 100%;
+  max-width: 1000px;
+  font-family: "NexaBold";
+  font-weight: 700;
+  font-size: clamp(20px, 2.2vw, 25px);
+  margin: 0 auto;
+  margin-top: clamp(50px, 6vw, 80px);
+  margin-bottom: clamp(66px, 8vw, 100px);
+  line-height: 1.2;
+}
+.section-casos-de-exito__data-project {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1050px;
+  padding: 0;
+}
+.section-casos-de-exito__data-project--item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(15px, 4vw, 58px);
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .section-casos-de-exito__data-project--item {
+    flex-direction: column;
+  }
+}
+.section-casos-de-exito__data-project--item-title {
+  flex: 1 0 30%;
+  margin: 0;
+  text-align: right;
+  font-family: "NexaSlabBook";
+  font-weight: 600;
+  font-size: clamp(35px, 3.4vw, 40px);
+  color: #65B3AD;
+}
+@media (max-width: 768px) {
+  .section-casos-de-exito__data-project--item-title {
+    text-align: left;
+  }
+}
+.section-casos-de-exito__data-project--item-content {
+  flex: 1 0 60%;
+}
+.section-casos-de-exito__data-project--item-content p {
+  text-align: left;
+  font-family: "NexaRegular";
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: #2C3947;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #2C3947;
+}
+.section-casos-de-exito__data-project--item-content p strong {
+  font-family: "NexaHeavy";
+}
+.section-casos-de-exito__data-project hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: 0;
+  background-color: rgba(204, 204, 204, 0.8);
+}
+.section-casos-de-exito__note {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  padding: 50px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .section-casos-de-exito__note {
+    padding: 24px 0px 40px 0px;
+  }
+}
+.section-casos-de-exito__note--p {
+  font-family: "NexaThinItalic";
+  font-size: clamp(20px, 2.4vw, 25px);
+  color: #3E7578;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .section-casos-de-exito__note--p {
+    margin-bottom: 20px;
+  }
+}
+.section-casos-de-exito__note--p strong {
+  font-family: "NexaBoldItalic";
+}
+.section-casos-de-exito__note--img {
+  width: 80px;
+}
+.section-casos-de-exito__note--name {
+  margin: 0;
+  margin-top: 10px;
+  color: #2C3947;
+  font-family: "NexaRegular";
+  font-size: 20px;
+}
+.section-casos-de-exito__note--job {
+  margin: 0;
+  margin-top: 5px;
+  color: #3E7578;
+  font-family: "NexaRegular";
+  font-size: 18px;
+}
+
+#us_equipo.bg-foro {
+  background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/bg-foro.png);
+}
+@media (max-width: 786px) {
+  #us_equipo.bg-foro {
+    background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/bg-foro-mob.png);
+  }
+}
+#us_equipo.bg-foro h2 {
+  color: #fff;
+  font-family: "NexaBook";
+  font-size: clamp(22px, 3.4vw, 40px);
+  font-weight: 300;
+  margin: 0 20px;
+  text-align: center;
 }
 
 .terms-and-conditions {
