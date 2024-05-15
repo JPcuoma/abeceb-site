@@ -2982,6 +2982,50 @@ footer .footer-column.last .mail {
   text-align: center;
 }
 
+.dialogo-section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+.dialogo-section__title {
+  font-family: "NexaBook";
+  font-size: clamp(25px, 3.5vw, 40px);
+  text-align: center;
+  color: #3E7578;
+  margin-bottom: 50px;
+}
+.dialogo-section__title strong {
+  display: block;
+  font-family: "NexaSlabBlack";
+  font-size: clamp(40px, 4vw, 50px);
+}
+.dialogo-section__dialog-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dialogo-section__dialog-icons img {
+  width: 70%;
+  max-width: 190px;
+}
+.dialogo-section__dialog-icons--right-img {
+  position: relative;
+  right: -35px;
+  z-index: 2;
+}
+.dialogo-section__dialog-icons--left-img {
+  margin-top: 49px;
+  position: relative;
+  left: -35px;
+}
+
 .terms-and-conditions {
   width: 100%;
   height: auto;
