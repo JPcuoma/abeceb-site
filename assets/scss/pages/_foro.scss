@@ -297,6 +297,110 @@
         color: $black-typo;
         text-align: center;
         margin: 26px auto;
+        margin-bottom: 50px;
         padding: 0 20;
     }
+    &__counter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: clamp(5px, 3vw, 74px);
+
+        &--box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: clamp(108px, 25vw, 251px);
+            height: clamp(108px, 25vw, 251px);
+            border-radius: 50%;
+            font-family: 'NexaBook', sans-serif;
+            font-size: clamp(13px, 2.5vw, 32px);
+            color: #fff;
+            
+            strong{
+                font-family: 'NexaHeavy', sans-serif;
+                display: block;
+                font-size: clamp(15px, 3vw, 35px);
+            }
+            span{
+                font-family: 'NexaHeavy', sans-serif;
+                font-size: clamp(35px, 5vw, 70px);
+                display: block;
+            }
+        }
+
+        &--box-1{
+            background-color: $black-typo;
+        }
+        &--box-2{
+            background-color: #65B3AD;
+        }
+        &--box-3{
+            background-color: $dark-green;
+        }
+    }
+}
+.resumen-foro-section{
+    background-color: #f2f2f2;
+    padding: clamp(50px, 8vw, 150px) 20px;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(45px, 6vw, 96px);
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__box{
+        text-align: center;
+        max-width: 400px;
+
+        &--img{
+            width: clamp(280px, 25vw, 380px);
+        }
+        &--title{
+            font-size: 35px;
+            font-family: 'NexaHeavy', sans-serif;
+            color: $black-typo;
+            text-align: center;
+            margin-top: clamp(30px, 4.5vw, 50px);
+            margin-top: 20px;
+        }
+        &--p{
+            font-family: 'NexaBook', sans-serif;
+            font-size: 18px;
+            color: $dark-green;
+            margin-bottom: 38px;
+
+            strong{
+                font-size: 22px;
+                display: block;
+                font-family: 'NexaBlack', sans-serif;
+            }
+        }
+        &--cta{
+            text-align: center;
+            display: block;
+            width: fit-content;
+            color: $green;
+            font-family: 'NexaHeavy';
+            font-size: 20px;
+            text-decoration: none;
+            transition: all .2s ease;
+            margin: 0 auto;
+
+            &:hover,&:active{
+                color: $dark-green;
+            }
+        }
+    }
+
 }

@@ -793,6 +793,8 @@ html {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  opacity: 0.2;
+  transition: all 300ms ease;
   /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
   margin: 0 25px;
   /* Espacio entre los slides */
@@ -873,87 +875,39 @@ html {
   color: #3E7578;
 }
 
-.slick-initialized.slick-slider .slick-active {
-  opacity: 0.2;
-  transition: all 300ms ease;
-}
 .slick-initialized.slick-slider .slick-active.slick-current {
   opacity: 1;
-  transition: all 300ms ease;
 }
 
 .foros-section .modern-slider {
+  height: 100%;
   /* ==== Slider Style === */
+}
+.foros-section .modern-slider .slick-list {
+  height: 400px;
+  overflow: visible !important;
 }
 .foros-section .modern-slider .slick-slide {
   float: left;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+  margin: 0 5px;
+  opacity: 1;
+  position: relative;
+  transition: all 300ms ease;
   /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
   margin: 0;
+  transform: scale(1);
   /* Espacio entre los slides */
   box-sizing: border-box;
   /* Otros estilos para los slides */
 }
-.foros-section .modern-slider .slick-arrow {
-  position: absolute;
-  top: 30%;
-  width: 32px;
-  height: 52px;
-  border: 0 none;
-  cursor: pointer;
+.foros-section .modern-slider .slick-slide:hover {
   z-index: 10;
-  background: none;
-}
-.foros-section .modern-slider .slick-arrow img {
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 768px) {
-  .foros-section .modern-slider .slick-arrow {
-    top: 3%;
-    width: 25px;
-    height: 31px;
-  }
-}
-.foros-section .modern-slider .next-arrow {
-  right: 5%;
-}
-@media (max-width: 768px) {
-  .foros-section .modern-slider .next-arrow {
-    right: 1vw;
-  }
-}
-.foros-section .modern-slider .prev-arrow {
-  left: 0;
-}
-@media (max-width: 768px) {
-  .foros-section .modern-slider .prev-arrow {
-    left: 1vw;
-  }
-}
-.foros-section .modern-slider .item {
-  width: 60vw;
-}
-.foros-section .slick-initialized.slick-slider .slick-active {
-  opacity: 0.2;
-  transition: all 300ms ease;
-  height: 280px;
+  transform: scale(1.1) !important;
 }
 .foros-section .slick-initialized.slick-slider .slick-active.slick-current {
-  opacity: 1;
-  transition: all 300ms ease;
-  width: 600px !important;
-  height: 320px;
+  z-index: 10;
+  transform: scale(1.2) !important;
 }
-@media (max-width: 768px) {
-  .foros-section .slick-initialized.slick-slider .slick-active.slick-current {
-    width: 100% !important;
-  }
-}
-
 .nuestra-red-slider {
   width: 100%;
   max-width: 1318px;
@@ -1234,7 +1188,7 @@ footer .footer-column.last .mail {
 }
 @media (max-width: 768px) {
   #one .fullwidth-container .one-hero-wrapper-1 {
-    height: 70vh;
+    height: 57vh;
   }
 }
 #one .fullwidth-container .one-hero-wrapper-2 {
@@ -1252,19 +1206,25 @@ footer .footer-column.last .mail {
 }
 #one h1 {
   text-align: center;
+  align-items: center;
   color: #fff;
   transition: opacity 0.5s ease;
   font-family: "NexaBook", sans-serif;
   font-weight: 400;
-  font-size: clamp(24px, 4vw, 60px);
+  font-size: clamp(27px, 4vw, 60px);
 }
-#one h1 strong {
-  display: block;
-  text-align: center;
-  font-size: clamp(42px, 5vw, 100px);
+#one h1 p {
+  margin: 0;
+  padding: 2px;
+  margin-top: clamp(0.1875rem, 0.1298rem + 0.2564vw, 0.4375rem);
+}
+#one h1 p .title-1 {
+  font-size: clamp(2.9375rem, 2.1731rem + 3.3974vw, 6.25rem);
   font-family: "NexaSlabxBold", sans-serif;
-  margin-top: 10px;
-  margin-bottom: 0px;
+}
+#one h1 p .title-2 {
+  font-size: clamp(2.1875rem, 1.6827rem + 2.2436vw, 4.375rem);
+  font-family: "NexaSlabxBold", sans-serif;
 }
 #one h1.scroll-transition {
   position: absolute;
@@ -3417,7 +3377,104 @@ footer .footer-column.last .mail {
   color: #2C3947;
   text-align: center;
   margin: 26px auto;
+  margin-bottom: 50px;
   padding: 0 20;
+}
+.foros-section__counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: clamp(5px, 3vw, 74px);
+}
+.foros-section__counter--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: clamp(108px, 25vw, 251px);
+  height: clamp(108px, 25vw, 251px);
+  border-radius: 50%;
+  font-family: "NexaBook", sans-serif;
+  font-size: clamp(13px, 2.5vw, 32px);
+  color: #fff;
+}
+.foros-section__counter--box strong {
+  font-family: "NexaHeavy", sans-serif;
+  display: block;
+  font-size: clamp(15px, 3vw, 35px);
+}
+.foros-section__counter--box span {
+  font-family: "NexaHeavy", sans-serif;
+  font-size: clamp(35px, 5vw, 70px);
+  display: block;
+}
+.foros-section__counter--box-1 {
+  background-color: #2C3947;
+}
+.foros-section__counter--box-2 {
+  background-color: #65B3AD;
+}
+.foros-section__counter--box-3 {
+  background-color: #3E7578;
+}
+
+.resumen-foro-section {
+  background-color: #f2f2f2;
+  padding: clamp(50px, 8vw, 150px) 20px;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(45px, 6vw, 96px);
+}
+@media (max-width: 1000px) {
+  .resumen-foro-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.resumen-foro-section__box {
+  text-align: center;
+  max-width: 400px;
+}
+.resumen-foro-section__box--img {
+  width: clamp(280px, 25vw, 380px);
+}
+.resumen-foro-section__box--title {
+  font-size: 35px;
+  font-family: "NexaHeavy", sans-serif;
+  color: #2C3947;
+  text-align: center;
+  margin-top: clamp(30px, 4.5vw, 50px);
+  margin-top: 20px;
+}
+.resumen-foro-section__box--p {
+  font-family: "NexaBook", sans-serif;
+  font-size: 18px;
+  color: #3E7578;
+  margin-bottom: 38px;
+}
+.resumen-foro-section__box--p strong {
+  font-size: 22px;
+  display: block;
+  font-family: "NexaBlack", sans-serif;
+}
+.resumen-foro-section__box--cta {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  color: #93C01F;
+  font-family: "NexaHeavy";
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.resumen-foro-section__box--cta:hover, .resumen-foro-section__box--cta:active {
+  color: #3E7578;
 }
 
 .terms-and-conditions {

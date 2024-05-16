@@ -34,6 +34,8 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    opacity: 0.2;
+    transition: all 300ms ease;
     // flex: 0 0 calc(10.333% - 10px);
     // flex: 1 0 50vw;
     /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
@@ -126,13 +128,9 @@
   
   
   .slick-initialized.slick-slider {
-    .slick-active {
-      opacity: 0.2;
-      transition: all 300ms ease;
-  
+    .slick-active {  
       &.slick-current {
         opacity: 1;
-        transition: all 300ms ease;
       }
     }
   }
