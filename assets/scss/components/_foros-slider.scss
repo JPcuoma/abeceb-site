@@ -1,0 +1,85 @@
+.foros-section{
+
+    // 
+// Slider
+// 
+
+  .modern-slider{
+  
+    .slick-slide {
+      float: left;
+      margin: 0 ;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      // flex: 0 0 calc(10.333% - 10px);
+      // flex: 1 0 50vw;
+      /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
+      margin: 0;
+      /* Espacio entre los slides */
+      box-sizing: border-box;
+      /* Otros estilos para los slides */
+    }
+  
+  
+    /* ==== Slider Style === */
+      .slick-arrow{
+        position: absolute;
+        top: 30%;
+        width: 32px;
+        height: 52px;
+        border: 0 none;
+        cursor: pointer;
+        z-index: 10;
+        background: none;
+  
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width:768px) {
+          top: 3%;
+          width: 25px;
+          height: 31px;
+        }
+      }
+      .next-arrow {
+        right: 5%;
+        @media (max-width: 768px) {
+          right: 1vw;
+        }
+      }
+      .prev-arrow {
+        left: 0;
+        @media (max-width: 768px) {
+          left: 1vw;
+        }
+      }
+    
+      .item {
+        width: 60vw;
+      }
+    }
+    
+    
+    .slick-initialized.slick-slider {
+      .slick-active {
+        opacity: 0.2;
+        transition: all 300ms ease;
+        height: 280px;
+    
+        &.slick-current {
+          opacity: 1;
+          transition: all 300ms ease;
+            width: 600px !important;
+          height: 320px;
+
+          @media (max-width:768px) {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  
+  
+}
