@@ -36,7 +36,7 @@
             justify-content: center;
 
             @media (max-width:768px) {
-                height: 70vh;
+                height: 57vh;
             }
         }
 
@@ -46,7 +46,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
         }
     }
 
@@ -60,19 +59,27 @@
 
     h1 {
         text-align: center;
+        align-items: center;
         color: $white;
         transition: opacity 0.5s ease;
         font-family: 'NexaBook', sans-serif;
         font-weight: 400;
-        font-size: clamp(24px, 4vw, 60px);
+        font-size: clamp(27px, 4vw, 60px);
 
-        strong {
-            display: block;
-            text-align: center;
-            font-size: clamp(42px, 5vw, 100px);
-            font-family: 'NexaSlabxBold', sans-serif;
-            margin-top: 10px;
-            margin-bottom: 0px;
+        p {
+            margin: 0;
+            padding: 2px;
+            margin-top: clamp(0.1875rem, 0.1298rem + 0.2564vw, 0.4375rem);
+
+            .title-1 {
+                font-size: clamp(2.9375rem, 2.1731rem + 3.3974vw, 6.25rem);
+                font-family: 'NexaSlabxBold', sans-serif;
+            }
+
+            .title-2 {
+                font-size: clamp(2.1875rem, 1.6827rem + 2.2436vw, 4.375rem);
+                font-family: 'NexaSlabxBold', sans-serif;
+            }
         }
 
         &.scroll-transition {
