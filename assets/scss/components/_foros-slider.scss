@@ -57,12 +57,12 @@
     /* ==== Slider Style === */
     
       .slick-slide:hover {
-        z-index: 10;
-        transform: scale(1.1) !important;
+        // z-index: 10;
+        // transform: scale(1.1) !important;
 
-        @media (max-width:768px) {
-          transform: scale(1) !important;
-        }
+        // @media (max-width:768px) {
+        //   transform: scale(1) !important;
+        // }
         // height: 280px !important;
       }
     }

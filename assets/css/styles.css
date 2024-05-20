@@ -922,15 +922,6 @@ html {
   z-index: 1111111;
   background-color: transparent;
 }
-.foros-section .slider-foro-video .slick-slide:hover {
-  z-index: 10;
-  transform: scale(1.1) !important;
-}
-@media (max-width: 768px) {
-  .foros-section .slider-foro-video .slick-slide:hover {
-    transform: scale(1) !important;
-  }
-}
 .foros-section .slick-initialized.slick-slider .item.slick-current {
   z-index: 10;
   transform: scale(1.2) !important;
