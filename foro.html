@@ -147,68 +147,80 @@
             <h5 class="foros-section__h5">Conocé lo que sucedió en el</h5>
             <h4 class="foros-section__h4">13º Foro ABECEB</h4>
             <p class="foros-section__p">Accedé a los videos de los paneles cliqueando en el que quieras ver.</p>
+            <div class="slider-foro-modal">
+                <div class="slider-foro-modal__iframe">
+                </div>
+            </div>
             <div class="slick-container">
                 <div class="slick-container__overlay">
                     <div class="slider-foro-video">
                         <!-- Item -->
                         <div class="item">
-                            <iframe width="100%" height="320px" 
-                                class="embed-player"
-                                src="https://www.youtube.com/embed/08-8b4TYCnc?si=ScT9sxgM2-CH5leA" 
-                                data-lazy="https://www.youtube.com/embed/08-8b4TYCnc?si=ScT9sxgM2-CH5leA" 
-                                title="Sectores ganadores de nuevos negocios I" 
-                                frameborder="0" 
-                                enablejsapi="1"
-                                allow="accelerometer; autoplay; gyroscope; picture-in-picture;" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <!-- Item -->
-
-                        <!-- Item -->
-                        <div class="item">
-                            <iframe width="100%" height="320px" 
-                                class="embed-player"
-                                src="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio" 
-                                data-lazy="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio" 
-                                title="Sectores ganadores de nuevos negocios II" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; gyroscope; picture-in-picture;" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <!-- Item -->
-
-                        <!-- Item -->
-                        <div class="item">
-                            <iframe width="100%" height="320px" 
-                                class="embed-player"
-                                src="https://www.youtube.com/embed/cXoItPc6ORM?si=za4f9sw3je7Z21PD" 
-                                data-lazy="https://www.youtube.com/embed/cXoItPc6ORM?si=za4f9sw3je7Z21PD" 
-                                title="Sectores ganadores de Latinoamérica" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; gyroscope; picture-in-picture;" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <!-- Item -->
-
-                            <!-- Item -->
-                            <div class="item">
-                                <iframe width="100%" height="320px"
-                                    class="embed-player"
-                                    src="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio" 
-                                    data-lazy="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio" 
-                                    title="Sectores ganadores de nuevos negocios II" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; gyroscope; picture-in-picture;" 
-                                    allowfullscreen>
-                                </iframe>
+                            <div class="item__bg">
+                                <img src="./assets/img/foro-slider-bg/slider-bg-1.png" alt="youtube background" class="item__bg--img">
+                                <div class="item__bg--overlay"></div>
                             </div>
-                            <!-- Item -->
+                            <button 
+                                class="item__play-icon" 
+                                id="play_video"
+                                value="https://www.youtube.com/embed/08-8b4TYCnc?si=ScT9sxgM2-CH5leA"
+                                > 
+                                <img src="./assets/img/icons/play-icon.png" alt="play icon">
+                            </button>
+                            <h6 class="item__title">Sectores ganadores y nuevos negocios I</h6>
+                        </div>
+                        <!-- Item -->
+                        
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="item__bg">
+                                <img src="./assets/img/foro-slider-bg/slider-bg-2.png" alt="youtube background" class="item__bg--img">
+                                <div class="item__bg--overlay"></div>
+                            </div>
+                            <button 
+                                class="item__play-icon" 
+                                id="play_video"
+                                value="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio"
+                                >
+                                <img src="./assets/img/icons/play-icon.png" alt="play icon">
+                            </button>
+                            <h6 class="item__title">Sectores ganadores y nuevos negocios II</h6>
+                        </div>
+                        <!-- Item -->
+                        
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="item__bg">
+                                <img src="./assets/img/foro-slider-bg/slider-bg-3.png" alt="youtube background" class="item__bg--img">
+                                <div class="item__bg--overlay"></div>
+                            </div>
+                            <button 
+                                class="item__play-icon" 
+                                id="play_video"
+                                value="https://www.youtube.com/embed/cXoItPc6ORM?si=za4f9sw3je7Z21PD"
+                                >
+                                <img src="./assets/img/icons/play-icon.png" alt="play icon">
+                            </button>
+                            <h6 class="item__title">Sectores ganadores de Latinoamérica</h6>
+                        </div>
+                        <!-- Item -->
+                        
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="item__bg">
+                                <img src="./assets/img/foro-slider-bg/slider-bg-4.png" alt="youtube background" class="item__bg--img">
+                                <div class="item__bg--overlay"></div>
+                            </div>
+                            <button 
+                                class="item__play-icon" 
+                                id="play_video"
+                                value="https://www.youtube.com/embed/Y8d9w3tVhek?si=y-Ata_sDW0WZvhio"
+                                >
+                                <img src="./assets/img/icons/play-icon.png" alt="play icon">
+                            </button>
+                            <h6 class="item__title">Inversión sustentable: el desafío de crecer con inflación y volatilidad financiera</h6>
+                        </div>
+                        <!-- Item -->
                     </div>
                 </div>
             </div>
@@ -387,68 +399,14 @@
 
         <!-- slider "foros abeceb" -->
         <script>
-            var slideWrapper = $(".slider-foro-video"),
-                iframes = slideWrapper.find('.embed-player')
+            var slideWrapper = document.querySelector(".slider-foro-video"),
+                playBtn = document.querySelectorAll('#play_video'),
+                modalContainer = document.querySelector('.slider-foro-modal')
 
-
-            function postMessageToPlayer(player, command){
-                if (player == null || command == null) return;
-                player.contentWindow.postMessage(JSON.stringify(command), "*");
-                }
-
-            function playPauseVideo(slick, control){
-                        var currentSlide, slideType, startTime, player, video;
-
-                        currentSlide = slick.find(".slick-current");
-                        player = currentSlide.find("iframe").get(0);
-
-                        switch (control) {
-                        case "play":
-                            postMessageToPlayer(player, {
-                            "event": "command",
-                            "func": "mute"
-                            });
-                            postMessageToPlayer(player, {
-                            "event": "command",
-                            "func": "playVideo"
-                            });
-                            break;
-                        case "pause":
-                            postMessageToPlayer(player, {
-                            "event": "command",
-                            "func": "pauseVideo"
-                            });
-                            break;
-                        }
-
-                        }
-                        
 
             $(document).ready(function () {
 
-                    // Initialize
-                    slideWrapper.on("init", function(slick){
-                        slick = $(slick.currentTarget);
-                        setTimeout(function(){
-                        playPauseVideo(slick,"play");
-                        }, 1000);
-                        // resizePlayer(iframes, 16/9);
-                    });
-                    slideWrapper.on("beforeChange", function(event, slick) {
-                        slick = $(slick.$slider);
-                        playPauseVideo(slick,"pause");
-                    });
-                    slideWrapper.on("afterChange", function(event, slick) {
-                        slick = $(slick.$slider);
-                        playPauseVideo(slick,"play");
-                    });
-                    slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
-                        lazyCounter++;
-                        if (lazyCounter === lazyImages.length){
-                        lazyImages.addClass('show');
-                        // slideWrapper.slick("slickPlay");
-                        }
-                    });
+                console.log(playBtn);
     
                 $(slideWrapper).slick({
                     autoplay: true,
@@ -479,6 +437,22 @@
                 });
             })
     
+            playBtn.forEach(
+                (e)=>{
+                    e.addEventListener('click', ()=>{
+                        let iframe_src = $(e).attr('value');
+
+                        if (!modalContainer.classList.contains('show')) {
+                            modalContainer.classList.add('show')
+                        }
+                    })
+                }
+            )
+            modalContainer.addEventListener('click', ()=>{
+                if (modalContainer.classList.contains('show')) {
+                    modalContainer.classList.remove('show')
+                }
+            })
         </script>
 </body>
 
