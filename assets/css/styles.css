@@ -879,16 +879,22 @@ html {
   opacity: 1;
 }
 
+.foros-section .slick-container {
+  width: 100%;
+}
 .foros-section .slider-foro-video {
   height: 100%;
+  position: relative;
   /* ==== Slider Style === */
 }
 .foros-section .slider-foro-video .slick-list {
+  position: relative;
   height: 400px;
-  overflow: visible !important;
 }
 .foros-section .slider-foro-video .slick-track {
-  height: 100%;
+  position: relative;
+  top: 5%;
+  height: 80%;
   width: 100%;
 }
 .foros-section .slider-foro-video .slick-dots li button:before {
@@ -906,26 +912,29 @@ html {
   transform: scale(1);
   /* Espacio entre los slides */
   box-sizing: border-box;
-  border-radius: 20px;
   /* Otros estilos para los slides */
 }
-.foros-section .slider-foro-video .slick-slide .item {
+.foros-section .slider-foro-video .item {
   position: relative;
   overflow: hidden;
-  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 20px;
+  justify-content: flex-start;
+  height: 100%;
 }
-.foros-section .slider-foro-video .slick-slide .item__bg {
+.foros-section .slider-foro-video .item__bg {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.foros-section .slider-foro-video .slick-slide .item__bg--img {
+.foros-section .slider-foro-video .item__bg--img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.foros-section .slider-foro-video .slick-slide .item__bg--overlay {
+.foros-section .slider-foro-video .item__bg--overlay {
   position: absolute;
   z-index: inherit;
   width: 100%;
@@ -935,7 +944,7 @@ html {
   background-color: rgba(0, 0, 0, 0.5921568627);
   transition: all 0.4s ease-in;
 }
-.foros-section .slider-foro-video .slick-slide .item__play-icon {
+.foros-section .slider-foro-video .item__play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -953,17 +962,17 @@ html {
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
-.foros-section .slider-foro-video .slick-slide .item__play-icon img {
+.foros-section .slider-foro-video .item__play-icon img {
   width: 40px;
 }
-.foros-section .slider-foro-video .slick-slide .item__title {
+.foros-section .slider-foro-video .item__title {
+  position: relative;
+  padding: 10px;
   color: #fff;
   font-family: "NexaHeavy", sans-serif;
   font-size: 20px;
   text-align: left;
   margin: 0;
-  align-self: flex-end;
-  justify-self: flex-start;
 }
 .foros-section .slider-foro-video .slick-slide:hover {
   z-index: 10;
@@ -3477,8 +3486,8 @@ footer .footer-column.last .mail {
   color: #2C3947;
   text-align: center;
   margin: 26px auto;
-  margin-bottom: 50px;
-  padding: 0 20;
+  margin-bottom: 30px;
+  padding: 0 20px;
 }
 .foros-section__counter {
   display: flex;
