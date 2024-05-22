@@ -985,6 +985,7 @@ html {
   position: fixed;
   z-index: 10000;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3647058824);
@@ -994,8 +995,8 @@ html {
   transform: scale(0);
 }
 .slider-foro-modal__iframe {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 450px;
 }
 .slider-foro-modal__iframe iframe {
   width: 100%;
