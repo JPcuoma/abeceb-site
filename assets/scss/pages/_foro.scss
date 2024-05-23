@@ -1,7 +1,7 @@
 #us_equipo.bg-foro{
-    background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/bg-foro.png);
+    background-image: url('../img/bg-foro.png');
     @media (max-width:786px) {
-            background-image: linear-gradient(to bottom, #023a3a9b, #023a3a9b), url(../img/bg-foro-mob.png);
+            background-image: url('../img/bg-foro-mob.png');
         }
 
         h2{
@@ -29,11 +29,12 @@
         font-family: 'NexaBook', sans-serif;
         font-size: clamp(25px, 3.5vw, 40px);
         text-align: center;
-        color: $dark-green;
+        color: #2C3947;
         margin-bottom: 50px;
         
         strong{
             display: block;
+            color: #3E7578;
             font-family: 'NexaSlabBlack', sans-serif;
             font-size: clamp(40px, 4vw, 50px);
         }
@@ -270,7 +271,7 @@
         margin: 0;
         text-align: center;
         margin-bottom: 65px;
-        padding: 0 20;
+        padding: 0 20px;
 
         @media (max-width: 768px) {
             margin-bottom: 35px;
@@ -282,7 +283,7 @@
         color: $black-typo;
         margin: 0;
         text-align: center;
-        padding: 0 20;
+        padding: 0 20px;
     }
     &__h4{
         margin: 0;
@@ -290,7 +291,7 @@
         font-size: clamp(50px, 5.5vw, 60px);
         font-family: 'NexaRegular', sans-serif;
         color: $dark-green;
-        padding: 0 20;
+        padding: 0 20px;
     }
     &__p{
         font-family: 'NexaRegular', sans-serif;
@@ -305,8 +306,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 70px;
         gap: clamp(5px, 3vw, 74px);
+        padding: 0 10px;
+
+        @media (max-width:768px) {
+            gap: 3px;
+        }
 
         &--box{
             display: flex;
@@ -317,18 +323,21 @@
             height: clamp(108px, 25vw, 251px);
             border-radius: 50%;
             font-family: 'NexaBook', sans-serif;
-            font-size: clamp(13px, 2.5vw, 32px);
+            font-size: clamp(12px, 2.5vw, 32px);
             color: #fff;
             
             strong{
                 font-family: 'NexaHeavy', sans-serif;
                 display: block;
-                font-size: clamp(15px, 3vw, 35px);
+                font-size: clamp(12px, 3vw, 35px);
             }
             span{
                 font-family: 'NexaHeavy', sans-serif;
                 font-size: clamp(35px, 5vw, 70px);
                 display: block;
+                line-height: 1;
+                margin: 4px 0;
+                margin-bottom: 2px;
             }
         }
 
@@ -365,7 +374,7 @@
         max-width: 400px;
 
         &--img{
-            width: clamp(280px, 25vw, 380px);
+            width: clamp(280px, 25vw, 350px);
         }
         &--title{
             font-size: 35px;
@@ -373,12 +382,13 @@
             color: $black-typo;
             text-align: center;
             margin-top: clamp(30px, 4.5vw, 50px);
-            margin-top: 20px;
+            margin-bottom: 15px;
         }
         &--p{
             font-family: 'NexaBook', sans-serif;
             font-size: 18px;
             color: $dark-green;
+            margin-top: 0;
             margin-bottom: 38px;
 
             strong{

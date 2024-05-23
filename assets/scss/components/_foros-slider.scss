@@ -13,15 +13,23 @@
 
     .slick-list{
       position: relative;
-      height: 400px;
+      height: 350px;
+
+      @media (max-width:768px) {
+        height: 200px;
+      }
       // top: 20px;
       // overflow: visible !important;
     }
     .slick-track{
       position: relative;
       top: 5%;
-      height: 80%;
+      height: 90%;
       width: 100%;
+
+      @media (max-width:768px) {
+        height: 95%;
+      }
     }
     .slick-dots li button:before{
       font-size: 10px !important;

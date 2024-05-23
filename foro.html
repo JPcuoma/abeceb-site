@@ -135,9 +135,9 @@
                         </span>
                     </span>
                 </div>
-                <button type="submit" class="btn">
+                <a href="mailto:mzavalski@abeceb.com" type="submit" class="btn">
                     Quiero ser sponsor
-                </button>
+                </a>
             </form>
             <img src="./assets/img/foro-form-ilustration.png" alt="ilustracion" class="sponsor-section__ilustration">
         </section>
@@ -149,6 +149,9 @@
             <p class="foros-section__p">Accedé a los videos de los paneles cliqueando en el que quieras ver.</p>
             <div class="slider-foro-modal">
                 <div class="slider-foro-modal__iframe">
+                    <button class="slider-foro-modal__iframe--close-btn" id="close_foro_video_modal">
+                        <img src="./assets/img/icons/close-icon.png" alt="close">
+                    </button>
                     <iframe 
                         width="100%" 
                         height="100%" 
@@ -409,6 +412,7 @@
             var slideWrapper = document.querySelector(".slider-foro-video"),
                 playBtn = document.querySelectorAll('#play_video'),
                 modalContainer = document.querySelector('.slider-foro-modal'),
+                closeModalBtn = document.querySelector('#close_foro_video_modal'),
                 iframe_element = modalContainer.querySelector('.slider-foro-modal__iframe>iframe')
 
 
@@ -425,7 +429,7 @@
                     slidesToScroll: 1,
                     pauseOnHover: true,
                     infinite: true,
-                    dots: false,
+                    dots: true,
                     cssEase: 'ease',
                     lazyLoad: 'ondemand',
                     draggable: true,
@@ -453,13 +457,17 @@
                         }
                         iframe_element.setAttribute('src', iframe_src + '?enablejsapi=1&autoplay=1&?mute=0')
                         document.body.style.overflow = 'hidden';
-                        
-                        
-                        
                     })
                 }
             )
-            modalContainer.addEventListener('click', ()=>{
+            // modalContainer.addEventListener('click', ()=>{
+            //     if (modalContainer.classList.contains('show')) {
+            //         modalContainer.classList.remove('show')
+            //         iframe_element.setAttribute('src', '')
+            //         document.body.style.overflow = 'auto';
+            //     }
+            // })
+            closeModalBtn.addEventListener('click', ()=>{
                 if (modalContainer.classList.contains('show')) {
                     modalContainer.classList.remove('show')
                     iframe_element.setAttribute('src', '')

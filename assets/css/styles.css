@@ -45,6 +45,7 @@
 }
 @font-face {
   font-family: "NexaSlabBlack";
+  font-weight: 700;
   src: local("NexaSlabBlack"), url("../fonts/NexaSlabBlack.otf") format("opentype");
 }
 @font-face {
@@ -889,13 +890,23 @@ html {
 }
 .foros-section .slider-foro-video .slick-list {
   position: relative;
-  height: 400px;
+  height: 350px;
+}
+@media (max-width: 768px) {
+  .foros-section .slider-foro-video .slick-list {
+    height: 200px;
+  }
 }
 .foros-section .slider-foro-video .slick-track {
   position: relative;
   top: 5%;
-  height: 80%;
+  height: 90%;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .foros-section .slider-foro-video .slick-track {
+    height: 95%;
+  }
 }
 .foros-section .slider-foro-video .slick-dots li button:before {
   font-size: 10px !important;
@@ -997,19 +1008,34 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3647058824);
+  background-color: rgba(0, 0, 0, 0.5490196078);
   display: flex;
   align-items: center;
   justify-content: center;
   transform: scale(0);
+  transition: all 0.15s ease-out;
 }
 .slider-foro-modal__iframe {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
   width: 90%;
-  height: 450px;
+  height: clamp(450px, 90vh, 650px);
+}
+.slider-foro-modal__iframe--close-btn {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+.slider-foro-modal__iframe--close-btn img {
+  width: 100%;
 }
 .slider-foro-modal__iframe iframe {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .slider-foro-modal.show {
@@ -3188,11 +3214,11 @@ footer .footer-column.last .mail {
 }
 
 #us_equipo.bg-foro {
-  background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/bg-foro.png);
+  background-image: url("../img/bg-foro.png");
 }
 @media (max-width: 786px) {
   #us_equipo.bg-foro {
-    background-image: linear-gradient(to bottom, rgba(2, 58, 58, 0.6078431373), rgba(2, 58, 58, 0.6078431373)), url(../img/bg-foro-mob.png);
+    background-image: url("../img/bg-foro-mob.png");
   }
 }
 #us_equipo.bg-foro h2 {
@@ -3219,11 +3245,12 @@ footer .footer-column.last .mail {
   font-family: "NexaBook", sans-serif;
   font-size: clamp(25px, 3.5vw, 40px);
   text-align: center;
-  color: #3E7578;
+  color: #2C3947;
   margin-bottom: 50px;
 }
 .dialogo-section__title strong {
   display: block;
+  color: #3E7578;
   font-family: "NexaSlabBlack", sans-serif;
   font-size: clamp(40px, 4vw, 50px);
 }
@@ -3457,7 +3484,7 @@ footer .footer-column.last .mail {
   margin: 0;
   text-align: center;
   margin-bottom: 65px;
-  padding: 0 20;
+  padding: 0 20px;
 }
 @media (max-width: 768px) {
   .foros-section__h6 {
@@ -3470,7 +3497,7 @@ footer .footer-column.last .mail {
   color: #2C3947;
   margin: 0;
   text-align: center;
-  padding: 0 20;
+  padding: 0 20px;
 }
 .foros-section__h4 {
   margin: 0;
@@ -3478,7 +3505,7 @@ footer .footer-column.last .mail {
   font-size: clamp(50px, 5.5vw, 60px);
   font-family: "NexaRegular", sans-serif;
   color: #3E7578;
-  padding: 0 20;
+  padding: 0 20px;
 }
 .foros-section__p {
   font-family: "NexaRegular", sans-serif;
@@ -3493,8 +3520,14 @@ footer .footer-column.last .mail {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
   gap: clamp(5px, 3vw, 74px);
+  padding: 0 10px;
+}
+@media (max-width: 768px) {
+  .foros-section__counter {
+    gap: 3px;
+  }
 }
 .foros-section__counter--box {
   display: flex;
@@ -3505,18 +3538,21 @@ footer .footer-column.last .mail {
   height: clamp(108px, 25vw, 251px);
   border-radius: 50%;
   font-family: "NexaBook", sans-serif;
-  font-size: clamp(13px, 2.5vw, 32px);
+  font-size: clamp(12px, 2.5vw, 32px);
   color: #fff;
 }
 .foros-section__counter--box strong {
   font-family: "NexaHeavy", sans-serif;
   display: block;
-  font-size: clamp(15px, 3vw, 35px);
+  font-size: clamp(12px, 3vw, 35px);
 }
 .foros-section__counter--box span {
   font-family: "NexaHeavy", sans-serif;
   font-size: clamp(35px, 5vw, 70px);
   display: block;
+  line-height: 1;
+  margin: 4px 0;
+  margin-bottom: 2px;
 }
 .foros-section__counter--box-1 {
   background-color: #2C3947;
@@ -3550,7 +3586,7 @@ footer .footer-column.last .mail {
   max-width: 400px;
 }
 .resumen-foro-section__box--img {
-  width: clamp(280px, 25vw, 380px);
+  width: clamp(280px, 25vw, 350px);
 }
 .resumen-foro-section__box--title {
   font-size: 35px;
@@ -3558,12 +3594,13 @@ footer .footer-column.last .mail {
   color: #2C3947;
   text-align: center;
   margin-top: clamp(30px, 4.5vw, 50px);
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .resumen-foro-section__box--p {
   font-family: "NexaBook", sans-serif;
   font-size: 18px;
   color: #3E7578;
+  margin-top: 0;
   margin-bottom: 38px;
 }
 .resumen-foro-section__box--p strong {
@@ -3699,12 +3736,12 @@ footer .footer-column.last .mail {
 }
 
 #us_equipo.bg-colaboraciones {
-  background-image: url("../img/bg-medios.png");
+  background-image: url("../img/bg-colaboraciones.png");
   padding: 0 20px;
 }
 @media (max-width: 786px) {
   #us_equipo.bg-colaboraciones {
-    background-image: url("../img/bg-medios-mob.png");
+    background-image: url("../img/bg-colaboraciones-mob.png");
   }
 }
 #us_equipo.bg-colaboraciones h1 {
