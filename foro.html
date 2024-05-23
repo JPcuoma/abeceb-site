@@ -238,17 +238,17 @@
             <div class="foros-section__counter">
                 <div class="foros-section__counter--box foros-section__counter--box-1">
                     <strong>más de</strong>
-                    <span>800</span>
+                    <span id="counter_empresas"></span>
                     empresas
                 </div>
                 <div class="foros-section__counter--box foros-section__counter--box-2">
                     <strong>cerca de</strong>
-                    <span>1200</span>
+                    <span id="counter_asistentes"></span>
                     asistentes
                 </div>
                 <div class="foros-section__counter--box foros-section__counter--box-3">
                     <strong>más de</strong>
-                    <span>40</span>
+                    <span id="counter_disertantes"></span>
                     disertantes
                 </div>
             </div>
@@ -265,7 +265,7 @@
                     Porque el clima en los negocios
                     también cambió.
                 </p>
-                <a href="#" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
+                <a href="https://www.youtube.com/watch?v=cXoItPc6ORM" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
             </div>
             <div class="resumen-foro-section__box">
                 <img src="./assets/img/foro-resumen-2.png" alt="" class="resumen-foro-section__box--img">
@@ -278,7 +278,7 @@
                     en el nuevo mundo de los negocios.
                     
                 </p>
-                <a href="#" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
+                <a href="https://www.youtube.com/watch?v=Y8d9w3tVhek" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
             </div>
             <div class="resumen-foro-section__box">
                 <img src="./assets/img/foro-resumen-3.png" alt="" class="resumen-foro-section__box--img">
@@ -291,7 +291,7 @@
                     La inversión como motor de impulso
                     para el desarrollo regional.
                 </p>
-                <a href="#" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
+                <a href="https://www.youtube.com/watch?v=08-8b4TYCnc&t=2s" target="_blank" class="resumen-foro-section__box--cta">ver resumen</a>
             </div>
         </section>
 
@@ -460,13 +460,6 @@
                     })
                 }
             )
-            // modalContainer.addEventListener('click', ()=>{
-            //     if (modalContainer.classList.contains('show')) {
-            //         modalContainer.classList.remove('show')
-            //         iframe_element.setAttribute('src', '')
-            //         document.body.style.overflow = 'auto';
-            //     }
-            // })
             closeModalBtn.addEventListener('click', ()=>{
                 if (modalContainer.classList.contains('show')) {
                     modalContainer.classList.remove('show')
@@ -474,6 +467,44 @@
                     document.body.style.overflow = 'auto';
                 }
             })
+        </script>
+
+        <!-- counter section -->
+        <script>
+            var counter1 = document.querySelector('#counter_empresas'),
+                counter2 = document.querySelector('#counter_asistentes'),
+                counter3 = document.querySelector('#counter_disertantes');
+
+                counter1.textContent = 0;
+                counter2.textContent = 0;
+                counter3.textContent = 0;
+
+                function counterCount(element, count, time){
+                    
+                    let counting = setInterval(() => {
+                        
+                        if (element.textContent >= count) {
+                            clearInterval(counting)
+                            return
+                        }
+                        element.textContent ++
+
+                    }, time);
+                }
+
+                const observador =  new IntersectionObserver(
+                    entries => {
+                        entries.forEach((entry)=>{
+                            if (entry.isIntersecting) {
+                                counterCount(counter1, 800, 6)
+                                counterCount(counter2, 1200, .5)
+                                counterCount(counter3, 40, 90)
+                            }
+                        })
+                    },
+                    {threshold: .2}
+                )
+                observador.observe(counter1)
         </script>
 </body>
 
