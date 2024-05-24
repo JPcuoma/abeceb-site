@@ -3766,16 +3766,20 @@ footer .footer-column.last .mail {
   font-size: clamp(25px, 5vw, 50px);
   color: #2C3947;
   width: 100%;
-  max-width: 980px;
+  max-width: 1275px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: clamp(60px, 7vw, 82px);
+  line-height: 1.2;
 }
 .organizaciones-section__title strong {
   font-size: clamp(35px, 6vw, 70px);
   font-family: "NexaHeavy", sans-serif;
   color: #65B3AD;
   display: block;
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
 }
 .organizaciones-section__grid {
   width: 100%;
