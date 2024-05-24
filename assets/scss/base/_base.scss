@@ -9,16 +9,12 @@ ul {
 li {
     list-style: none;
 }
-// *{
-//     scroll-behavior: smooth;
-// }
 
 body {
     margin: 0;
     padding: 0;
     transition: all 1s;
     font-size: 10px;
-    overflow-x: hidden;
 }
 
 html {
@@ -53,4 +49,33 @@ html {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+}
+
+// 
+// Margin
+// 
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    ) !default;
+
+@each $name, $size in $spacers {
+    .m-#{$name} {
+        margin: $size !important;
+    }
+
+    .mt-#{$name} {
+        margin-top: $size !important;
+    }
+
+    .my-#{$name} {
+        margin-top: $size !important;
+        margin-bottom: $size !important;
+    }
 }
