@@ -193,6 +193,65 @@
                 background-color: $dark-green;
             }
         }
+        &--calendar{
+            margin: 80px auto 60px auto;
+            width: 100%;
+            max-width: 520px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: clamp(17px, 3vw, 30px);
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &--calendar-img{
+            flex: 1 0 0;
+            max-width: 118px;
+
+            img{
+                width: 100%;
+            }
+        }
+        &--calendar-text-box{
+            flex: 1 0 0;
+            text-align: left;
+
+            @media (max-width:768px) {
+                text-align: center;
+            }
+        }
+        &--calendar-title{
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: clamp(30px, 3.3vw, 35px);
+            font-family: 'NexaSlabBlack', sans-serif;
+            color: #2C3947;
+        }
+        &--calendar-p1{
+            margin: 0;
+            color: #3E7578;
+            font-family: 'NexaRegular', sans-serif;
+            font-size: clamp(18px, 2vw, 20px);
+            
+        }
+        &--calendar-p2{
+            margin: 0;
+            font-family: 'NexaHeavy', sans-serif;
+            color: #2C3947;
+            font-size: clamp(25px, 3vw, 30px);
+            
+        }
+        &--calendar-p3{
+            margin: 0;
+            font-family: 'NexaHeavy', sans-serif;
+            color: #65B3AD;
+            font-size: clamp(20px, 2.3vw, 25px);
+
+        }
     }
 }
 

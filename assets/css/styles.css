@@ -45,7 +45,6 @@
 }
 @font-face {
   font-family: "NexaSlabBlack";
-  font-weight: 700;
   src: local("NexaSlabBlack"), url("../fonts/NexaSlabBlack.otf") format("opentype");
 }
 @font-face {
@@ -76,7 +75,6 @@ body {
   padding: 0;
   transition: all 1s;
   font-size: 10px;
-  overflow-x: hidden;
 }
 
 html {
@@ -110,6 +108,84 @@ html {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.my-1 {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 1rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.m-5 {
+  margin: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 
 @keyframes bounceIn {
@@ -167,6 +243,447 @@ html {
     position: absolute;
   }
 }
+section#hablamos {
+  width: 100%;
+  text-align: center;
+  font-family: "NexaExtraLight", sans-serif;
+  font-size: clamp(20px, 3vw, 30px);
+  min-height: 100vh;
+  background: #2C3947;
+  color: #fff;
+  padding: clamp(80px, 8vw, 170px) clamp(20px, 2vw, 70px);
+}
+section#hablamos .row {
+  --gutter-x: 1.2rem;
+  --gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(-1 * var(--gutter-y));
+  margin-right: calc(-0.5 * var(--gutter-x));
+  margin-left: calc(-0.5 * var(--gutter-x));
+}
+section#hablamos .row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-top: var(--gutter-y);
+}
+section#hablamos .col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+section#hablamos h3 {
+  font-size: 32px;
+  font-family: "NexaHeavy", sans-serif;
+  color: #93C01F;
+  text-align: center;
+  margin-bottom: clamp(50px, 8vw, 110px);
+}
+section#hablamos form p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section#hablamos form input {
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  border-left: none;
+  flex: 1 0 0;
+}
+section#hablamos form input:focus-visible {
+  outline: none;
+}
+section#hablamos form input[type=checkbox]::-ms-check {
+  display: none;
+}
+section#hablamos form input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 22px;
+  width: 22px;
+  border: 3px solid silver;
+  flex: none;
+  cursor: pointer;
+}
+section#hablamos form input[type=checkbox]:checked {
+  background-image: url(../img/icons/check1.png);
+  background-size: cover;
+}
+section#hablamos form select {
+  cursor: pointer;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: fit-content;
+  max-width: 200px;
+  outline: none;
+  color: #fff;
+  font-size: clamp(18px, 2.2vw, 30px);
+  appearance: none;
+  padding: 0rem 2.25rem 0.15rem 0.75rem;
+  background-size: 16px 12px;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: text-bottom;
+  background-image: url(../img/icons/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  border-bottom: 1px solid #fff;
+}
+@media (max-width: 786px) {
+  section#hablamos form select {
+    width: 100%;
+  }
+}
+section#hablamos form select option {
+  font-size: 18px;
+  background-color: rgba(44, 57, 71, 0.8196078431);
+}
+section#hablamos form #inputContact1 {
+  width: 80%;
+}
+section#hablamos form #inputContact2 {
+  max-width: 320px;
+}
+@media (max-width: 570px) {
+  section#hablamos form #inputContact2 {
+    max-width: 90%;
+  }
+}
+section#hablamos form #inputContact3 {
+  max-width: 320px;
+}
+@media (max-width: 570px) {
+  section#hablamos form #inputContact3 {
+    max-width: 90%;
+  }
+}
+section#hablamos form #inputContact4 {
+  max-width: 400px;
+}
+@media (max-width: 570px) {
+  section#hablamos form #inputContact4 {
+    max-width: 90%;
+  }
+}
+section#hablamos form #inputContact5 {
+  max-width: 520px;
+}
+@media (max-width: 570px) {
+  section#hablamos form #inputContact5 {
+    max-width: 98%;
+  }
+}
+section#hablamos form #inputContact6 {
+  max-width: 350px;
+}
+@media (max-width: 570px) {
+  section#hablamos form #inputContact6 {
+    max-width: 90%;
+  }
+}
+section#hablamos form .terms {
+  vertical-align: middle;
+  align-items: center;
+}
+section#hablamos form .terms a {
+  cursor: pointer;
+  font-size: 15px;
+  color: #CCCCCC;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+section#hablamos form input.btn {
+  margin-top: 40px;
+  color: #fff;
+  background: #93C01F;
+  text-decoration: none;
+  border-radius: 40px;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  max-width: 335px;
+  font-family: "nexaheavy", sans-serif;
+  cursor: pointer;
+  padding: 20px;
+  transition: background-color 0.2s ease;
+}
+section#hablamos form input.btn:hover, section#hablamos form input.btn:active {
+  background-color: #3E7578;
+}
+section#hablamos form input.btn.disabled {
+  cursor: default;
+  background-color: rgba(204, 204, 204, 0.6666666667);
+}
+section#hablamos form .form-field {
+  position: relative;
+  width: 100%;
+}
+section#hablamos form .form-field__error-text {
+  display: none;
+  color: #93C01F;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  font-size: 14px;
+}
+section#hablamos form .form-field input:focus-visible,
+section#hablamos form .form-field select:focus-visible {
+  border-bottom: 1px solid #93C01F;
+}
+section#hablamos form .form-field input[type=checkbox]:focus {
+  border: 3px solid #93C01F;
+}
+section#hablamos form .form-field input:focus-visible ~ .form-field__error-text,
+section#hablamos form .form-field select:focus-visible ~ .form-field__error-text {
+  display: inline-block;
+}
+section#hablamos form .form-field.active input,
+section#hablamos form .form-field.active select {
+  border-bottom: 1px solid #93C01F;
+}
+section#hablamos form .form-field.active input[type=checkbox] {
+  border: 3px solid #93C01F;
+}
+section#hablamos form .form-field.active .form-field__error-text {
+  display: block;
+}
+section#hablamos form .form-message {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 749px;
+  text-align: center;
+  padding: 7px 20px;
+  font-size: clamp(16px, 2vw, 18px);
+  font-family: "NexaBold", sans-serif;
+  border-radius: 30px;
+}
+section#hablamos form .form-message img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+}
+section#hablamos form .form-message__succes {
+  background-color: #74C89F;
+}
+section#hablamos form .form-message__error {
+  background-color: #FA4343;
+}
+section#hablamos form .form-message.active {
+  display: flex;
+}
+section#hablamos form .form-message.show {
+  display: flex;
+}
+section#hablamos .wpcf7-not-valid-tip {
+  color: #93C01F;
+  font-size: 1rem;
+  font-weight: normal;
+  display: block;
+}
+section#hablamos .wpcf7 .ajax-loader {
+  visibility: hidden;
+  display: inline-block;
+  background-color: #23282d;
+  opacity: 0.75;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 24px;
+  position: relative;
+}
+section#hablamos .wpcf7 form.submitting .ajax-loader {
+  visibility: visible;
+}
+section#hablamos .wpcf7 .ajax-loader::before {
+  content: "";
+  position: absolute;
+  background-color: #72ff00;
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 100%;
+  transform-origin: 8px 8px;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  section#hablamos .wpcf7 .ajax-loader::before {
+    animation-name: blink;
+    animation-duration: 2000ms;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+section#hablamos .wpcf7-response-output {
+  color: #fff !important;
+  border-radius: 2rem !important;
+  font-size: 1rem !important;
+}
+section#hablamos .wpcf7 form .wpcf7-response-output {
+  margin: 0px !important;
+}
+section#hablamos input.wpcf7-form-control.wpcf7-submit.w-100.btn.btn-primary {
+  margin-bottom: 10px !important;
+}
+section#hablamos .wpcf7-mail-sent-ok {
+  border: 5px solid #74C89F !important;
+  background-color: #74C89F !important;
+}
+section#hablamos .wpcf7-mail-sent-ng {
+  border: 5px solid #f84343 !important;
+  background-color: #f84343 !important;
+}
+section#hablamos .wpcf7-spam-blocked {
+  border: 5px solid #ffa500 !important;
+  background-color: #ffa500 !important;
+  color: black !important;
+}
+section#hablamos .wpcf7-validation-errors {
+  border: 5px solid #faf067 !important;
+  background-color: #faf067 !important;
+  color: black !important;
+}
+section#hablamos .wpcf7 form.invalid .wpcf7-response-output, section#hablamos .wpcf7 form.unaccepted .wpcf7-response-output, section#hablamos .wpcf7 form.payment-required .wpcf7-response-output {
+  border: 5px solid #faf067 !important;
+  background-color: #faf067 !important;
+  color: black !important;
+}
+
+.pagination {
+  --link-hover-color: #cca000;
+  --pagination-padding-x: 1.5rem;
+  --pagination-padding-y: 0.75rem;
+  --pagination-font-size: 1.25rem;
+  --pagination-border-radius: 0.5rem;
+  --pagination-color: var(--link-color);
+  --pagination-bg: #fff;
+  --pagination-border-width: 1px;
+  --pagination-border-color: #dee2e6;
+  --pagination-hover-color: var(--link-hover-color);
+  --pagination-hover-bg: #e9ecef;
+  --pagination-hover-border-color: #dee2e6;
+  --pagination-focus-color: var(--link-hover-color);
+  --pagination-focus-bg: #e9ecef;
+  --pagination-focus-box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+  --pagination-active-color: #fff;
+  --pagination-active-bg: #93C01F;
+  --pagination-active-border-color: #93C01F;
+  --pagination-disabled-color: #6c757d;
+  --pagination-disabled-bg: #fff;
+  --pagination-disabled-border-color: #dee2e6;
+  font-family: "NexaRegular", sans-serif;
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: var(--pagination-padding-y) var(--pagination-padding-x);
+  font-size: var(--pagination-font-size);
+  color: var(--pagination-color);
+  text-decoration: none;
+  background-color: var(--pagination-bg);
+  border: var(--pagination-border-width) solid var(--pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-link {
+    transition: none;
+  }
+}
+.page-link:hover {
+  z-index: 2;
+  color: var(--pagination-hover-color);
+  background-color: var(--pagination-hover-bg);
+  border-color: var(--pagination-hover-border-color);
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: var(--pagination-focus-color);
+  background-color: var(--pagination-focus-bg);
+  outline: 0;
+  box-shadow: var(--pagination-focus-box-shadow);
+}
+
+.page-link.active,
+.active > .page-link {
+  z-index: 3;
+  color: var(--pagination-active-color);
+  background-color: var(--pagination-active-bg);
+  border-color: var(--pagination-active-border-color);
+}
+
+.page-link.disabled,
+.disabled > .page-link {
+  color: var(--pagination-disabled-color);
+  pointer-events: none;
+  background-color: var(--pagination-disabled-bg);
+  border-color: var(--pagination-disabled-border-color);
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: var(--pagination-border-radius);
+  border-bottom-left-radius: var(--pagination-border-radius);
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: var(--pagination-border-radius);
+  border-bottom-right-radius: var(--pagination-border-radius);
+}
+
 .nav-container {
   width: 100%;
   height: 100px;
@@ -3405,6 +3922,63 @@ footer .footer-column.last .mail {
 }
 .foro-abeceb-2024__content--cta:hover, .foro-abeceb-2024__content--cta:active {
   background-color: #3E7578;
+}
+.foro-abeceb-2024__content--calendar {
+  margin: 80px auto 60px auto;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(17px, 3vw, 30px);
+}
+@media (max-width: 768px) {
+  .foro-abeceb-2024__content--calendar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.foro-abeceb-2024__content--calendar-img {
+  flex: 1 0 0;
+  max-width: 118px;
+}
+.foro-abeceb-2024__content--calendar-img img {
+  width: 100%;
+}
+.foro-abeceb-2024__content--calendar-text-box {
+  flex: 1 0 0;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .foro-abeceb-2024__content--calendar-text-box {
+    text-align: center;
+  }
+}
+.foro-abeceb-2024__content--calendar-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: clamp(30px, 3.3vw, 35px);
+  font-family: "NexaSlabBlack", sans-serif;
+  color: #2C3947;
+}
+.foro-abeceb-2024__content--calendar-p1 {
+  margin: 0;
+  color: #3E7578;
+  font-family: "NexaRegular", sans-serif;
+  font-size: clamp(18px, 2vw, 20px);
+}
+.foro-abeceb-2024__content--calendar-p2 {
+  margin: 0;
+  font-family: "NexaHeavy", sans-serif;
+  color: #2C3947;
+  font-size: clamp(25px, 3vw, 30px);
+}
+.foro-abeceb-2024__content--calendar-p3 {
+  margin: 0;
+  font-family: "NexaHeavy", sans-serif;
+  color: #65B3AD;
+  font-size: clamp(20px, 2.3vw, 25px);
 }
 
 .sponsor-section {
