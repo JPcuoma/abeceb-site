@@ -36,7 +36,7 @@
 
         strong{
             font-size: clamp(35px, 6vw, 70px);
-            font-family: 'NexaHeavy', sans-serif;
+            font-family: 'NexaSlabBlack', sans-serif;
             color: #65B3AD;
             display: block;
             width: 100%;
@@ -64,7 +64,9 @@
             align-items: center;
 
             img{
-                width: 100%;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
             }
         }
     }
