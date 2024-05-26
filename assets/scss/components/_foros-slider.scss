@@ -1,141 +1,133 @@
-.foros-section{
+  // 
+  // Slider
+  // 
 
-    // 
-// Slider
-// 
-  .slick-container{
-    width: 100%;
-    // overflow-x: hidden;
-  }
-  .slider-foro-video{
-    height: 100%;
-    position: relative;
-
-    .slick-list{
-      position: relative;
-      height: 350px;
-
-      @media (max-width:768px) {
-        height: 200px;
-      }
-      // top: 20px;
-      // overflow: visible !important;
-    }
-    .slick-track{
-      position: relative;
-      top: 5%;
-      height: 90%;
+  .foros-section {
+    .slick-container {
       width: 100%;
+    }
 
-      @media (max-width:768px) {
-        height: 95%;
-      }
-    }
-    .slick-dots li button:before{
-      font-size: 10px !important;
-    }
-    .slick-slide {
-      float: left;
-      margin: 0 5px;
-      // display: flex;
-      // justify-content: space-between;
-      opacity: 1;
-      overflow: hidden;
-      position: relative;
-      transition: all 300ms ease;
+    .slider-foro-video {
       height: 100%;
-      // flex: 0 0 calc(10.333% - 10px);
-      // flex: 1 0 50vw;
-      /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
-      // margin: 0;
-      transform: scale(1);
-      /* Espacio entre los slides */
-      box-sizing: border-box;
-      /* Otros estilos para los slides */
-
-    }
-    .item{
       position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-      border-radius: 20px;
-      justify-content: flex-start;
-      height: 100%;
 
-      &__bg{
-        position: absolute;
-        width: 100%;
-        height: 100%;        
-        &--img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;   
-        }
-        &--overlay{
-          position: absolute;
-          z-index: inherit;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background-color: #00000097;
-          // background-image: linear-gradient(to bottom, #00000048, #000);
-          transition: all .4s ease-in;
-        }
-      }
-      &__play-icon{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        z-index: 10;
-        width: 70px;
-        height: 70px;
-        border: none;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 10px 30px 17px;
-        border-radius: 50%;
-        transition: all .2s ease-in;
-        cursor: pointer;
-
-        img{
-          width: 40px;
-        }
-      }
-      &__title{
+      .slick-list {
         position: relative;
-        // bottom: 10px;
-        // left: 10px;
-        padding:  10px;
-        color: #fff;
-        font-family: 'NexaHeavy', sans-serif;
-        font-size: 20px;
-        text-align: left;
-        margin: 0;
+        height: 350px;
+
+        @media (max-width:768px) {
+          height: 200px;
+        }
       }
-    }
-  
-    /* ==== Slider Style === */
-    
+
+      .slick-track {
+        position: relative;
+        top: 5%;
+        height: 90%;
+        width: 100%;
+
+        @media (max-width:768px) {
+          height: 95%;
+        }
+      }
+
+      .slick-dots li button:before {
+        font-size: 10px !important;
+      }
+
+      .slick-slide {
+        float: left;
+        margin: 0 5px;
+        opacity: 1;
+        overflow: hidden;
+        position: relative;
+        transition: all 300ms ease;
+        height: 100%;
+        transform: scale(1);
+        box-sizing: border-box;
+      }
+
+      .item {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 20px;
+        justify-content: flex-start;
+        height: 100%;
+
+        &__bg {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+
+          &--overlay {
+            position: absolute;
+            z-index: inherit;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #00000097;
+            transition: all .4s ease-in;
+          }
+        }
+
+        &__play-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1);
+          z-index: 10;
+          width: 70px;
+          height: 70px;
+          border: none;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px 10px 30px 17px;
+          border-radius: 50%;
+          transition: all .2s ease-in;
+          cursor: pointer;
+
+          img {
+            width: 40px;
+          }
+        }
+
+        &__title {
+          position: relative;
+          padding: 10px;
+          color: #fff;
+          font-family: 'NexaHeavy', sans-serif;
+          font-size: 20px;
+          text-align: left;
+          margin: 0;
+        }
+      }
+
+      /* ==== Slider Style === */
+
       .slick-slide:hover {
         z-index: 10;
-        // width: 110%;
-        // height: 110%;
         transform: scale(1.1) !important;
 
-        .item{
-          &__bg{
-            &--overlay{
+        .item {
+          &__bg {
+            &--overlay {
               background-color: transparent;
-              // background-image: linear-gradient(to bottom, #00000000 60%, #000);
             }
           }
-          &__play-icon{
+
+          &__play-icon {
             transform: translate(-50%, -70%) scale(1.2);
             background-color: #00000096;
           }
@@ -144,30 +136,6 @@
         @media (max-width:768px) {
           transform: scale(1) !important;
         }
-        // height: 280px !important;
       }
     }
-    
-    
-    .slick-initialized.slick-slider {
-      .item.slick-current {
-          // opacity: 1;
-          // transition: all 300ms ease;
-          // width: 600px !important;
-          // height: 320px;
-          // width: 50% !important;
-          // z-index: 10;
-          // transform: scale(1.2) !important;
-
-          // @media (max-width:768px) {
-          //   transform: scale(1) !important;
-          // }
-
-          // &::after{
-          //   height: 0 !important;
-          // }
-      }
-    }
-  
-  
-}
+  }
