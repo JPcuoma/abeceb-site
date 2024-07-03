@@ -1,7 +1,7 @@
 //
 // Navbar
 //
-.nav-container{
+.nav-container {
     width: 100%;
     height: 100px;
     position: fixed;
@@ -15,7 +15,8 @@
     }
 
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     margin: 0 auto;
     position: absolute;
@@ -25,24 +26,24 @@
     transition: all .4s ease-in-out;
     transform: translatex(0);
 
-        @media (max-width:1000px) {
-            position: fixed;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin: 0 auto;
-            padding-top: 75px;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-image: url('../img/moleculas-bg-nav.png'),  linear-gradient(to bottom, $black-typo, $black-typo);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    @media (max-width:1000px) {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 75px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/moleculas-bg-nav.png'), linear-gradient(to bottom, $black-typo, $black-typo);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-        ul {
+    ul {
         display: flex;
         justify-content: flex-end;
         width: fit-content;
@@ -63,19 +64,21 @@
             padding: 0 10px;
             display: flex;
             align-items: center;
-            font-family: 'NexaBold';
+            font-family: 'NexaBold', sans-serif;
             cursor: pointer;
 
             @media (max-width:1000px) {
                 margin: 21px 0;
             }
 
-            a.item-inicio{
+            a.item-inicio {
                 display: none;
+
                 @media (max-width:1000px) {
                     display: inline-block;
                 }
             }
+
             a {
                 color: $white;
                 mix-blend-mode: difference;
@@ -91,7 +94,8 @@
                     border-radius: 30px;
                 }
 
-                &:hover,&:active{
+                &:hover,
+                &:active {
                     background: $dark-green;
                     color: $white;
                 }
@@ -99,13 +103,14 @@
         }
     }
 }
+
 .nav-menu.hide {
     opacity: 0;
     z-index: 0;
-    transform: translatex(160%);    
+    transform: translatex(160%);
 }
 
-.nav-logo-box{
+.nav-logo-box {
     position: absolute;
     top: 20px;
     left: 60px;
@@ -114,43 +119,28 @@
     display: inline-block;
     width: fit-content;
     text-decoration: none;
+
     @media (max-width: 1000px) {
         position: fixed;
         top: 0;
         left: 0;
     }
 
-    &__desk{
+    &__desk {
         display: flex;
         justify-content: center;
         align-items: center;
+
         @media (max-width:1000px) {
             display: none;
         }
-        &--logo{
+
+        &--logo {
             width: 180px;
         }
-
-        // &--america{
-        //     width: 61px;
-        //     margin-right: 2px;
-        // }
-        // &--text{
-        //     color: #fff;
-        //     mix-blend-mode: difference;
-        //     font-family: 'NexaBlack';
-        //     font-size: 35px;
-        //     mix-blend-mode: difference;
-        // }
-        // &--abeceb-dark{
-        //     width: 180px;
-        //     display: none;
-        // }
-        // &--abeceb-white{
-        //     width: 180px;
-        // }
     }
-    &__mob{
+
+    &__mob {
         display: none;
 
         @media (max-width:1000px) {
@@ -159,7 +149,7 @@
     }
 }
 
-.nav-burger-toggle{
+.nav-burger-toggle {
     position: absolute;
     top: 55px;
     right: 50px;
@@ -178,7 +168,7 @@
         right: 30px;
     }
 
-    &__burger{
+    &__burger {
         position: absolute;
         left: 0;
         display: block;
@@ -186,7 +176,8 @@
         width: 100%;
         transition: all .3s ease-in-out;
     }
-    &__close{
+
+    &__close {
         position: absolute;
         left: 0;
         display: block;
@@ -196,20 +187,14 @@
     }
 }
 
-.nav-burger-toggle.open{
+.nav-burger-toggle.open {
     transform: rotateY(180deg);
-    .nav-burger-toggle__burger{
+
+    .nav-burger-toggle__burger {
         opacity: 0;
     }
-    .nav-burger-toggle__close{
+
+    .nav-burger-toggle__close {
         opacity: 1;
     }
 }
-
-
-// .nav-logo-desktop{
-//     position: fixed;
-//     top: 50px;
-//     left: 120px;
-//     mix-blend-mode: difference;
-// }
