@@ -110,6 +110,14 @@ html {
   -webkit-box-orient: vertical;
 }
 
+.bg-primary {
+  background: #2C3947;
+}
+
+.bg-secondary {
+  background: #3E7578;
+}
+
 .m-0 {
   margin: 0 !important;
 }
@@ -748,7 +756,7 @@ section#hablamos .wpcf7 form.invalid .wpcf7-response-output, section#hablamos .w
   padding: 0 10px;
   display: flex;
   align-items: center;
-  font-family: "NexaBold";
+  font-family: "NexaBold", sans-serif;
   cursor: pointer;
 }
 @media (max-width: 1000px) {
@@ -1436,11 +1444,8 @@ section#hablamos .wpcf7 form.invalid .wpcf7-response-output, section#hablamos .w
   position: relative;
   transition: all 300ms ease;
   height: 100%;
-  /* Ajusta el ancho de los slides según la cantidad de slides que deseas mostrar y el espacio entre ellos */
   transform: scale(1);
-  /* Espacio entre los slides */
   box-sizing: border-box;
-  /* Otros estilos para los slides */
 }
 .foros-section .slider-foro-video .item {
   position: relative;
@@ -1518,6 +1523,7 @@ section#hablamos .wpcf7 form.invalid .wpcf7-response-output, section#hablamos .w
     transform: scale(1) !important;
   }
 }
+
 .slider-foro-modal {
   position: fixed;
   z-index: 10000;
