@@ -50,3 +50,25 @@
         return
       })
 
+// dropdowns
+
+const dropLabel = document.querySelectorAll('.isolate-dropdown__label');
+// const dropsClose = document.querySelectorAll('.dropdown')
+function findAncestor (el, cls) {
+    while ((el = el.parentElement) && !el.classList.contains(cls));
+    return el;
+}
+
+dropLabel.forEach((dropDownBox)=>{
+    dropDownBox.addEventListener('click', ()=>{
+        // const parentContainer = dropDownBox.parentElement
+        const parentContainer = findAncestor(dropDownBox, 'isolate-dropdown') 
+        if (parentContainer.classList.contains('active')) {
+          lenis.scrollTo(parentContainer.offsetTop - 80)
+        }
+
+        parentContainer.classList.toggle('active')
+        }
+    )
+}
+)
