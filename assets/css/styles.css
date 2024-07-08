@@ -4385,17 +4385,17 @@ footer .footer-column.last .mail {
 }
 .organizaciones-section__title {
   font-family: "NexaLight", sans-serif;
-  font-size: clamp(25px, 5vw, 50px);
+  font-size: clamp(22px, 5vw, 40px);
   color: #2C3947;
   width: 100%;
-  max-width: 1275px;
+  max-width: 1050px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: clamp(60px, 7vw, 82px);
   line-height: 1.3;
 }
 .organizaciones-section__title strong {
-  font-size: clamp(35px, 6vw, 70px);
+  font-size: clamp(35px, 6vw, 50px);
   font-family: "NexaSlabBlack", sans-serif;
   color: #65B3AD;
   display: block;
@@ -4502,7 +4502,7 @@ footer .footer-column.last .mail {
 .clientes-casos-de-exito__header--text img {
   display: inline-block;
   margin-top: 30px;
-  width: 135px;
+  max-width: 150px;
 }
 .clientes-casos-de-exito__header--text h6 {
   font-family: "NexaHeavy";
@@ -4550,7 +4550,6 @@ footer .footer-column.last .mail {
   justify-content: center;
   align-items: flex-start;
   gap: clamp(15px, 4vw, 58px);
-  padding: 50px 0;
 }
 @media (max-width: 768px) {
   .clientes-casos-de-exito__data-project--item {
@@ -4576,26 +4575,29 @@ footer .footer-column.last .mail {
 }
 .clientes-casos-de-exito__data-project--item div p {
   text-align: left;
-  font-family: "NexaRegular";
-  font-size: clamp(15px, 1.8vw, 18px);
+  font-family: "NexaBook";
+  font-size: clamp(15px, 1.5vw, 18px);
   color: #2C3947;
   margin: 0;
+}
+.clientes-casos-de-exito__data-project--item div p:not(:last-child) {
   margin-bottom: 15px;
-  color: #2C3947;
 }
 .clientes-casos-de-exito__data-project--item div p strong {
+  color: #3E7578;
   font-family: "NexaHeavy";
 }
 .clientes-casos-de-exito__data-project hr {
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   border: none;
   margin: 0;
   background-color: rgba(204, 204, 204, 0.8);
 }
 .clientes-casos-de-exito__note {
   margin: 0 auto;
+  margin-top: 44px;
   width: 100%;
   max-width: 1000px;
   background-color: #ffffff;
@@ -4608,7 +4610,7 @@ footer .footer-column.last .mail {
 }
 @media (max-width: 768px) {
   .clientes-casos-de-exito__note {
-    padding: 24px 0px 40px 0px;
+    padding: 34px 15px 40px 15px;
   }
 }
 .clientes-casos-de-exito__note p {
@@ -4647,13 +4649,13 @@ footer .footer-column.last .mail {
 }
 .clientes-casos-de-exito__close-btn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 50px;
 }
 .clientes-casos-de-exito hr {
   display: block;
   border: none;
-  height: 3px;
+  height: 2px;
   background-color: rgba(204, 204, 204, 0.8);
   border-radius: 10px;
   margin: clamp(50px, 6vw, 80px) auto;
