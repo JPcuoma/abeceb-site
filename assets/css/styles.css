@@ -3604,6 +3604,7 @@ footer .footer-column.last .mail {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 .section-casos-de-exito__destacado--img {
@@ -3669,11 +3670,6 @@ footer .footer-column.last .mail {
   margin-top: 19px;
   line-height: 1;
 }
-@media (max-width: 1000px) {
-  .section-casos-de-exito__destacado--text a {
-    margin-bottom: 30px;
-  }
-}
 .section-casos-de-exito__destacado--text a:hover, .section-casos-de-exito__destacado--text a:active {
   color: #3E7578;
 }
@@ -3681,8 +3677,7 @@ footer .footer-column.last .mail {
   display: block;
   width: 100%;
   max-width: 1050px;
-  margin: 0 auto;
-  margin: clamp(50px, 8vw, 80px) auto;
+  margin: clamp(45px, 8vw, 80px) auto;
   border: none;
   height: 3px;
   border-radius: 10px;
@@ -3722,7 +3717,6 @@ footer .footer-column.last .mail {
 }
 .section-casos-de-exito__casos hr {
   display: none;
-  margin: 45px 0;
 }
 @media (max-width: 768px) {
   .section-casos-de-exito__casos hr {

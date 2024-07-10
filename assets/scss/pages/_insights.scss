@@ -226,6 +226,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            padding-bottom: 0;
         }
 
         &--img{
@@ -291,9 +292,9 @@
                 line-height: 1;
 
                 
-                @media (max-width:1000px) {
-                    margin-bottom: 30px;
-                }
+                // @media (max-width:1000px) {
+                //     margin-bottom: 30px;
+                // }
 
                 &:hover,&:active{
                     color: $dark-green;
@@ -306,9 +307,7 @@
         display: block;
         width: 100%;
         max-width: 1050px;
-        margin: 0 auto;
-        // margin: clamp(50px, 9vw, 124px);
-        margin: clamp(50px, 8vw, 80px) auto;
+        margin: clamp(45px, 8vw, 80px) auto;
         border: none;
         height: 3px;
         border-radius: 10px;
@@ -347,7 +346,7 @@
 
         hr{
             display: none;
-            margin: 45px 0;
+            // margin: clamp(45px, 8vw, 80px) auto clamp(45px, 8vw, 80px) auto;
             @media (max-width:768px) {
                 display: block;
             }
