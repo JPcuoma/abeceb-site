@@ -3971,52 +3971,56 @@ footer .footer-column.last .mail {
   max-width: 520px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: clamp(17px, 3vw, 30px);
 }
 @media (max-width: 768px) {
   .foro-abeceb-2024__content--calendar {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 }
-.foro-abeceb-2024__content--calendar-img {
+.foro-abeceb-2024__content--calendar div:nth-child(1) {
   flex: 1 0 0;
   max-width: 118px;
 }
-.foro-abeceb-2024__content--calendar-img img {
+.foro-abeceb-2024__content--calendar div:nth-child(1) img {
   width: 100%;
 }
-.foro-abeceb-2024__content--calendar-text-box {
+.foro-abeceb-2024__content--calendar div:nth-child(2) {
   flex: 1 0 0;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 768px) {
-  .foro-abeceb-2024__content--calendar-text-box {
+  .foro-abeceb-2024__content--calendar div:nth-child(2) {
     text-align: center;
   }
 }
-.foro-abeceb-2024__content--calendar-title {
+.foro-abeceb-2024__content--calendar div:nth-child(2) h6 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: clamp(30px, 3.3vw, 35px);
   font-family: "NexaSlabBlack", sans-serif;
   color: #2C3947;
+  line-height: 1;
 }
-.foro-abeceb-2024__content--calendar-p1 {
+.foro-abeceb-2024__content--calendar div:nth-child(2) p {
   margin: 0;
   color: #3E7578;
   font-family: "NexaRegular", sans-serif;
   font-size: clamp(18px, 2vw, 20px);
+  line-height: 1;
 }
-.foro-abeceb-2024__content--calendar-p2 {
-  margin: 0;
+.foro-abeceb-2024__content--calendar div:nth-child(2) p:nth-child(3) {
   font-family: "NexaHeavy", sans-serif;
   color: #2C3947;
   font-size: clamp(25px, 3vw, 30px);
+  margin-bottom: 3px;
 }
-.foro-abeceb-2024__content--calendar-p3 {
+.foro-abeceb-2024__content--calendar div:nth-child(2) p:nth-child(4) {
   margin: 0;
   font-family: "NexaHeavy", sans-serif;
   color: #65B3AD;
