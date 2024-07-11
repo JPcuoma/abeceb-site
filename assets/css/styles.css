@@ -1597,6 +1597,7 @@ section#hablamos .wpcf7 form.invalid .wpcf7-response-output, section#hablamos .w
   border-radius: 15px;
   background-color: #fff;
   width: 90%;
+  max-width: 1035px;
   height: clamp(450px, 90vh, 650px);
 }
 .slider-foro-modal__iframe--close-btn {

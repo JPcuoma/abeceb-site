@@ -17,6 +17,7 @@
         border-radius: 15px;
         background-color: #fff;
         width: 90%;
+        max-width: 1035px;
         height: clamp(450px, 90vh, 650px);
 
         &--close-btn{
